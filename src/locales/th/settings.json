@@ -274,10 +274,7 @@
         "support": {
             "title": "การสนับสนุน",
             "description": "โปรเจกต์โอเพนซอร์ซ",
-            "feedbackTitle": "ข้อเสนอแนะ",
-            "feedbackDescription": "ปัญหา? Issue บน GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "ข้อเสนอแนะ",
             "thanksTitle": "ขอบคุณ",
             "thanksDescription": "ขอบคุณผู้มีส่วนร่วมทุกคน"
         },

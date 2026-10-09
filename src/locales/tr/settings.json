@@ -274,10 +274,7 @@
         "support": {
             "title": "Destek",
             "description": "Açık kaynak proje.",
-            "feedbackTitle": "Geri bildirim",
-            "feedbackDescription": "Sorun? GitHub'da Issue",
             "githubButton": "GitHub",
-            "feedbackButton": "Geri bildirim",
             "thanksTitle": "Teşekkürler",
             "thanksDescription": "Tüm katkıda bulunanlara teşekkürler"
         },

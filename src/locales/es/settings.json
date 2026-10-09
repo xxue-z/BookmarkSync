@@ -316,10 +316,7 @@
         "support": {
             "title": "Apoya el desarrollo continuo",
             "description": "BookmarkSync es un proyecto de código abierto mantenido por desarrolladores individuales. Tu apoyo es la mayor motivación para las actualizaciones continuas.",
-            "feedbackTitle": "Comentarios y sugerencias",
-            "feedbackDescription": "¿Encontraste algún problema o quieres proporcionar sugerencias? No dudes en enviar un Issue en GitHub o visitar la página del proyecto.",
             "githubButton": "GitHub",
-            "feedbackButton": "Comentarios",
             "thanksTitle": "Agradecimientos especiales",
             "thanksDescription": "Gracias a todos los usuarios que enviaron código, reportaron errores y proporcionaron sugerencias. También gracias a excelentes proyectos de código abierto como lucide-react, shadcn/ui por su ayuda."
         },

@@ -274,10 +274,7 @@
         "support": {
             "title": "Hỗ trợ",
             "description": "Dự án mã nguồn mở.",
-            "feedbackTitle": "Phản hồi",
-            "feedbackDescription": "Vấn đề? Issue trên GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "Phản hồi",
             "thanksTitle": "Cảm ơn",
             "thanksDescription": "Cảm ơn tất cả người đóng góp"
         },

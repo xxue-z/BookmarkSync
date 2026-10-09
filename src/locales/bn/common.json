@@ -95,9 +95,7 @@
         "timeMachine": "টাইম মেশিন",
         "syncHistory": "সিঙ্ক ইতিহাস",
         "tools": "টুলস",
-        "about": "সম্পর্কে",
-        "tutorial": "টিউটোরিয়াল",
-        "feedback": "প্রতিক্রিয়া"
+        "about": "সম্পর্কে"
     },
     "activityGraph": {
         "title": "সাম্প্রতিক সিঙ্ক কার্যকলাপ",

@@ -3706,52 +3706,7 @@ function Za() {
                 className: "grid grid-cols-1 sm:grid-cols-2 gap-6",
                 children: [
                   null,
-                  e.jsxs("div", {
-                    className: "space-y-4",
-                    children: [
-                      e.jsx("h4", {
-                        className: "font-medium text-sm",
-                        children: s("about.support.feedbackTitle"),
-                      }),
-                      e.jsx("p", {
-                        className: "text-xs text-muted-foreground",
-                        children: s("about.support.feedbackDescription"),
-                      }),
-                      e.jsxs("div", {
-                        className: "flex gap-2",
-                        children: [
-                          e.jsx(N, {
-                            className: "flex-1 gap-2",
-                            variant: "outline",
-                            asChild: !0,
-                            children: e.jsxs("a", {
-                              href: W.APP_GITHUB_URL,
-                              target: "_blank",
-                              rel: "noreferrer",
-                              children: [
-                                e.jsx(Vt, { className: "w-4 h-4" }),
-                                s("about.support.githubButton"),
-                              ],
-                            }),
-                          }),
-                          e.jsx(N, {
-                            className: "flex-1 gap-2",
-                            variant: "outline",
-                            asChild: !0,
-                            children: e.jsxs("a", {
-                              href: W.APP_GITHUB_URL + "/issues",
-                              target: "_blank",
-                              rel: "noreferrer",
-                              children: [
-                                e.jsx(Wt, { className: "w-4 h-4" }),
-                                s("about.support.feedbackButton"),
-                              ],
-                            }),
-                          }),
-                        ],
-                      }),
-                    ],
-                  }),
+                  null,
                 ],
               }),
               e.jsx(Be, {}),
@@ -6619,18 +6574,7 @@ function Or({ activeTab: s, onTabChange: a, ...t }) {
           isActive: s === "about",
         },
       ],
-      navSecondary: [
-        {
-          title: i("common:sidebar.tutorial"),
-          url: W.APP_URL + "/docs",
-          icon: ya,
-        },
-        {
-          title: i("common:sidebar.feedback"),
-          url: W.APP_GITHUB_URL + "/issues",
-          icon: Na,
-        },
-      ],
+      navSecondary: [],
     };
   return e.jsxs(tt, {
     variant: "inset",

@@ -1,8 +1,27 @@
 {
     "title": "BookmarkSync",
-    "menu": { "dashboard": "לוח בקרה", "helpDocs": "תיעוד", "feedback": "משוב", "donate": "תרומה", "rate": "דירוג", "community": "קהילה", "website": "אתר", "support": "תמיכה", "terms": "תנאים" },
-    "stats": { "localBookmarks": "סימניות מקומיות", "storageType": "סוג אחסון", "lastStatus": "סטטוס אחרון", "lastSync": "סנכרון אחרון" },
-    "autoSync": { "title": "סנכרון אוטומטי", "description": "שמור על עקביות הנתונים בין מכשירים" },
-    "safetyWarning": { "title": "מחיקה המונית נחסמה", "description": "בדוק הגדרות וסנכרן ידנית" },
+    "menu": {
+        "dashboard": "לוח בקרה",
+        "donate": "תרומה",
+        "rate": "דירוג",
+        "community": "קהילה",
+        "website": "אתר",
+        "support": "תמיכה",
+        "terms": "תנאים"
+    },
+    "stats": {
+        "localBookmarks": "סימניות מקומיות",
+        "storageType": "סוג אחסון",
+        "lastStatus": "סטטוס אחרון",
+        "lastSync": "סנכרון אחרון"
+    },
+    "autoSync": {
+        "title": "סנכרון אוטומטי",
+        "description": "שמור על עקביות הנתונים בין מכשירים"
+    },
+    "safetyWarning": {
+        "title": "מחיקה המונית נחסמה",
+        "description": "בדוק הגדרות וסנכרן ידנית"
+    },
     "version": "V{{version}}"
 }

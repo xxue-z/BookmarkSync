@@ -1,8 +1,27 @@
 {
     "title": "BookmarkSync",
-    "menu": { "dashboard": "แดชบอร์ด", "helpDocs": "เอกสาร", "feedback": "ข้อเสนอแนะ", "donate": "บริจาค", "rate": "ให้คะแนน", "community": "ชุมชน", "website": "เว็บไซต์", "support": "การสนับสนุน", "terms": "ข้อกำหนด" },
-    "stats": { "localBookmarks": "บุ๊กมาร์กในเครื่อง", "storageType": "ประเภทที่เก็บข้อมูล", "lastStatus": "สถานะล่าสุด", "lastSync": "ซิงโครไนซ์ล่าสุด" },
-    "autoSync": { "title": "ซิงโครไนซ์อัตโนมัติ", "description": "รักษาความสอดคล้องของข้อมูลระหว่างอุปกรณ์" },
-    "safetyWarning": { "title": "การลบจำนวนมากถูกบล็อก", "description": "ตรวจสอบการตั้งค่าและซิงโครไนซ์ด้วยตนเอง" },
+    "menu": {
+        "dashboard": "แดชบอร์ด",
+        "donate": "บริจาค",
+        "rate": "ให้คะแนน",
+        "community": "ชุมชน",
+        "website": "เว็บไซต์",
+        "support": "การสนับสนุน",
+        "terms": "ข้อกำหนด"
+    },
+    "stats": {
+        "localBookmarks": "บุ๊กมาร์กในเครื่อง",
+        "storageType": "ประเภทที่เก็บข้อมูล",
+        "lastStatus": "สถานะล่าสุด",
+        "lastSync": "ซิงโครไนซ์ล่าสุด"
+    },
+    "autoSync": {
+        "title": "ซิงโครไนซ์อัตโนมัติ",
+        "description": "รักษาความสอดคล้องของข้อมูลระหว่างอุปกรณ์"
+    },
+    "safetyWarning": {
+        "title": "การลบจำนวนมากถูกบล็อก",
+        "description": "ตรวจสอบการตั้งค่าและซิงโครไนซ์ด้วยตนเอง"
+    },
     "version": "V{{version}}"
 }

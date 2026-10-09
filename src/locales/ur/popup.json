@@ -1,8 +1,27 @@
 {
     "title": "BookmarkSync",
-    "menu": { "dashboard": "ڈیش بورڈ", "helpDocs": "دستاویزات", "feedback": "فیڈ بیک", "donate": "عطیہ", "rate": "ریٹنگ", "community": "کمیونٹی", "website": "ویب سائٹ", "support": "سپورٹ", "terms": "شرائط" },
-    "stats": { "localBookmarks": "مقامی بک مارکس", "storageType": "اسٹوریج کی قسم", "lastStatus": "آخری حالت", "lastSync": "آخری سینک" },
-    "autoSync": { "title": "خودکار سینک", "description": "ڈیوائسز کے درمیان ڈیٹا مستقل رکھیں" },
-    "safetyWarning": { "title": "بڑے پیمانے پر حذف بلاک ہو گیا", "description": "ترتیبات چیک کریں اور دستی سینک کریں" },
+    "menu": {
+        "dashboard": "ڈیش بورڈ",
+        "donate": "عطیہ",
+        "rate": "ریٹنگ",
+        "community": "کمیونٹی",
+        "website": "ویب سائٹ",
+        "support": "سپورٹ",
+        "terms": "شرائط"
+    },
+    "stats": {
+        "localBookmarks": "مقامی بک مارکس",
+        "storageType": "اسٹوریج کی قسم",
+        "lastStatus": "آخری حالت",
+        "lastSync": "آخری سینک"
+    },
+    "autoSync": {
+        "title": "خودکار سینک",
+        "description": "ڈیوائسز کے درمیان ڈیٹا مستقل رکھیں"
+    },
+    "safetyWarning": {
+        "title": "بڑے پیمانے پر حذف بلاک ہو گیا",
+        "description": "ترتیبات چیک کریں اور دستی سینک کریں"
+    },
     "version": "V{{version}}"
 }

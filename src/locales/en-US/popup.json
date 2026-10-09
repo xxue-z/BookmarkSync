@@ -2,8 +2,6 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Dashboard",
-        "helpDocs": "Help Docs",
-        "feedback": "Feedback",
         "donate": "Support Us",
         "rate": "Rate Us",
         "community": "Join Community",

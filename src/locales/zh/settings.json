@@ -305,10 +305,7 @@
         "support": {
             "title": "支持项目持续发展",
             "description": "BookmarkSync 是一个由个人开发者维护的开源项目.您的支持是项目持续更新的最大动力。",
-            "feedbackTitle": "反馈与建议",
-            "feedbackDescription": "遇到问题或是想提供建议?欢迎在 GitHub 提交 Issue 或访问项目主页。",
             "githubButton": "GitHub",
-            "feedbackButton": "反馈",
             "thanksTitle": "特别感谢",
             "thanksDescription": "感谢所有为项目提交代码、报告 Bug、提出建议的用户.同时感谢 lucide-react, shadcn/ui 等优秀的开源项目对本项目提供的帮助。"
         },

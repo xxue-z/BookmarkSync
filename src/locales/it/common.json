@@ -97,9 +97,7 @@
         "timeMachine": "Macchina del tempo",
         "syncHistory": "Log sincronizzazione",
         "tools": "Strumenti",
-        "about": "Info",
-        "tutorial": "Tutorial",
-        "feedback": "Feedback"
+        "about": "Info"
     },
     "activityGraph": {
         "title": "Attività sincronizzazione recente",

@@ -2,8 +2,6 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "控制台",
-        "helpDocs": "帮助文档",
-        "feedback": "反馈问题",
         "donate": "支持我们",
         "rate": "好评支持",
         "community": "加入社区",

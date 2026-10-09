@@ -1,8 +1,27 @@
 {
     "title": "BookmarkSync",
-    "menu": { "dashboard": "Irányítópult", "helpDocs": "Dokumentáció", "feedback": "Visszajelzés", "donate": "Adomány", "rate": "Értékelés", "community": "Közösség", "website": "Weboldal", "support": "Támogatás", "terms": "Feltételek" },
-    "stats": { "localBookmarks": "Helyi könyvjelzők", "storageType": "Tárolás típusa", "lastStatus": "Utolsó állapot", "lastSync": "Utolsó szinkronizálás" },
-    "autoSync": { "title": "Automatikus szinkronizálás", "description": "Tartsd az adatokat konzisztensen az eszközök között" },
-    "safetyWarning": { "title": "Tömeges törlés blokkolva", "description": "Ellenőrizd a beállításokat és szinkronizálj manuálisan" },
+    "menu": {
+        "dashboard": "Irányítópult",
+        "donate": "Adomány",
+        "rate": "Értékelés",
+        "community": "Közösség",
+        "website": "Weboldal",
+        "support": "Támogatás",
+        "terms": "Feltételek"
+    },
+    "stats": {
+        "localBookmarks": "Helyi könyvjelzők",
+        "storageType": "Tárolás típusa",
+        "lastStatus": "Utolsó állapot",
+        "lastSync": "Utolsó szinkronizálás"
+    },
+    "autoSync": {
+        "title": "Automatikus szinkronizálás",
+        "description": "Tartsd az adatokat konzisztensen az eszközök között"
+    },
+    "safetyWarning": {
+        "title": "Tömeges törlés blokkolva",
+        "description": "Ellenőrizd a beállításokat és szinkronizálj manuálisan"
+    },
     "version": "V{{version}}"
 }

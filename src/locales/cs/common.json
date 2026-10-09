@@ -95,9 +95,7 @@
         "timeMachine": "Časová osa",
         "syncHistory": "Historie synchronizace",
         "tools": "Nástroje",
-        "about": "O aplikaci",
-        "tutorial": "Návod",
-        "feedback": "Zpětná vazba"
+        "about": "O aplikaci"
     },
     "activityGraph": {
         "title": "Nedávná aktivita synchronizace",

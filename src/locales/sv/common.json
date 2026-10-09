@@ -95,9 +95,7 @@
         "timeMachine": "Tidsmaskin",
         "syncHistory": "Synkningshistorik",
         "tools": "Verktyg",
-        "about": "Om",
-        "tutorial": "Handledning",
-        "feedback": "Feedback"
+        "about": "Om"
     },
     "activityGraph": {
         "title": "Senaste synkningsaktivitet",

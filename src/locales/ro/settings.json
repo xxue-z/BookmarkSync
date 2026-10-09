@@ -274,10 +274,7 @@
         "support": {
             "title": "Suport",
             "description": "Proiect open-source.",
-            "feedbackTitle": "Feedback",
-            "feedbackDescription": "Probleme? Issue pe GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "Feedback",
             "thanksTitle": "Mulțumiri",
             "thanksDescription": "Mulțumim tuturor contributorilor"
         },

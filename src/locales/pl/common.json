@@ -95,9 +95,7 @@
         "timeMachine": "Wehikuł czasu",
         "syncHistory": "Historia synchronizacji",
         "tools": "Narzędzia",
-        "about": "O",
-        "tutorial": "Przewodnik",
-        "feedback": "Opinia"
+        "about": "O"
     },
     "activityGraph": {
         "title": "Ostatnia aktywność synchronizacji",

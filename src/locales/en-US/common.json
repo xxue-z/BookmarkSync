@@ -97,9 +97,7 @@
         "timeMachine": "Time Machine",
         "syncHistory": "Sync Logs",
         "tools": "Tools",
-        "about": "About",
-        "tutorial": "Tutorial",
-        "feedback": "Feedback"
+        "about": "About"
     },
     "activityGraph": {
         "title": "Recent Sync Activity",

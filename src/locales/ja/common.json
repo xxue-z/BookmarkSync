@@ -97,9 +97,7 @@
         "timeMachine": "タイムマシン",
         "syncHistory": "同期ログ",
         "tools": "ツール",
-        "about": "概要",
-        "tutorial": "チュートリアル",
-        "feedback": "フィードバック"
+        "about": "概要"
     },
     "activityGraph": {
         "title": "最近の同期アクティビティ",

@@ -274,10 +274,7 @@
         "support": {
             "title": "지원",
             "description": "오픈소스 프로젝트.",
-            "feedbackTitle": "피드백",
-            "feedbackDescription": "문제? GitHub에 Issue",
             "githubButton": "GitHub",
-            "feedbackButton": "피드백",
             "thanksTitle": "감사",
             "thanksDescription": "기여자에게 감사"
         },

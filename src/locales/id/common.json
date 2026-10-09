@@ -95,9 +95,7 @@
         "timeMachine": "Mesin waktu",
         "syncHistory": "Riwayat sinkronisasi",
         "tools": "Alat",
-        "about": "Tentang",
-        "tutorial": "Tutorial",
-        "feedback": "Masukan"
+        "about": "Tentang"
     },
     "activityGraph": {
         "title": "Aktivitas sinkronisasi terkini",

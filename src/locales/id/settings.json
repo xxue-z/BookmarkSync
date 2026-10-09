@@ -279,10 +279,7 @@
         "support": {
             "title": "Dukungan",
             "description": "Proyek open source.",
-            "feedbackTitle": "Masukan",
-            "feedbackDescription": "Masalah? Issue di GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "Masukan",
             "thanksTitle": "Terima kasih",
             "thanksDescription": "Terima kasih untuk semua kontributor"
         },

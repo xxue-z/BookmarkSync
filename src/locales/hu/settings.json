@@ -274,10 +274,7 @@
         "support": {
             "title": "Támogatás",
             "description": "Nyílt forráskódú projekt.",
-            "feedbackTitle": "Visszajelzés",
-            "feedbackDescription": "Problémák? Issue a GitHubon",
             "githubButton": "GitHub",
-            "feedbackButton": "Visszajelzés",
             "thanksTitle": "Köszönet",
             "thanksDescription": "Köszönjük minden közreműködőnek"
         },

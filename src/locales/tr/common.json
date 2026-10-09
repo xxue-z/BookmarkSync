@@ -95,9 +95,7 @@
         "timeMachine": "Zaman makinesi",
         "syncHistory": "Senkronizasyon geçmişi",
         "tools": "Araçlar",
-        "about": "Hakkında",
-        "tutorial": "Rehber",
-        "feedback": "Geri bildirim"
+        "about": "Hakkında"
     },
     "activityGraph": {
         "title": "Son senkronizasyon aktivitesi",
