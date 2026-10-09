@@ -1,5 +1,5 @@
 {
-    "title": "BookmarkHub",
+    "title": "BookmarkSync",
     "menu": { "dashboard": "Панель", "helpDocs": "Документація", "feedback": "Відгук", "donate": "Пожертва", "rate": "Оцінити", "community": "Спільнота", "website": "Веб-сайт", "support": "Підтримка", "terms": "Умови" },
     "stats": { "localBookmarks": "Локальні закладки", "storageType": "Тип сховища", "lastStatus": "Останній статус", "lastSync": "Остання синхронізація" },
     "autoSync": { "title": "Автосинхронізація", "description": "Підтримуйте узгодженість даних між пристроями" },

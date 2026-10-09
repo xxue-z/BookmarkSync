@@ -91,7 +91,7 @@ import "../chunks/vendor-sentry-B3P1rFJ6.js";
             : typeof self < "u"
               ? self
               : {};
-    s.SENTRY_RELEASE = { id: "bookmarkhub-extension@dev" };
+    s.SENTRY_RELEASE = { id: "bookmarksync-extension@dev" };
     var i = new s.Error().stack;
     i &&
       ((s._sentryDebugIds = s._sentryDebugIds || {}),
@@ -298,7 +298,7 @@ function Xe() {
                     }),
                     e.jsx(ce, {
                       className: "text-md",
-                      children: "BookmarkHub",
+                      children: "BookmarkSync",
                     }),
                   ],
                 }),

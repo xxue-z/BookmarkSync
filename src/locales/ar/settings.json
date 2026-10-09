@@ -254,7 +254,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "الإصدار",
         "stable": "مستقر",
         "description": "حل مفتوح المصدر للمزامنة.",
@@ -293,7 +293,7 @@
             "terms": "الشروط",
             "privacy": "الخصوصية",
             "website": "الموقع",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

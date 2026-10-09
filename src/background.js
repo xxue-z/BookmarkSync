@@ -45,7 +45,7 @@ import "./chunks/vendor-sentry-B3P1rFJ6.js";
             : typeof self < "u"
               ? self
               : {};
-    s.SENTRY_RELEASE = { id: "bookmarkhub-extension@dev" };
+    s.SENTRY_RELEASE = { id: "bookmarksync-extension@dev" };
     var t = new s.Error().stack;
     t &&
       ((s._sentryDebugIds = s._sentryDebugIds || {}),

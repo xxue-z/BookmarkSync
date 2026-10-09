@@ -35,7 +35,7 @@
         "safetyProtection": "Защита безопасности синхронизации",
         "safetyBlocked": "Синхронизация заблокирована: будет удалено {{count}} закладок. Подтвердите в настройках.",
         "safetyBlockedGeneric": "Синхронизация заблокирована: обнаружено много изменений.",
-        "autoSyncDisabled": "BookmarkHub - автосинхронизация не включена",
+        "autoSyncDisabled": "BookmarkSync - автосинхронизация не включена",
         "autoSyncRequiresRegistration": "Автосинхронизация требует регистрации",
         "autoSyncPaused": "Автосинхронизация приостановлена",
         "operationCancelled": "Операция отменена",

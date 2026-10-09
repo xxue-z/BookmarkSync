@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "Opis rozszerzenia",
-      "message": "BookmarkHub, synchronizuj zakładki między przeglądarkami"
+      "message": "BookmarkSync, synchronizuj zakładki między przeglądarkami"
    },
    "appName": {
       "description": "Nazwa rozszerzenia",
-      "message": "BookmarkHub - synchronizuj zakładki"
+      "message": "BookmarkSync - synchronizuj zakładki"
    }
 }

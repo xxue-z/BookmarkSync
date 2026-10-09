@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "وصف الإضافة",
-      "message": "BookmarkHub، مزامنة الإشارات المرجعية بين المتصفحات"
+      "message": "BookmarkSync، مزامنة الإشارات المرجعية بين المتصفحات"
    },
    "appName": {
       "description": "اسم الإضافة",
-      "message": "BookmarkHub - مزامنة الإشارات المرجعية"
+      "message": "BookmarkSync - مزامنة الإشارات المرجعية"
    }
 }

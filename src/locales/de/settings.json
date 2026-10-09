@@ -291,7 +291,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Version",
         "stable": "Stabil",
         "description": "Eine Open-Source-, sichere und vollständig selbst kontrollierte browserübergreifende Lesezeichen-Synchronisationslösung.",
@@ -315,7 +315,7 @@
         },
         "support": {
             "title": "Kontinuierliche Entwicklung unterstützen",
-            "description": "BookmarkHub ist ein Open-Source-Projekt, das von einzelnen Entwicklern gewartet wird. Ihre Unterstützung ist die größte Motivation für kontinuierliche Updates.",
+            "description": "BookmarkSync ist ein Open-Source-Projekt, das von einzelnen Entwicklern gewartet wird. Ihre Unterstützung ist die größte Motivation für kontinuierliche Updates.",
             "proTitle": "Möchten Sie erweiterte Funktionen?",
             "proDescription": "Abonnieren Sie die Pro-Version, um Verlaufssnapshots, automatische Backups, mehr Speicherknoten und priorisierten technischen Support freizuschalten.",
             "proButton": "Mehr über Pro erfahren",
@@ -330,7 +330,7 @@
             "terms": "Nutzungsbedingungen",
             "privacy": "Datenschutzrichtlinie",
             "website": "Offizielle Website",
-            "copyright": "© {{year}} BookmarkHub. Mit Liebe veröffentlicht."
+            "copyright": "© {{year}} BookmarkSync. Mit Liebe veröffentlicht."
         }
     },
     "dashboard": {

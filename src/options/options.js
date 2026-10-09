@@ -184,7 +184,7 @@ import "../chunks/vendor-sentry-B3P1rFJ6.js";
             : typeof self < "u"
               ? self
               : {};
-    s.SENTRY_RELEASE = { id: "bookmarkhub-extension@dev" };
+    s.SENTRY_RELEASE = { id: "bookmarksync-extension@dev" };
     var a = new s.Error().stack;
     a &&
       ((s._sentryDebugIds = s._sentryDebugIds || {}),
@@ -780,7 +780,7 @@ function za({
                       variant: "outline",
                       onClick: () =>
                         window.open(
-                          "https://github.com/settings/tokens/new?description=BookmarkHub&scopes=repo,gist,user",
+                          "https://github.com/settings/tokens/new?description=BookmarkSync&scopes=repo,gist,user",
                           "_blank",
                         ),
                       title: "\u4E00\u952E\u521B\u5EFA GitHub Token",
@@ -1297,7 +1297,7 @@ function Aa({
                     variant: "outline",
                     onClick: () =>
                       window.open(
-                        "https://github.com/settings/tokens/new?description=BookmarkHub-Gist&scopes=gist",
+                        "https://github.com/settings/tokens/new?description=BookmarkSync-Gist&scopes=gist",
                         "_blank",
                       ),
                     title: "\u521B\u5EFA Gist Token",
@@ -2594,7 +2594,7 @@ function Ya({
                       variant: "outline",
                       onClick: () =>
                         window.open(
-                          `${h.baseUrl || "https://gitlab.com"}/-/profile/personal_access_tokens?name=BookmarkHub&scopes=api`,
+                          `${h.baseUrl || "https://gitlab.com"}/-/profile/personal_access_tokens?name=BookmarkSync&scopes=api`,
                           "_blank",
                         ),
                       title: "Create GitLab Token",
@@ -4715,7 +4715,7 @@ function nr() {
           H = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19),
           M = document.createElement("a");
         (M.href = V),
-          (M.download = `bookmarkhub-backup-${H}.json`),
+          (M.download = `bookmarksync-backup-${H}.json`),
           M.click(),
           URL.revokeObjectURL(V),
           x(s("tools.bookmarkBackup.exportSuccess"));
@@ -7541,7 +7541,7 @@ function Or({ activeTab: s, onTabChange: a, ...t }) {
                     children: [
                       e.jsx("span", {
                         className: "truncate font-semibold",
-                        children: "BookmarkHub",
+                        children: "BookmarkSync",
                       }),
                       e.jsx("span", {
                         className: "truncate text-xs",
@@ -7736,7 +7736,7 @@ function Kr() {
                               onClick: (d) => {
                                 d.preventDefault(), g("dashboard");
                               },
-                              children: "BookmarkHub",
+                              children: "BookmarkSync",
                             }),
                           }),
                           e.jsx(pt, { className: "hidden md:block" }),

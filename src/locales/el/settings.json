@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Έκδοση",
         "stable": "Σταθερή",
         "description": "Λύση συγχρονισμού σελιδοδεικτών ανοιχτού κώδικα.",
@@ -288,7 +288,7 @@
             "terms": "Όροι",
             "privacy": "Ιδιωτικότητα",
             "website": "Ιστοσελίδα",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

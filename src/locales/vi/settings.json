@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Phiên bản",
         "stable": "Ổn định",
         "description": "Giải pháp đồng bộ đánh dấu mã nguồn mở.",
@@ -288,7 +288,7 @@
             "terms": "Điều khoản",
             "privacy": "Quyền riêng tư",
             "website": "Trang web",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

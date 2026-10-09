@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "버전",
         "stable": "안정",
         "description": "오픈소스 북마크 동기화 솔루션.",
@@ -288,7 +288,7 @@
             "terms": "약관",
             "privacy": "개인정보",
             "website": "웹사이트",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

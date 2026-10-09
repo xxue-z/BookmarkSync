@@ -10,7 +10,7 @@
             : typeof self < "u"
               ? self
               : {};
-    e.SENTRY_RELEASE = { id: "bookmarkhub-extension@dev" };
+    e.SENTRY_RELEASE = { id: "bookmarksync-extension@dev" };
     var t = new e.Error().stack;
     t &&
       ((e._sentryDebugIds = e._sentryDebugIds || {}),

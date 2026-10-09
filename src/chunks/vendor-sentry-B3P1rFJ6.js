@@ -11,7 +11,7 @@ import { r as wi } from "./vendor-ui-Piys8gOI.js";
             : typeof self < "u"
               ? self
               : {};
-    t.SENTRY_RELEASE = { id: "bookmarkhub-extension@dev" };
+    t.SENTRY_RELEASE = { id: "bookmarksync-extension@dev" };
     var e = new t.Error().stack;
     e &&
       ((t._sentryDebugIds = t._sentryDebugIds || {}),

@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "Описание расширения",
-      "message": "BookmarkHub, синхронизация закладок между браузерами"
+      "message": "BookmarkSync, синхронизация закладок между браузерами"
    },
    "appName": {
       "description": "Название расширения",
-      "message": "BookmarkHub - синхронизация закладок"
+      "message": "BookmarkSync - синхронизация закладок"
    }
 }

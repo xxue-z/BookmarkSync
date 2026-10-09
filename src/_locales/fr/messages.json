@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "La description de l'extension",
-      "message": "BookmarkHub, synchronisez les favoris entre les navigateurs"
+      "message": "BookmarkSync, synchronisez les favoris entre les navigateurs"
    },
    "appName": {
       "description": "Le nom de l'extension",
-      "message": "BookmarkHub - synchroniser les favoris"
+      "message": "BookmarkSync - synchroniser les favoris"
    }
 }

@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Versie",
         "stable": "Stabiel",
         "description": "Open-source bladwijzer-synchronisatieoplossing.",
@@ -288,7 +288,7 @@
             "terms": "Voorwaarden",
             "privacy": "Privacy",
             "website": "Website",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

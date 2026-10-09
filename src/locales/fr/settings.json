@@ -291,7 +291,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Version",
         "stable": "Stable",
         "description": "Une solution de synchronisation de signets open source, sécurisée et entièrement contrôlée entre navigateurs.",
@@ -315,7 +315,7 @@
         },
         "support": {
             "title": "Soutenir le développement continu",
-            "description": "BookmarkHub est un projet open source maintenu par des développeurs individuels. Votre soutien est la plus grande motivation pour les mises à jour continues.",
+            "description": "BookmarkSync est un projet open source maintenu par des développeurs individuels. Votre soutien est la plus grande motivation pour les mises à jour continues.",
             "proTitle": "Vous voulez des fonctionnalités plus avancées ?",
             "proDescription": "Abonnez-vous à la version Pro pour débloquer les instantanés d'historique, les sauvegardes automatiques, plus de nœuds de stockage et le support technique prioritaire.",
             "proButton": "En savoir plus sur Pro",
@@ -330,7 +330,7 @@
             "terms": "Conditions d'utilisation",
             "privacy": "Politique de confidentialité",
             "website": "Site officiel",
-            "copyright": "© {{year}} BookmarkHub. Publié avec amour."
+            "copyright": "© {{year}} BookmarkSync. Publié avec amour."
         }
     },
     "dashboard": {

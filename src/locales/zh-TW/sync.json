@@ -39,7 +39,7 @@
         "safetyProtection": "安全保護",
         "safetyBlocked": "同步已阻止：將刪除{{count}}個書籤。請在設定中確認。",
         "safetyBlockedGeneric": "同步已阻止：偵測到大量變更。",
-        "autoSyncDisabled": "BookmarkHub - 自動同步未啟用",
+        "autoSyncDisabled": "BookmarkSync - 自動同步未啟用",
         "autoSyncRequiresRegistration": "自動同步需要註冊帳戶",
         "autoSyncPaused": "自動同步已暫停",
         "operationCancelled": "操作已取消",

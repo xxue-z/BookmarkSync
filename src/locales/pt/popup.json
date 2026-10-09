@@ -1,5 +1,5 @@
 {
-    "title": "BookmarkHub",
+    "title": "BookmarkSync",
     "menu": { "dashboard": "Painel", "helpDocs": "Documentação de ajuda", "feedback": "Feedback", "donate": "Apoie-nos", "rate": "Avalie-nos", "community": "Junte-se à comunidade", "website": "Site oficial", "support": "Suporte técnico", "terms": "Termos de serviço" },
     "stats": { "localBookmarks": "Favoritos locais", "storageType": "Tipo de armazenamento", "lastStatus": "Último status", "lastSync": "Última sincronização" },
     "autoSync": { "title": "Sincronização automática", "description": "Mantenha dados consistentes entre dispositivos em tempo real" },

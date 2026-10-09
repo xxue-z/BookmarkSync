@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "Uzantının açıklaması",
-      "message": "BookmarkHub, tarayıcılar arasında yer işaretlerini senkronize et"
+      "message": "BookmarkSync, tarayıcılar arasında yer işaretlerini senkronize et"
    },
    "appName": {
       "description": "Uzantının adı",
-      "message": "BookmarkHub - yer işaretlerini senkronize et"
+      "message": "BookmarkSync - yer işaretlerini senkronize et"
    }
 }

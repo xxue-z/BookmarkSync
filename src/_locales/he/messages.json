@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "תיאור ההרחבה",
-      "message": "BookmarkHub, סנכרן סימניות בין דפדפנים"
+      "message": "BookmarkSync, סנכרן סימניות בין דפדפנים"
    },
    "appName": {
       "description": "שם ההרחבה",
-      "message": "BookmarkHub - סנכרון סימניות"
+      "message": "BookmarkSync - סנכרון סימניות"
    }
 }

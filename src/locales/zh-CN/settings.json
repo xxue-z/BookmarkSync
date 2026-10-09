@@ -280,7 +280,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "版本",
         "stable": "稳定版",
         "description": "一个开源、安全且由您完全掌控的跨浏览器书签同步解决方案。",
@@ -304,7 +304,7 @@
         },
         "support": {
             "title": "支持项目持续发展",
-            "description": "BookmarkHub 是一个由个人开发者维护的开源项目.您的支持是项目持续更新的最大动力。",
+            "description": "BookmarkSync 是一个由个人开发者维护的开源项目.您的支持是项目持续更新的最大动力。",
             "proTitle": "想要更多高级功能?",
             "proDescription": "订阅 Pro 版本可以解锁历史快照、自动备份、更多存储节点以及优先技术支持。",
             "proButton": "了解 Pro 方案",
@@ -319,7 +319,7 @@
             "terms": "用户协议",
             "privacy": "隐私政策",
             "website": "官方网站",
-            "copyright": "© {{year}} BookmarkHub. 基于热爱发布。"
+            "copyright": "© {{year}} BookmarkSync. 基于热爱发布。"
         }
     },
     "dashboard": {

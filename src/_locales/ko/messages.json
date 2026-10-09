@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "확장 프로그램 설명",
-      "message": "BookmarkHub, 브라우저 간 북마크 동기화"
+      "message": "BookmarkSync, 브라우저 간 북마크 동기화"
    },
    "appName": {
       "description": "확장 프로그램 이름",
-      "message": "BookmarkHub - 북마크 동기화"
+      "message": "BookmarkSync - 북마크 동기화"
    }
 }

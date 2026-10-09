@@ -34,7 +34,7 @@
         "safetyProtection": "Protección de seguridad de sincronización",
         "safetyBlocked": "Sincronización bloqueada: eliminará {{count}} marcadores. Por favor confirma en configuración.",
         "safetyBlockedGeneric": "Sincronización bloqueada: se detectaron una gran cantidad de cambios.",
-        "autoSyncDisabled": "BookmarkHub - Sincronización automática no habilitada",
+        "autoSyncDisabled": "BookmarkSync - Sincronización automática no habilitada",
         "autoSyncRequiresRegistration": "La sincronización automática requiere registro de cuenta, por favor regístrate en configuración",
         "autoSyncPaused": "Sincronización automática pausada",
         "operationCancelled": "Operación cancelada",

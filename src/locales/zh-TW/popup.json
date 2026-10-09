@@ -1,5 +1,5 @@
 {
-    "title": "BookmarkHub",
+    "title": "BookmarkSync",
     "menu": { "dashboard": "儀表板", "helpDocs": "文檔", "feedback": "回饋", "donate": "捐贈", "rate": "評分", "community": "社區", "website": "網站", "support": "支援", "terms": "條款" },
     "stats": { "localBookmarks": "本地書籤", "storageType": "儲存類型", "lastStatus": "上次狀態", "lastSync": "上次同步" },
     "autoSync": { "title": "自動同步", "description": "保持裝置間資料一致" },

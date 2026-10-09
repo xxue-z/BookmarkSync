@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "גרסה",
         "stable": "יציב",
         "description": "פתרון סנכרון סימניות קוד פתוח.",
@@ -288,7 +288,7 @@
             "terms": "תנאים",
             "privacy": "פרטיות",
             "website": "אתר",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

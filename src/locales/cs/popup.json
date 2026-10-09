@@ -1,5 +1,5 @@
 {
-    "title": "BookmarkHub",
+    "title": "BookmarkSync",
     "menu": { "dashboard": "Dashboard", "helpDocs": "Dokumentace", "feedback": "Zpětná vazba", "donate": "Přispět", "rate": "Ohodnotit", "community": "Komunita", "website": "Webová stránka", "support": "Podpora", "terms": "Podmínky" },
     "stats": { "localBookmarks": "Místní záložky", "storageType": "Typ úložiště", "lastStatus": "Poslední stav", "lastSync": "Poslední synchronizace" },
     "autoSync": { "title": "Automatická synchronizace", "description": "Zajistěte konzistenci dat mezi zařízeními" },

@@ -254,7 +254,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "نسخه",
         "stable": "پایدار",
         "description": "راه‌حل همگام‌سازی نشانک منبع باز.",
@@ -293,7 +293,7 @@
             "terms": "شرایط",
             "privacy": "حریم خصوصی",
             "website": "وب‌سایت",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

@@ -26,7 +26,7 @@ import { i as Wt, b as Gt, c as Yt } from "./vendor-sentry-B3P1rFJ6.js";
             : typeof self < "u"
               ? self
               : {};
-    t.SENTRY_RELEASE = { id: "bookmarkhub-extension@dev" };
+    t.SENTRY_RELEASE = { id: "bookmarksync-extension@dev" };
     var e = new t.Error().stack;
     e &&
       ((t._sentryDebugIds = t._sentryDebugIds || {}),
@@ -163,7 +163,7 @@ const it = {
     },
     maxSnapshotsToKeep: 15,
   },
-  nn = "BookmarkHub",
+  nn = "BookmarkSync",
   sn = "\u4E66\u7B7E\u540C\u6B65",
   on = "https://bh.memoload.com",
   rn = "https://github.com/dudor/BookmarkHub",
@@ -229,7 +229,7 @@ async function hn() {
       te
     );
   } catch (t) {
-    return console.error("[BookmarkHub] Failed to init system IDs:", t), te;
+    return console.error("[BookmarkSync] Failed to init system IDs:", t), te;
   }
 }
 function dn() {
@@ -4840,7 +4840,7 @@ class Re {
 class et {
   constructor(e) {
     R(this, "consola");
-    (this.consola = Ut({ level: 1, defaults: { tag: e || "BookmarkHub" } })),
+    (this.consola = Ut({ level: 1, defaults: { tag: e || "BookmarkSync" } })),
       this.consola.wrapConsole();
   }
   trace(e, ...n) {
@@ -4882,7 +4882,7 @@ class et {
     this.consola.level = e;
   }
 }
-const Ys = new et("BookmarkHub");
+const Ys = new et("BookmarkSync");
 async function Xs() {
   Ys.trace("initSentry");
   try {
@@ -4896,7 +4896,7 @@ async function Xs() {
     integrations: [Gt(), Yt({ levels: ["warn", "error"] })],
     tracesSampleRate: 0.5,
     sendDefaultPii: !0,
-    release: "bookmarkhub-extension@1.0.3",
+    release: "bookmarksync-extension@1.0.3",
     enableLogs: !0,
   });
 }

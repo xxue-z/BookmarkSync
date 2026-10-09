@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "संस्करण",
         "stable": "स्थिर",
         "description": "ओपन-सोर्स बुकमार्क सिंक समाधान।",
@@ -288,7 +288,7 @@
             "terms": "नियम",
             "privacy": "गोपनीयता",
             "website": "वेबसाइट",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {
