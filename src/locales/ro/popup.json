@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Panou",
-        "rate": "Evaluare",
-        "website": "Site",
-        "support": "Suport",
-        "terms": "Termeni"
+        "rate": "Evaluare"
     },
     "stats": {
         "localBookmarks": "Semne de carte locale",

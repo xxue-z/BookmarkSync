@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "ڈیش بورڈ",
-        "rate": "ریٹنگ",
-        "website": "ویب سائٹ",
-        "support": "سپورٹ",
-        "terms": "شرائط"
+        "rate": "ریٹنگ"
     },
     "stats": {
         "localBookmarks": "مقامی بک مارکس",

@@ -279,9 +279,6 @@
             "thanksDescription": "Дякуємо всім, хто зробив внесок"
         },
         "footer": {
-            "terms": "Умови",
-            "privacy": "Конфіденційність",
-            "website": "Веб-сайт",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

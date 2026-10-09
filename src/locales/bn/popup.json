@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "ড্যাশবোর্ড",
-        "rate": "রেটিং",
-        "website": "ওয়েবসাইট",
-        "support": "সাপোর্ট",
-        "terms": "শর্তাবলী"
+        "rate": "রেটিং"
     },
     "stats": {
         "localBookmarks": "স্থানীয় বুকমার্ক",

@@ -279,9 +279,6 @@
             "thanksDescription": "Grazie a tutti i contributori"
         },
         "footer": {
-            "terms": "Termini",
-            "privacy": "Privacy",
-            "website": "Sito",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

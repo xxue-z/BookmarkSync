@@ -279,9 +279,6 @@
             "thanksDescription": "সমস্ত কন্ট্রিবিউটরদের ধন্যবাদ"
         },
         "footer": {
-            "terms": "শর্তাবলী",
-            "privacy": "গোপনীয়তা",
-            "website": "ওয়েবসাইট",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

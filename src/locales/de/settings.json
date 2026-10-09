@@ -321,9 +321,6 @@
             "thanksDescription": "Danke an alle Benutzer, die Code eingereicht, Fehler gemeldet und Vorschläge gemacht haben. Auch Danke an exzellente Open-Source-Projekte wie lucide-react, shadcn/ui für ihre Hilfe."
         },
         "footer": {
-            "terms": "Nutzungsbedingungen",
-            "privacy": "Datenschutzrichtlinie",
-            "website": "Offizielle Website",
             "copyright": "© {{year}} BookmarkSync. Mit Liebe veröffentlicht."
         }
     },

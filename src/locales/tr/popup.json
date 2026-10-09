@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Panel",
-        "rate": "Değerlendir",
-        "website": "Web sitesi",
-        "support": "Destek",
-        "terms": "Koşullar"
+        "rate": "Değerlendir"
     },
     "stats": {
         "localBookmarks": "Yerel yer imleri",

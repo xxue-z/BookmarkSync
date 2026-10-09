@@ -279,9 +279,6 @@
             "thanksDescription": "सभी योगदानकर्ताओं को धन्यवाद"
         },
         "footer": {
-            "terms": "नियम",
-            "privacy": "गोपनीयता",
-            "website": "वेबसाइट",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Dashboard",
-        "rate": "Betygsätt",
-        "website": "Webbplats",
-        "support": "Support",
-        "terms": "Villkor"
+        "rate": "Betygsätt"
     },
     "stats": {
         "localBookmarks": "Lokala bokmärken",

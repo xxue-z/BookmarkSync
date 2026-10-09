@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Dasbor",
-        "rate": "Beri nilai",
-        "website": "Situs web",
-        "support": "Dukungan",
-        "terms": "Ketentuan"
+        "rate": "Beri nilai"
     },
     "stats": {
         "localBookmarks": "Markah lokal",

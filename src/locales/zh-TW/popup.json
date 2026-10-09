@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "儀表板",
-        "rate": "評分",
-        "website": "網站",
-        "support": "支援",
-        "terms": "條款"
+        "rate": "評分"
     },
     "stats": {
         "localBookmarks": "本地書籤",

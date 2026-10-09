@@ -279,9 +279,6 @@
             "thanksDescription": "ขอบคุณผู้มีส่วนร่วมทุกคน"
         },
         "footer": {
-            "terms": "ข้อกำหนด",
-            "privacy": "ความเป็นส่วนตัว",
-            "website": "เว็บไซต์",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

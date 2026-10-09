@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "ダッシュボード",
-        "rate": "評価する",
-        "website": "公式サイト",
-        "support": "技術サポート",
-        "terms": "利用規約"
+        "rate": "評価する"
     },
     "stats": {
         "localBookmarks": "ローカルブックマーク",

@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Panel",
-        "rate": "Oceń",
-        "website": "Strona internetowa",
-        "support": "Wsparcie",
-        "terms": "Warunki"
+        "rate": "Oceń"
     },
     "stats": {
         "localBookmarks": "Zakładki lokalne",

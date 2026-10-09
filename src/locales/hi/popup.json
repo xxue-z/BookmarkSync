@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "डैशबोर्ड",
-        "rate": "रेटिंग दें",
-        "website": "वेबसाइट",
-        "support": "सहायता",
-        "terms": "नियम"
+        "rate": "रेटिंग दें"
     },
     "stats": {
         "localBookmarks": "स्थानीय बुकमार्क",

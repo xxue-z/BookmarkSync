@@ -570,62 +570,7 @@ function Xe() {
                     ],
                   }),
                 }),
-                e.jsxs(T, {
-                  children: [
-                    e.jsx(D, {
-                      asChild: !0,
-                      children: e.jsxs("button", {
-                        className:
-                          "flex items-center gap-1 text-xs p-1.5 text-muted-foreground hover:text-primary hover:bg-muted rounded-md transition-all active:scale-90",
-                        title: s("common:buttons.more"),
-                        children: [
-                          e.jsx(Be, { size: 16 }),
-                          s("common:buttons.more"),
-                        ],
-                      }),
-                    }),
-                    e.jsxs(L, {
-                      align: "end",
-                      side: "top",
-                      className: "w-48 mb-1",
-                      children: [
-                        null,
-                        null,
-null,
-                        e.jsxs(c, {
-                          onClick: () => o("/"),
-                          children: [
-                            e.jsx(qe, { className: "mr-2 h-4 w-4" }),
-                            e.jsx("span", {
-                              className: "text-xs",
-                              children: s("popup:menu.website"),
-                            }),
-                          ],
-                        }),
-                        e.jsxs(c, {
-                          onClick: () => f("mailto:support@memoload.com"),
-                          children: [
-                            e.jsx(Qe, { className: "mr-2 h-4 w-4" }),
-                            e.jsx("span", {
-                              className: "text-xs",
-                              children: s("popup:menu.support"),
-                            }),
-                          ],
-                        }),
-                        e.jsxs(c, {
-                          onClick: () => o("/terms"),
-                          children: [
-                            e.jsx(Ye, { className: "mr-2 h-4 w-4" }),
-                            e.jsx("span", {
-                              className: "text-xs",
-                              children: s("popup:menu.terms"),
-                            }),
-                          ],
-                        }),
-                      ],
-                    }),
-                  ],
-                }),
+                null,
               ],
             }),
           }),

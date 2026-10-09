@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "แดชบอร์ด",
-        "rate": "ให้คะแนน",
-        "website": "เว็บไซต์",
-        "support": "การสนับสนุน",
-        "terms": "ข้อกำหนด"
+        "rate": "ให้คะแนน"
     },
     "stats": {
         "localBookmarks": "บุ๊กมาร์กในเครื่อง",

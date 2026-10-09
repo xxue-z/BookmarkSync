@@ -279,9 +279,6 @@
             "thanksDescription": "Dziękujemy wszystkim kontrybutorom"
         },
         "footer": {
-            "terms": "Warunki",
-            "privacy": "Prywatność",
-            "website": "Strona internetowa",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

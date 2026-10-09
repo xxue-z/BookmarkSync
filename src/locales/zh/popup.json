@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "控制台",
-        "rate": "好评支持",
-        "website": "官方网站",
-        "support": "技术支持",
-        "terms": "使用条款"
+        "rate": "好评支持"
     },
     "stats": {
         "localBookmarks": "本地书签",

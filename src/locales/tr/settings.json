@@ -279,9 +279,6 @@
             "thanksDescription": "Tüm katkıda bulunanlara teşekkürler"
         },
         "footer": {
-            "terms": "Koşullar",
-            "privacy": "Gizlilik",
-            "website": "Web sitesi",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

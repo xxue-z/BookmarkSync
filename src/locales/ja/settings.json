@@ -321,9 +321,6 @@
             "thanksDescription": "コードを送信し、バグを報告し、提案を提供してくれたすべてのユーザーに感謝します。lucide-react、shadcn/uiなどの優れたオープンソースプロジェクトにも感謝します。"
         },
         "footer": {
-            "terms": "利用規約",
-            "privacy": "プライバシーポリシー",
-            "website": "公式サイト",
             "copyright": "© {{year}} BookmarkSync。愛を込めてリリース。"
         }
     },

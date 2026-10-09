@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "لوحة التحكم",
-        "rate": "قيمنا",
-        "website": "الموقع الرسمي",
-        "support": "الدعم",
-        "terms": "الشروط"
+        "rate": "قيمنا"
     },
     "stats": {
         "localBookmarks": "الإشارات المحلية",

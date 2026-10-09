@@ -310,9 +310,6 @@
             "thanksDescription": "感谢所有为项目提交代码、报告 Bug、提出建议的用户.同时感谢 lucide-react, shadcn/ui 等优秀的开源项目对本项目提供的帮助。"
         },
         "footer": {
-            "terms": "用户协议",
-            "privacy": "隐私政策",
-            "website": "官方网站",
             "copyright": "© {{year}} BookmarkSync. 基于热爱发布。"
         }
     },

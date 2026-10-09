@@ -279,9 +279,6 @@
             "thanksDescription": "Tack till alla bidragsgivare"
         },
         "footer": {
-            "terms": "Villkor",
-            "privacy": "Integritet",
-            "website": "Webbplats",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

@@ -279,9 +279,6 @@
             "thanksDescription": "Děkujeme všem přispěvatelům"
         },
         "footer": {
-            "terms": "Podmínky",
-            "privacy": "Soukromí",
-            "website": "Webová stránka",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

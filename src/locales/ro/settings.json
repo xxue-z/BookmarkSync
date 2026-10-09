@@ -279,9 +279,6 @@
             "thanksDescription": "Mulțumim tuturor contributorilor"
         },
         "footer": {
-            "terms": "Termeni",
-            "privacy": "Confidențialitate",
-            "website": "Site",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

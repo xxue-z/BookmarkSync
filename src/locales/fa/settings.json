@@ -284,9 +284,6 @@
             "thanksDescription": "از همه مشارکت‌کنندگان متشکریم"
         },
         "footer": {
-            "terms": "شرایط",
-            "privacy": "حریم خصوصی",
-            "website": "وب‌سایت",
             "copyright": "© {{year}} BookmarkSync."
         }
     },
