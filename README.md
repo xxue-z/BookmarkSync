@@ -72,3 +72,8 @@ npm run repack
 - Sentry（`sentry.io` 遥测）与各同步适配器（GitHub/Gitee/GitLab/微软）未改动。
 - 校验：`node --check` 修改过的 JS；manifest 用 `JSON.parse`；改完跑 `npm run repack`。
 - 验证成品：`chrome://extensions` 开发者模式加载 `dist/`（或解压 `bookmarksync-1.0.3.zip`），确认无登录/升级入口、自动同步可开、Pro 分区全部可用。
+## 扩展 ID
+
+- 本仓库使用**自生成的扩展 ID**（manifest `key` 已轮换，不再使用官方商店密钥对应的 `fdnmfpogadcljhecfhdikdecbkggfmgk`）。
+- 当前 ID：`fmhcbgfpcgbijngkiamciiikeanhbjaf`（由 `scripts/rotate-extension-id.mjs` 生成）。
+- 私钥保存于 `.keys/extension-private-key.pem`（已被 gitignore，勿提交）；重新生成 ID 请运行 `node scripts/rotate-extension-id.mjs`（每次运行会生成新 ID）。
