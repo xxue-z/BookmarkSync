@@ -60,7 +60,7 @@
       "48": "icons/dark/48.png",
       "64": "icons/dark/64.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6CgHRpLTzF7X8Gqr2lhfQofybOW6o6GdWdcHQYyhEBe75V/Tugo5K1oT+6rv7mRiiOFAnSEWG8K7O64/B6orZ6RMaxYu4vLWWkJYZoJ9BVLGh9Gi8011NJvHnPKjM5VQCXYNXRGLqcBvI4YjixtyJp4ry8K/Sa+WhXb1kIv+pzYs+xXXwXaV5gjwQivu4kidLlWkdzEweVE33Tpvn8z2efuJ7F8KlluvQQErtEKV4lC4YR1vuMhecnUa+0dIgALyCn5mgdC8PA53wizKjKyrJm/sjPZ3eNF6AptdRC1sRJYvlL0VhTuugZy4kpjlTBmroV0KV1bcE4rTHDDNlI6zUwIDAQAB",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6TngA0AKsiTFXvKAZWCvxTOmtSzO8yEuRdd/nvueieWq9yde3vgRtMLQTYB70AHmBD4auOuIe81a0s3O6Nu3kXjtMALFtFmFQWxhGCLBDcTuoJ4DXpqCljibTeML1TFyiQhsMYdRaPYUGOGKHPWWiE2tUfth6Gd00JcZs2zihYTVD6xpCoar3WIhtqCelxCNG3SRLuDYX5XaqUvSy9JhBKmUnOVYirouT+xZfM7sqeMvodRSuTtPUhGvNt73I0R+/RfdU2DL6J13Gt9uq31fHG+4OENxC8FwoNTa5ZNsMWaQ5AqkLgn6ZZIXp3J17z5xk3I3MZvRc6nkkEBxVJ3wUwIDAQAB",
    "manifest_version": 3,
    "name": "__MSG_appName__",
    "optional_host_permissions": [ "https://*/*", "http://*/*" ],

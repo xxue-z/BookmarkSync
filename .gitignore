@@ -6,6 +6,7 @@ bookmarksync-1.0.3.zip
 .wxt/
 
 # Local caches / scratch
+.keys/
 .temp/
 .pnpm-store/
 
