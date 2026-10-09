@@ -103,7 +103,7 @@
             "branchLabel": "Κλάδος",
             "branchPlaceholder": "main",
             "pathLabel": "Διαδρομή",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Διεύθυνση:"
         },
         "webdav": {
@@ -116,7 +116,7 @@
             "usernamePlaceholder": "χρήστης",
             "passwordLabel": "Κωδικός",
             "pathLabel": "Διαδρομή",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist",
@@ -128,7 +128,7 @@
             "gistIdLabel": "Gist ID",
             "gistIdPlaceholder": "32 χαρακτήρες",
             "filenameLabel": "Όνομα αρχείου",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Δημιουργία Gist",
             "createSuccess": "Δημιουργήθηκε! ID: {{id}}",
             "createError": "Αποτυχία"
@@ -274,9 +274,6 @@
         "support": {
             "title": "Υποστήριξη",
             "description": "Έργο ανοιχτού κώδικα.",
-            "proTitle": "Έκδοση Pro",
-            "proDescription": "Εγγραφείτε για επιπλέον λειτουργίες",
-            "proButton": "Μάθετε περισσότερα",
             "feedbackTitle": "Σχόλια",
             "feedbackDescription": "Προβλήματα; Issue στο GitHub",
             "githubButton": "GitHub",
@@ -294,9 +291,6 @@
     "dashboard": {
         "title": "Πίνακας ελέγχου",
         "subtitle": "Επισκόπηση",
-        "proVersion": "Pro",
-        "freeVersion": "Δωρεάν",
-        "upgrade": "Αναβάθμιση",
         "bookmarkCount": "Συνολικοί σελιδοδείκτες",
         "bookmarkCountDesc": "Σελιδοδείκτες στο πρόγραμμα περιήγησης",
         "storageType": "Αποθήκευση",
@@ -374,33 +368,6 @@
         "errorInvalidData": "Μη έγκυρη μορφή",
         "errorRestoreFailed": "Αποτυχία επαναφοράς",
         "gistVersionMessage": "Έκδοση {{date}}",
-        "githubUser": "Χρήστης",
-        "teaser": {
-            "title": "Μηχανή χρόνου",
-            "description": "Πηγαίνετε πίσω στον χρόνο",
-            "previewTitle": "Προεπισκόπηση",
-            "unlockText": "Αναβάθμιση σε Pro",
-            "feature1Title": "Εκδόσεις Git",
-            "feature1Desc": "Μην χάσετε δεδομένα",
-            "feature2Title": "Ένα κλικ",
-            "feature2Desc": "Γρήγορη επαναφορά",
-            "upgradeButton": "Ξεκλείδωμα",
-            "userTrustText": "10.000+ χρήστες",
-            "premiumFeature": "Premium",
-            "mock": {
-                "v1": "Πριν 10 λεπτά",
-                "v1Msg": "Από Chrome",
-                "v2": "Πριν 1 ώρα",
-                "v2Msg": "+12 σύνδεσμοι",
-                "v3": "Χθες",
-                "v3Msg": "Καθαρισμός",
-                "v4": "Πριν 2 ημέρες",
-                "v4Msg": "+11",
-                "v5": "Πριν 2 ημέρες",
-                "v5Msg": "+20",
-                "authorWork": "Δουλειά",
-                "authorMobile": "Κινητό"
-            }
-        }
+        "githubUser": "Χρήστης"
     }
 }

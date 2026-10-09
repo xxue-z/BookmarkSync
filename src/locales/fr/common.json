@@ -4,8 +4,6 @@
         "syncing": "Synchronisation...",
         "settings": "Paramètres",
         "more": "Plus",
-        "login": "Connexion",
-        "logout": "Déconnexion",
         "save": "Enregistrer",
         "cancel": "Annuler",
         "confirm": "Confirmer",
@@ -13,8 +11,7 @@
         "edit": "Modifier",
         "close": "Fermer",
         "back": "Retour",
-        "next": "Suivant",
-        "upgrade": "Mettre à niveau"
+        "next": "Suivant"
     },
     "labels": {
         "language": "Langue",
@@ -30,8 +27,7 @@
         "lastSync": "Dernière synchronisation",
         "status": "Statut",
         "localBookmarks": "Signets locaux",
-        "remoteStorage": "Stockage distant",
-        "pro": "Pro"
+        "remoteStorage": "Stockage distant"
     },
     "status": {
         "syncing": "Synchronisation",
@@ -105,14 +101,6 @@
         "tutorial": "Tutoriel",
         "feedback": "Commentaires"
     },
-    "navUser": {
-        "notLoggedIn": "Non connecté",
-        "clickToLogin": "Cliquez pour vous connecter",
-        "accountSettings": "Paramètres du compte",
-        "manageSubscription": "Gérer l'abonnement",
-        "upgradePro": "Passer à Pro",
-        "logout": "Se déconnecter"
-    },
     "activityGraph": {
         "title": "Activité de synchronisation récente",
         "subtitle": "Fréquence de synchronisation des signets au cours des 10 derniers mois",
@@ -123,78 +111,6 @@
         "wed": "Mer",
         "fri": "Ven",
         "syncCount": "{{date}}: {{count}} synchronisations"
-    },
-    "upgradeDialog": {
-        "title": "Passer à Pro",
-        "subtitle": "Débloquez des fonctionnalités avancées et améliorez la gestion de vos signets",
-        "proMember": "Membre professionnel",
-        "proMemberDesc": "Vous avez débloqué toutes les fonctionnalités premium. Merci pour votre soutien !",
-        "close": "Fermer",
-        "refreshStatus": "Actualiser le statut",
-        "refreshing": "Actualisation...",
-        "paidNote": "Déjà payé ? Cliquez sur actualiser à droite",
-        "goToPricing": "S'abonner sur le site",
-        "accountPromotion": "Mettez à niveau votre compte",
-        "accountPromotionDesc": "Les fonctionnalités Pro sont liées à votre compte de synchronisation. Abonnez-vous sur notre site, puis actualisez ici pour tout débloquer.",
-        "features": {
-            "storage": {
-                "title": "Stockage privé",
-                "desc": "Support pour GitHub et WebDAV. Gardez vos données entre vos mains."
-            },
-            "autoSync": {
-                "title": "Synchronisation automatique",
-                "desc": "Synchronisez les signets automatiquement sans intervention manuelle, mises à jour en temps réel sur tous les appareils."
-            },
-            "configSync": {
-                "title": "Synchronisation cloud des paramètres",
-                "desc": "Les paramètres et les règles de synchronisation sont synchronisés avec votre compte, pas besoin de reconfigurer sur les nouveaux appareils."
-            },
-            "encryption": {
-                "title": "Chiffrement de bout en bout",
-                "desc": "Chiffrement militaire AES-256-GCM avant la synchronisation."
-            },
-            "timeMachine": {
-                "title": "Machine à remonter le temps",
-                "desc": "Contrôle de version basé sur Git. Revenez à n'importe quel moment."
-            },
-            "syncControl": {
-                "title": "Contrôle de synchronisation avancé",
-                "desc": "Téléchargement/chargement forcé manuel pour résoudre instantanément les conflits."
-            },
-            "audit": {
-                "title": "Journaux d'audit de synchronisation",
-                "desc": "Graphiques détaillés de l'historique de synchronisation et suivi d'activité."
-            },
-            "more": {
-                "title": "Plus de fonctionnalités premium",
-                "desc": "Mises à jour prioritaires et support technique professionnel."
-            }
-        }
-    },
-    "upgradeCard": {
-        "title": "Passer à Pro",
-        "description": "Débloquez des fonctionnalités avancées comme le stockage GitHub/WebDAV, la synchronisation cloud des paramètres, le chiffrement privé et la restauration par machine à remonter le temps.",
-        "button": "Débloquer maintenant"
-    },
-    "registrationDialog": {
-        "title": "Débloquer la synchronisation automatique",
-        "subtitle": "Abonnez-vous pour profiter des fonctionnalités suivantes",
-        "login": "Connexion à votre compte",
-        "later": "Peut-être plus tard",
-        "features": {
-            "autoSync": {
-                "title": "Synchronisation automatique",
-                "desc": "Synchronisez automatiquement les signets toutes les 10 minutes"
-            },
-            "history": {
-                "title": "Historique de synchronisation",
-                "desc": "Voir les 100 derniers enregistrements de synchronisation"
-            },
-            "cloudBackup": {
-                "title": "Sauvegarde cloud",
-                "desc": "Configurez des sauvegardes automatiques cloud et la synchronisation multi-appareils"
-            }
-        }
     },
     "messages": {
         "startingSync": "Démarrage de la synchronisation...",

@@ -109,7 +109,7 @@
             "branchLabel": "Branch (Optional)",
             "branchPlaceholder": "main",
             "pathLabel": "Dateipfad",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Repository-Adresse:"
         },
         "webdav": {
@@ -124,7 +124,7 @@
             "passwordLabel": "App-Passwort",
             "passwordNote": "Es wird dringend empfohlen, ein 'App-Passwort' anstelle Ihres Hauptkontopassworts zu verwenden.",
             "pathLabel": "Dateipfad",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist-Konfiguration",
@@ -137,7 +137,7 @@
             "gistIdLabel": "Gist-ID",
             "gistIdPlaceholder": "32-stellige Hexadezimalzeichenfolge",
             "filenameLabel": "Dateiname",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Gist erstellen",
             "creatingGist": "Erstelle...",
             "gistAddr": "Gist-Adresse:",
@@ -161,7 +161,7 @@
             "branchLabel": "Branch (Optional)",
             "branchPlaceholder": "master",
             "pathLabel": "Dateipfad",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Repository-Adresse:"
         },
         "gitlab": {
@@ -177,7 +177,7 @@
             "branchLabel": "Branch (Optional)",
             "branchPlaceholder": "main",
             "pathLabel": "Dateipfad",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Repository-Adresse:"
         },
         "googledrive": {
@@ -188,7 +188,7 @@
             "tokenPlaceholder": "OAuth2-Zugriffstoken",
             "authorize": "Autorisieren",
             "filenameLabel": "Dateiname",
-            "filenamePlaceholder": "bookmarkhub.json"
+            "filenamePlaceholder": "bookmarksync.json"
         },
         "dropbox": {
             "title": "Dropbox-Konfiguration",
@@ -198,7 +198,7 @@
             "tokenPlaceholder": "Dropbox-Zugriffstoken",
             "authorize": "Autorisieren",
             "pathLabel": "Dateipfad",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "onedrive": {
             "title": "OneDrive-Konfiguration",
@@ -208,7 +208,7 @@
             "tokenPlaceholder": "Microsoft Graph-Token",
             "authorize": "Autorisieren",
             "pathLabel": "Dateipfad",
-            "pathPlaceholder": "bookmarkhub.json"
+            "pathPlaceholder": "bookmarksync.json"
         },
         "s3": {
             "title": "S3-kompatible Speicherkonfiguration",
@@ -316,9 +316,6 @@
         "support": {
             "title": "Kontinuierliche Entwicklung unterstützen",
             "description": "BookmarkSync ist ein Open-Source-Projekt, das von einzelnen Entwicklern gewartet wird. Ihre Unterstützung ist die größte Motivation für kontinuierliche Updates.",
-            "proTitle": "Möchten Sie erweiterte Funktionen?",
-            "proDescription": "Abonnieren Sie die Pro-Version, um Verlaufssnapshots, automatische Backups, mehr Speicherknoten und priorisierten technischen Support freizuschalten.",
-            "proButton": "Mehr über Pro erfahren",
             "feedbackTitle": "Feedback und Vorschläge",
             "feedbackDescription": "Haben Sie Probleme gefunden oder möchten Sie Vorschläge machen? Zögern Sie nicht, ein Issue auf GitHub einzureichen oder die Projektseite zu besuchen.",
             "githubButton": "GitHub",
@@ -336,9 +333,6 @@
     "dashboard": {
         "title": "Dashboard",
         "subtitle": "Systemzustand und Statusübersicht",
-        "proVersion": "Pro-Version",
-        "freeVersion": "Kostenlose Version",
-        "upgrade": "Auf Pro upgraden",
         "bookmarkCount": "Gesamte Lesezeichen",
         "bookmarkCountDesc": "Lesezeichen, die derzeit im Browser gespeichert sind",
         "storageType": "Speicherdienst",
@@ -420,33 +414,6 @@
         "errorInvalidData": "Ungültiges Backup-Datenformat",
         "errorRestoreFailed": "Wiederherstellung fehlgeschlagen",
         "gistVersionMessage": "Version vom {{date}}",
-        "githubUser": "GitHub-Benutzer",
-        "teaser": {
-            "title": "Lesezeichen-Zeitmaschine",
-            "description": "Gehen Sie in der Zeit zurück zu einem beliebigen Lesezeichenstatus. Bewahren Sie jeden Synchronisationsmoment sicher und nachverfolgbar auf.",
-            "previewTitle": "Verfurfsvorschau (Demo)",
-            "unlockText": "Auf Pro upgraden, um den vollständigen Verlauf anzuzeigen",
-            "feature1Title": "Native Versionierung",
-            "feature1Desc": "Basiert auf GitHub-Commits, Daten nie verloren",
-            "feature2Title": "Ein-Klick-Wiederherstellung",
-            "feature2Desc": "Intelligentes Rollback zu einem beliebigen Zeitpunkt",
-            "upgradeButton": "Zeitmaschine jetzt freischalten",
-            "userTrustText": "Schließen Sie sich über 10.000 Benutzern für sicherere Lesezeichenverwaltung an",
-            "premiumFeature": "Premium-Funktion",
-            "mock": {
-                "v1": "Vor 10 Min",
-                "v1Msg": "Synchronisation von Chrome",
-                "v2": "Vor 1 Stunde",
-                "v2Msg": "12 Links hinzugefügt",
-                "v3": "Gestern 12:45",
-                "v3Msg": "Wöchentliche Bereinigung",
-                "v4": "Vor 2 Tagen 16:02",
-                "v4Msg": "11 Links hinzugefügt",
-                "v5": "Vor 2 Tagen 09:29",
-                "v5Msg": "20 Links aktualisiert",
-                "authorWork": "Arbeit",
-                "authorMobile": "Mobil"
-            }
-        }
+        "githubUser": "GitHub-Benutzer"
     }
 }

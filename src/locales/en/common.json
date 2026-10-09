@@ -4,8 +4,6 @@
         "syncing": "Syncing...",
         "settings": "Settings",
         "more": "More",
-        "login": "Login",
-        "logout": "Logout",
         "save": "Save",
         "cancel": "Cancel",
         "confirm": "Confirm",
@@ -13,8 +11,7 @@
         "edit": "Edit",
         "close": "Close",
         "back": "Back",
-        "next": "Next",
-        "upgrade": "Upgrade"
+        "next": "Next"
     },
     "labels": {
         "language": "Language",
@@ -30,8 +27,7 @@
         "lastSync": "Last Sync",
         "status": "Status",
         "localBookmarks": "Local Bookmarks",
-        "remoteStorage": "Remote Storage",
-        "pro": "Pro"
+        "remoteStorage": "Remote Storage"
     },
     "status": {
         "syncing": "Syncing",
@@ -106,14 +102,6 @@
         "feedback": "Feedback",
         "activities": "Notices"
     },
-    "navUser": {
-        "notLoggedIn": "Not Logged In",
-        "clickToLogin": "Click to Logged In",
-        "accountSettings": "Account Settings",
-        "manageSubscription": "Manage Subscription",
-        "upgradePro": "Upgrade to Pro",
-        "logout": "Log Out"
-    },
     "activityGraph": {
         "title": "Recent Sync Activity",
         "subtitle": "Bookmark sync frequency over the past 10 months",
@@ -124,78 +112,6 @@
         "wed": "Wed",
         "fri": "Fri",
         "syncCount": "{{date}}: {{count}} syncs"
-    },
-    "upgradeDialog": {
-        "title": "Upgrade to Pro",
-        "subtitle": "Unlock advanced features and enhance your bookmark management",
-        "proMember": "Professional Member",
-        "proMemberDesc": "You've unlocked all premium features. Thank you for your support!",
-        "close": "Close",
-        "refreshStatus": "Refresh Status",
-        "refreshing": "Refreshing...",
-        "paidNote": "Already paid? Click refresh on the right",
-        "goToPricing": "Subscribe on Website",
-        "accountPromotion": "Upgrade Your Account",
-        "accountPromotionDesc": "Pro features are linked to your sync account. Please subscribe on our website, then refresh here to unlock everything.",
-        "features": {
-            "storage": {
-                "title": "Private Storage",
-                "desc": "Support for GitHub and WebDAV. Keep data in your own hands."
-            },
-            "autoSync": {
-                "title": "Automatic Sync",
-                "desc": "Sync bookmarks automatically without manual intervention, real-time updates across devices."
-            },
-            "configSync": {
-                "title": "Config Cloud Sync",
-                "desc": "Settings and sync rules are synced with your account, no need to reconfigure on new devices."
-            },
-            "encryption": {
-                "title": "End-to-End Encryption",
-                "desc": "AES-256-GCM military-grade encryption before syncing."
-            },
-            "timeMachine": {
-                "title": "Time Machine",
-                "desc": "Git-based version control. Roll back to any point in time."
-            },
-            "syncControl": {
-                "title": "Advanced Sync Control",
-                "desc": "Manual force upload/download to resolve conflicts instantly."
-            },
-            "audit": {
-                "title": "Sync Audit Logs",
-                "desc": "Detailed sync history charts and activity tracking."
-            },
-            "more": {
-                "title": "More Premium Features",
-                "desc": "Priority updates and professional technical support."
-            }
-        }
-    },
-    "upgradeCard": {
-        "title": "Upgrade to Pro",
-        "description": "Unlock advanced features like GitHub/WebDAV storage, config cloud sync, private encryption, and Time Machine rollback.",
-        "button": "Unlock Now"
-    },
-    "registrationDialog": {
-        "title": "Unlock Auto Sync",
-        "subtitle": "Subscribe to enjoy the following features",
-        "login": "Login to Your Account",
-        "later": "Maybe Later",
-        "features": {
-            "autoSync": {
-                "title": "Auto Sync",
-                "desc": "Automatically sync bookmarks every 10 minutes"
-            },
-            "history": {
-                "title": "Sync History",
-                "desc": "View the most recent 100 sync records"
-            },
-            "cloudBackup": {
-                "title": "Cloud Backup",
-                "desc": "Set up automatic cloud backups and multi-device sync"
-            }
-        }
     },
     "messages": {
         "startingSync": "Starting sync...",

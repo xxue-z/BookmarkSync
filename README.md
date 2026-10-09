@@ -5,7 +5,7 @@
 ## 诚实边界（重要）
 
 - 编译产物**不含 source map**，原始 TypeScript / 组件拆分 / 注释 / 命名**无法无损恢复**；本工程是「美化 + 逆向标注」出的可维护基线，不是原作者源码。
-- `src/assets/bookmarkhub_core_bg-*.wasm` 是 Rust 同步核心（287KB），**二进制保留、不可还原为 Rust 源码**，通过 `src/chunks/hash-Cx2ffm9Z.js` 的胶水代码调用。
+- `src/assets/bookmarksync_core_bg-*.wasm` 是 Rust 同步核心（287KB），**二进制保留、不可还原为 Rust 源码**，通过 `src/chunks/hash-Cx2ffm9Z.js` 的胶水代码调用。
 - 变量名多被压缩为单字母（`s/t/e/a`），但**类名、方法名、i18n key、字符串全部保留**，行为与官方 v1.0.3 一致。
 
 ## 目录结构
@@ -21,7 +21,7 @@
 │  │  ├─ I18nProvider-bZ79bPbq.js  # i18next 国际化 + LicenseContext（UI 权限）
 │  │  ├─ sentry--tCLaZao.js        # 许可/鉴权核心（is/hasPermission/trigger）
 │  │  └─ vendor-*.js               # UI/工具/Sentry 库分包
-│  ├─ assets/bookmarkhub_core_bg-*.wasm  # Rust 核心（二进制）
+│  ├─ assets/bookmarksync_core_bg-*.wasm  # Rust 核心（二进制）
 │  ├─ icons/  locales/  _locales/  # 图标 + 30 种语言
 │  └─ src/popup|options/index.html # 两个入口页
 ├─ scripts/
@@ -76,4 +76,4 @@ npm run repack
 
 - 本仓库使用**自生成的扩展 ID**（manifest `key` 已轮换，不再使用官方商店密钥对应的 `fdnmfpogadcljhecfhdikdecbkggfmgk`）。
 - 当前 ID：`fmhcbgfpcgbijngkiamciiikeanhbjaf`（由 `scripts/rotate-extension-id.mjs` 生成）。
-- 私钥保存于 `.keys/extension-private-key.pem`（已被 gitignore，勿提交）；重新生成 ID 请运行 `node scripts/rotate-extension-id.mjs`（每次运行会生成新 ID）。
+- 私钥保存于 `.keys/extension-private-key.pem`（已被 gitignore，勿提交）；重新生成 ID 请运行 `node scripts/rotate-extension-id.mjs`（每次运行会生成新 ID）。> 2026-10 更新：已完成完全去品牌化与去订阅化——扩展名 BookmarkSync；数据文件默认名 `bookmarksync.json`、IndexedDB 存储名 `BookmarkSync_SyncRecords`、WASM 核心 `bookmarksync_core_bg.wasm`；专业版（Pro/升级/订阅/登录）文字与样式已全部移除。仅保留两处**上游功能 URL**（`github.com/dudor/bookmarkhub` 活动公告 json、About 页 GitHub 链接），因为它们是功能依赖而非品牌。

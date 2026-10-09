@@ -826,7 +826,7 @@ const et = (a) => {
 };
 class ot extends q {
   constructor() {
-    super("BookmarkHub_SyncRecords");
+    super("BookmarkSync_SyncRecords");
     w(this, "records");
     this.version(1).stores({
       records: "++id, timestamp, status, type, deviceName",

@@ -86,7 +86,7 @@
             "branchLabel": "分支 (可选)",
             "branchPlaceholder": "main",
             "pathLabel": "文件路径",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "仓库地址:"
         },
         "webdav": {
@@ -114,7 +114,7 @@
             "gistIdLabel": "Gist ID",
             "gistIdPlaceholder": "32位十六进制字符串",
             "filenameLabel": "文件名",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "创建 Gist",
             "creatingGist": "创建中...",
             "gistAddr": "Gist 地址:",
@@ -138,7 +138,7 @@
             "branchLabel": "分支 (可选)",
             "branchPlaceholder": "master",
             "pathLabel": "文件路径",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "仓库地址:"
         },
         "gitlab": {
@@ -154,7 +154,7 @@
             "branchLabel": "分支 (可选)",
             "branchPlaceholder": "main",
             "pathLabel": "文件路径",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "仓库地址:"
         },
         "googledrive": {
@@ -165,7 +165,7 @@
             "tokenPlaceholder": "OAuth2 授权令牌",
             "authorize": "授权登录",
             "filenameLabel": "文件名",
-            "filenamePlaceholder": "bookmarkhub.json"
+            "filenamePlaceholder": "bookmarksync.json"
         },
         "dropbox": {
             "title": "Dropbox 配置",
@@ -175,7 +175,7 @@
             "tokenPlaceholder": "Dropbox 授权令牌",
             "authorize": "授权登录",
             "pathLabel": "文件路径",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "onedrive": {
             "title": "OneDrive 配置",
@@ -185,7 +185,7 @@
             "tokenPlaceholder": "Microsoft Graph 令牌",
             "authorize": "授权登录",
             "pathLabel": "文件路径",
-            "pathPlaceholder": "bookmarkhub.json"
+            "pathPlaceholder": "bookmarksync.json"
         },
         "s3": {
             "title": "S3 兼容存储配置",
@@ -305,9 +305,6 @@
         "support": {
             "title": "支持项目持续发展",
             "description": "BookmarkSync 是一个由个人开发者维护的开源项目.您的支持是项目持续更新的最大动力。",
-            "proTitle": "想要更多高级功能?",
-            "proDescription": "订阅 Pro 版本可以解锁历史快照、自动备份、更多存储节点以及优先技术支持。",
-            "proButton": "了解 Pro 方案",
             "feedbackTitle": "反馈与建议",
             "feedbackDescription": "遇到问题或是想提供建议?欢迎在 GitHub 提交 Issue 或访问项目主页。",
             "githubButton": "GitHub",
@@ -325,9 +322,6 @@
     "dashboard": {
         "title": "仪表盘",
         "subtitle": "系统运行状态概览",
-        "proVersion": "专业版",
-        "freeVersion": "免费版",
-        "upgrade": "升级到专业版",
         "bookmarkCount": "书签总数",
         "bookmarkCountDesc": "当前浏览器已收藏",
         "storageType": "存储方式",
@@ -377,17 +371,7 @@
         "colStats": "变更统计",
         "statusSuccess": "成功",
         "statusFailure": "失败",
-        "noHistory": "暂无同步历史记录",
-        "teaser": {
-            "title": "同步统计与日志",
-            "description": "注册免费账号，追踪跨设备书签变动趋势，掌握每一次同步详情。",
-            "chartPreview": "活跃趋势预览",
-            "logPreview": "近期日志预览",
-            "unlockText": "注册以解锁完整同步历史",
-            "registerButton": "注册免费账号",
-            "loginText": "已有账号？",
-            "loginButton": "立即登录"
-        }
+        "noHistory": "暂无同步历史记录"
     },
     "timemachine": {
         "title": "书签时光机",
@@ -411,33 +395,6 @@
         "errorInvalidData": "无效的备份数据格式",
         "errorRestoreFailed": "恢复失败",
         "gistVersionMessage": "版本于 {{date}}",
-        "githubUser": "GitHub 用户",
-        "teaser": {
-            "title": "书签时光机",
-            "description": "穿越回任何书签状态。让每一次同步都安全可追溯。",
-            "previewTitle": "历史预览 (演示)",
-            "unlockText": "升级到专业版查看完整历史",
-            "feature1Title": "原生版本控制",
-            "feature1Desc": "基于 GitHub Commits，数据永不丢失",
-            "feature2Title": "一键恢复",
-            "feature2Desc": "智能回滚到任何特定时间点",
-            "upgradeButton": "立即解锁时光机",
-            "userTrustText": "加入 10,000+ 用户，享受更安全的书签管理",
-            "premiumFeature": "高级功能",
-            "mock": {
-                "v1": "10 分钟前",
-                "v1Msg": "从 Chrome 同步",
-                "v2": "1 小时前",
-                "v2Msg": "新增了 12 个链接",
-                "v3": "昨天 12:45",
-                "v3Msg": "每周清理",
-                "v4": "2 天前 16:02",
-                "v4Msg": "新增了 11 个链接",
-                "v5": "2 天前 09:29",
-                "v5Msg": "更新了 20 个链接",
-                "authorWork": "工作",
-                "authorMobile": "手机"
-            }
-        }
+        "githubUser": "GitHub 用户"
     }
 }

@@ -17,7 +17,6 @@ import {
   w as y,
   x as X,
   S as re,
-  P as K,
   i as vt,
   L as Xe,
   v as Pe,
@@ -329,203 +328,6 @@ const Ba = c.forwardRef(({ className: s, ...a }, t) =>
   e.jsx(gs, { ref: t, className: j("-mx-1 my-1 h-px bg-muted", s), ...a }),
 );
 Ba.displayName = gs.displayName;
-function te({ open: s, onOpenChange: a }) {
-  const { refreshLicense: t, isPro: i } = Y(),
-    [n, r] = c.useState(!1),
-    { t: l } = D(["common"]),
-    m = async () => {
-      r(!0);
-      try {
-        await t();
-      } finally {
-        setTimeout(() => {
-          r(!1);
-        }, 1e3);
-      }
-    };
-  if (i())
-    return e.jsx(qe, {
-      open: s,
-      onOpenChange: a,
-      children: e.jsx(Ye, {
-        className: "max-w-md",
-        children: e.jsxs("div", {
-          className: "py-8 text-center",
-          children: [
-            e.jsx("div", {
-              className:
-                "inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4",
-              children: e.jsx(ds, { className: "h-8 w-8 text-green-600" }),
-            }),
-            e.jsx("h3", {
-              className: "text-xl font-semibold mb-2",
-              children: l("common:upgradeDialog.proMember"),
-            }),
-            e.jsx("p", {
-              className: "text-gray-600 mb-6",
-              children: l("common:upgradeDialog.proMemberDesc"),
-            }),
-            e.jsx(N, {
-              className: "bg-green-600 hover:bg-green-700",
-              onClick: () => a(!1),
-              children: l("common:upgradeDialog.close"),
-            }),
-          ],
-        }),
-      }),
-    });
-  const o = [
-    {
-      icon: e.jsx(It, { className: "h-6 w-6 text-blue-500" }),
-      title: l("common:upgradeDialog.features.storage.title"),
-      description: l("common:upgradeDialog.features.storage.desc"),
-    },
-    {
-      icon: e.jsx(ge, { className: "h-6 w-6 text-teal-500" }),
-      title: l("common:upgradeDialog.features.autoSync.title"),
-      description: l("common:upgradeDialog.features.autoSync.desc"),
-    },
-    {
-      icon: e.jsx(ms, { className: "h-6 w-6 text-rose-500" }),
-      title: l("common:upgradeDialog.features.configSync.title"),
-      description: l("common:upgradeDialog.features.configSync.desc"),
-    },
-    {
-      icon: e.jsx(pe, { className: "h-6 w-6 text-green-500" }),
-      title: l("common:upgradeDialog.features.encryption.title"),
-      description: l("common:upgradeDialog.features.encryption.desc"),
-    },
-    {
-      icon: e.jsx(fe, { className: "h-6 w-6 text-purple-500" }),
-      title: l("common:upgradeDialog.features.timeMachine.title"),
-      description: l("common:upgradeDialog.features.timeMachine.desc"),
-    },
-    {
-      icon: e.jsx(hs, { className: "h-6 w-6 text-indigo-500" }),
-      title: l("common:upgradeDialog.features.more.title"),
-      description: l("common:upgradeDialog.features.more.desc"),
-    },
-  ];
-  return e.jsx(qe, {
-    open: s,
-    onOpenChange: a,
-    children: e.jsxs(Ye, {
-      className: "max-w-2xl max-h-[90vh] overflow-y-auto",
-      children: [
-        e.jsxs(bt, {
-          children: [
-            e.jsxs(jt, {
-              className: "flex items-center gap-2 text-2xl",
-              children: [
-                e.jsx(be, { className: "h-8 w-8 text-yellow-500" }),
-                l("common:upgradeDialog.title"),
-              ],
-            }),
-            e.jsx(yt, {
-              className: "text-base",
-              children: l("common:upgradeDialog.subtitle"),
-            }),
-          ],
-        }),
-        e.jsx("div", {
-          className: "grid grid-cols-1 md:grid-cols-2 gap-4 py-4",
-          children: o.map((u, x) =>
-            e.jsxs(
-              "div",
-              {
-                className:
-                  "flex items-start gap-3 p-4 border rounded-lg hover:border-purple-500 transition-colors bg-card/50",
-                children: [
-                  e.jsx("div", { className: "mt-1", children: u.icon }),
-                  e.jsxs("div", {
-                    children: [
-                      e.jsx("h4", {
-                        className: "font-semibold mb-1",
-                        children: u.title,
-                      }),
-                      e.jsx("p", {
-                        className:
-                          "text-sm text-muted-foreground leading-relaxed",
-                        children: u.description,
-                      }),
-                    ],
-                  }),
-                ],
-              },
-              x,
-            ),
-          ),
-        }),
-        e.jsxs("div", {
-          className:
-            "bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl mb-4 text-center border border-purple-100",
-          children: [
-            e.jsx("h3", {
-              className: "text-lg font-semibold mb-2 text-purple-900",
-              children: l("common:upgradeDialog.accountPromotion"),
-            }),
-            e.jsx("p", {
-              className: "text-gray-600 mb-6 max-w-md mx-auto",
-              children: l("common:upgradeDialog.accountPromotionDesc"),
-            }),
-            e.jsx("div", {
-              className: "flex flex-col items-center gap-4",
-              children: e.jsxs(N, {
-                size: "lg",
-                className:
-                  "bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 shadow-lg text-white px-8",
-                onClick: () => Z("/pricing"),
-                children: [
-                  e.jsx(je, { className: "h-4 w-4 mr-2" }),
-                  l("common:upgradeDialog.goToPricing"),
-                ],
-              }),
-            }),
-          ],
-        }),
-        e.jsxs(Nt, {
-          className:
-            "flex-col sm:flex-row gap-3 sm:justify-between items-center pt-4 border-t",
-          children: [
-            e.jsx("div", {
-              className: "text-sm text-gray-500 flex items-center",
-              children: e.jsx("span", {
-                children: l("common:upgradeDialog.paidNote"),
-              }),
-            }),
-            e.jsxs("div", {
-              className: "flex gap-2 w-full sm:w-auto",
-              children: [
-                e.jsx(N, {
-                  variant: "ghost",
-                  onClick: () => a(!1),
-                  className: "flex-1 sm:flex-none",
-                  children: l("common:upgradeDialog.close"),
-                }),
-                e.jsxs(N, {
-                  variant: "outline",
-                  onClick: m,
-                  disabled: n,
-                  className: "flex-1 sm:flex-none",
-                  children: [
-                    e.jsx(ge, {
-                      className: `h-4 w-4 mr-2 ${n ? "animate-spin" : ""}`,
-                    }),
-                    l(
-                      n
-                        ? "common:upgradeDialog.refreshing"
-                        : "common:upgradeDialog.refreshStatus",
-                    ),
-                  ],
-                }),
-              ],
-            }),
-          ],
-        }),
-      ],
-    }),
-  });
-}
 const B = c.forwardRef(({ className: s, type: a, ...t }, i) =>
   e.jsx("input", {
     type: a,
@@ -2879,7 +2681,7 @@ function Xa({ settings: s, updateSettings: a }) {
                                   "settings:storage.github.menuLabel",
                                 ),
                               }),
-                              !i("storage_github") && e.jsx(K, { size: "sm" }),
+                              !i("storage_github") && null,
                             ],
                           }),
                         }),
@@ -2891,7 +2693,7 @@ function Xa({ settings: s, updateSettings: a }) {
                               e.jsx("span", {
                                 children: t("settings:storage.gist.menuLabel"),
                               }),
-                              !i("storage_gist") && e.jsx(K, { size: "sm" }),
+                              !i("storage_gist") && null,
                             ],
                           }),
                         }),
@@ -2903,7 +2705,7 @@ function Xa({ settings: s, updateSettings: a }) {
                               e.jsx("span", {
                                 children: t("settings:storage.gitee.menuLabel"),
                               }),
-                              !i("storage_gitee") && e.jsx(K, { size: "sm" }),
+                              !i("storage_gitee") && null,
                             ],
                           }),
                         }),
@@ -2917,7 +2719,7 @@ function Xa({ settings: s, updateSettings: a }) {
                                   "settings:storage.gitlab.menuLabel",
                                 ),
                               }),
-                              !i("storage_gitlab") && e.jsx(K, { size: "sm" }),
+                              !i("storage_gitlab") && null,
                             ],
                           }),
                         }),
@@ -2932,7 +2734,7 @@ function Xa({ settings: s, updateSettings: a }) {
                                 ),
                               }),
                               !i("storage_googledrive") &&
-                                e.jsx(K, { size: "sm" }),
+                                null,
                             ],
                           }),
                         }),
@@ -2947,7 +2749,7 @@ function Xa({ settings: s, updateSettings: a }) {
                                 ),
                               }),
                               !i("storage_onedrive") &&
-                                e.jsx(K, { size: "sm" }),
+                                null,
                             ],
                           }),
                         }),
@@ -2959,7 +2761,7 @@ function Xa({ settings: s, updateSettings: a }) {
                               e.jsx("span", {
                                 children: t("settings:storage.s3.menuLabel"),
                               }),
-                              !i("storage_s3") && e.jsx(K, { size: "sm" }),
+                              !i("storage_s3") && null,
                             ],
                           }),
                         }),
@@ -2973,7 +2775,7 @@ function Xa({ settings: s, updateSettings: a }) {
                                   "settings:storage.webdav.menuLabel",
                                 ),
                               }),
-                              !i("storage_webdav") && e.jsx(K, { size: "sm" }),
+                              !i("storage_webdav") && null,
                             ],
                           }),
                         }),
@@ -3058,7 +2860,7 @@ function Xa({ settings: s, updateSettings: a }) {
           testResult: l,
           handleTestConnection: g,
         }),
-      e.jsx(te, { open: o, onOpenChange: u }),
+      null,
     ],
   });
 }
@@ -3430,7 +3232,7 @@ function Qa({ settings: s, onUpdateSetting: a }) {
                               "settings:general.syncStrategy.autoSyncLabel",
                             ),
                           }),
-                          e.jsx(K, { size: "sm" }),
+                          null,
                         ],
                       }),
                       e.jsx("p", {
@@ -3741,7 +3543,7 @@ function Qa({ settings: s, onUpdateSetting: a }) {
           }),
         ],
       }),
-      e.jsx(te, { open: n, onOpenChange: r }),
+      null,
     ],
   });
 }
@@ -3903,34 +3705,7 @@ function Za() {
               e.jsxs("div", {
                 className: "grid grid-cols-1 sm:grid-cols-2 gap-6",
                 children: [
-                  e.jsxs("div", {
-                    className: "space-y-4",
-                    children: [
-                      e.jsx("h4", {
-                        className: "font-medium text-sm",
-                        children: s("about.support.proTitle"),
-                      }),
-                      e.jsx("p", {
-                        className: "text-xs text-muted-foreground",
-                        children: s("about.support.proDescription"),
-                      }),
-                      e.jsx(N, {
-                        className: "w-full gap-2",
-                        variant: "default",
-                        asChild: !0,
-                        children: e.jsxs("a", {
-                          href: "#",
-                          onClick: (n) => {
-                            n.preventDefault(), Z("/pricing");
-                          },
-                          children: [
-                            e.jsx(be, { className: "w-4 h-4 fill-current" }),
-                            s("about.support.proButton"),
-                          ],
-                        }),
-                      }),
-                    ],
-                  }),
+                  null,
                   e.jsxs("div", {
                     className: "space-y-4",
                     children: [
@@ -4306,43 +4081,7 @@ function sr() {
               }),
             ],
           }),
-          e.jsxs("div", {
-            className: "flex items-center gap-2",
-            children: [
-              t()
-                ? e.jsxs("div", {
-                    className:
-                      "flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-full",
-                    children: [
-                      e.jsx(be, { className: "w-4 h-4 text-purple-500" }),
-                      e.jsx("span", {
-                        className:
-                          "text-sm font-semibold text-purple-600 dark:text-purple-400",
-                        children: n("settings:dashboard.proVersion"),
-                      }),
-                    ],
-                  })
-                : e.jsx("div", {
-                    className:
-                      "flex items-center gap-2 px-3 py-1.5 bg-muted border border-border rounded-full",
-                    children: e.jsx("span", {
-                      className: "text-sm font-medium",
-                      children: n("settings:dashboard.freeVersion"),
-                    }),
-                  }),
-              !t() &&
-                e.jsxs(N, {
-                  variant: "outline",
-                  size: "sm",
-                  className: "h-8 px-3 text-xs",
-                  onClick: () => x(!0),
-                  children: [
-                    e.jsx(be, { className: "w-4 h-4 text-yellow-500" }),
-                    n("settings:dashboard.upgrade"),
-                  ],
-                }),
-            ],
-          }),
+          ,
         ],
       }),
       e.jsxs("div", {
@@ -4582,7 +4321,7 @@ function sr() {
             children: d.lastMessage,
           }),
         }),
-      e.jsx(te, { open: u, onOpenChange: x }),
+      null,
     ],
   });
 }
@@ -4993,7 +4732,7 @@ function nr() {
                       children: [
                         e.jsx(js, { className: "w-4 h-4 text-blue-500" }),
                         s("tools.settingsBackupCloud.uploadButton"),
-                        e.jsx(K, { size: "sm" }),
+                        null,
                       ],
                     }),
                     e.jsxs(N, {
@@ -5004,7 +4743,7 @@ function nr() {
                       children: [
                         e.jsx(ys, { className: "w-4 h-4 text-green-500" }),
                         s("tools.settingsBackupCloud.downloadButton"),
-                        e.jsx(K, { size: "sm" }),
+                        null,
                       ],
                     }),
                   ],
@@ -5051,7 +4790,7 @@ function nr() {
                       children: [
                         e.jsx(ea, { className: "w-4 h-4" }),
                         s("tools.dangerous.deleteRemoteButton"),
-                        e.jsx(K, { size: "sm" }),
+                        null,
                       ],
                     }),
                     e.jsx("div", {
@@ -5087,234 +4826,7 @@ function nr() {
             ],
           }),
         }),
-      e.jsx(te, { open: o, onOpenChange: u }),
-    ],
-  });
-}
-function or({ onUpgrade: s }) {
-  const { t: a } = D(["settings", "common"]),
-    t = [
-      {
-        id: "v1.0.5",
-        time: a("settings:timemachine.teaser.mock.v1"),
-        message: a("settings:timemachine.teaser.mock.v1Msg"),
-        author: a("settings:timemachine.teaser.mock.authorWork"),
-      },
-      {
-        id: "v1.0.4",
-        time: a("settings:timemachine.teaser.mock.v2"),
-        message: a("settings:timemachine.teaser.mock.v2Msg"),
-        author: a("settings:timemachine.teaser.mock.authorMobile"),
-      },
-      {
-        id: "v1.0.3",
-        time: a("settings:timemachine.teaser.mock.v3"),
-        message: a("settings:timemachine.teaser.mock.v3Msg"),
-        author: a("settings:timemachine.teaser.mock.authorWork"),
-      },
-      {
-        id: "v1.0.2",
-        time: a("settings:timemachine.teaser.mock.v4"),
-        message: a("settings:timemachine.teaser.mock.v4Msg"),
-        author: a("settings:timemachine.teaser.mock.authorWork"),
-      },
-      {
-        id: "v1.0.1",
-        time: a("settings:timemachine.teaser.mock.v5"),
-        message: a("settings:timemachine.teaser.mock.v5Msg"),
-        author: a("settings:timemachine.teaser.mock.authorWork"),
-      },
-    ];
-  return e.jsxs(T, {
-    className:
-      "overflow-hidden border-indigo-100 dark:border-indigo-900/50 bg-gradient-to-b from-white to-indigo-50/20 dark:from-background dark:to-indigo-950/10",
-    children: [
-      e.jsxs(_, {
-        className: "pb-4",
-        children: [
-          e.jsxs(L, {
-            className: "text-2xl flex items-center gap-2",
-            children: [
-              e.jsx(fe, { className: "w-6 h-6 text-indigo-500" }),
-              a("settings:timemachine.teaser.title"),
-              e.jsx("span", {
-                className:
-                  "ml-auto text-[10px] font-bold uppercase tracking-wider text-indigo-500 flex items-center gap-1",
-                children: e.jsx(K, {}),
-              }),
-            ],
-          }),
-          e.jsx(z, { children: a("settings:timemachine.teaser.description") }),
-        ],
-      }),
-      e.jsxs(P, {
-        className: "space-y-6",
-        children: [
-          e.jsxs("div", {
-            className:
-              "relative rounded-xl border bg-background/50 p-4 shadow-sm overflow-hidden",
-            children: [
-              e.jsx("div", {
-                className: "absolute top-0 right-0 p-2 opacity-10",
-                children: e.jsx(fe, { className: "w-24 h-24 -mr-8 -mt-8" }),
-              }),
-              e.jsxs("div", {
-                className: "relative space-y-3",
-                children: [
-                  e.jsxs("p", {
-                    className:
-                      "text-xs font-semibold text-muted-foreground mb-4 flex items-center gap-2",
-                    children: [
-                      e.jsx(ie, { className: "w-3 h-3" }),
-                      a("settings:timemachine.teaser.previewTitle"),
-                    ],
-                  }),
-                  t.map((i, n) =>
-                    e.jsxs(
-                      "div",
-                      {
-                        className:
-                          "flex items-center justify-between p-3 rounded-lg border bg-muted/30 group/item transition-colors",
-                        children: [
-                          e.jsxs("div", {
-                            className: "flex items-center gap-3",
-                            children: [
-                              e.jsx("div", {
-                                className:
-                                  "w-8 h-8 rounded-full bg-indigo-500/10 flex items-center justify-center shrink-0",
-                                children: e.jsx(ie, {
-                                  className: "w-4 h-4 text-indigo-500",
-                                }),
-                              }),
-                              e.jsxs("div", {
-                                className: "space-y-0.5",
-                                children: [
-                                  e.jsxs("div", {
-                                    className: "flex items-center gap-2",
-                                    children: [
-                                      e.jsx("span", {
-                                        className: "text-xs font-semibold",
-                                        children: i.time,
-                                      }),
-                                      e.jsx("span", {
-                                        className:
-                                          "text-[9px] font-mono bg-muted px-1 rounded text-muted-foreground uppercase",
-                                        children: i.id,
-                                      }),
-                                    ],
-                                  }),
-                                  e.jsx("p", {
-                                    className:
-                                      "text-[11px] text-muted-foreground line-clamp-1",
-                                    children: i.message,
-                                  }),
-                                ],
-                              }),
-                            ],
-                          }),
-                          e.jsxs(N, {
-                            variant: "ghost",
-                            size: "sm",
-                            className:
-                              "h-7 text-[10px] opacity-40 group-hover/item:opacity-100 transition-opacity",
-                            children: [
-                              e.jsx(me, { className: "w-3 h-3 mr-1" }),
-                              a("settings:timemachine.restoreButton"),
-                            ],
-                          }),
-                        ],
-                      },
-                      n,
-                    ),
-                  ),
-                  e.jsx("div", {
-                    className:
-                      "absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background/90 to-transparent flex items-end justify-center pb-2",
-                    children: e.jsx("span", {
-                      className:
-                        "text-[10px] text-indigo-500/60 font-medium italic",
-                      children: a("settings:timemachine.teaser.unlockText"),
-                    }),
-                  }),
-                ],
-              }),
-            ],
-          }),
-          e.jsxs("div", {
-            className: "grid grid-cols-1 sm:grid-cols-2 gap-4",
-            children: [
-              e.jsxs("div", {
-                className: "flex items-start gap-3",
-                children: [
-                  e.jsx(pe, {
-                    className: "w-4 h-4 text-indigo-500 mt-0.5 shrink-0",
-                  }),
-                  e.jsxs("div", {
-                    className: "space-y-0.5",
-                    children: [
-                      e.jsx("p", {
-                        className: "text-sm font-semibold",
-                        children: a(
-                          "settings:timemachine.teaser.feature1Title",
-                        ),
-                      }),
-                      e.jsx("p", {
-                        className: "text-xs text-muted-foreground",
-                        children: a("settings:timemachine.teaser.feature1Desc"),
-                      }),
-                    ],
-                  }),
-                ],
-              }),
-              e.jsxs("div", {
-                className: "flex items-start gap-3",
-                children: [
-                  e.jsx(me, {
-                    className: "w-4 h-4 text-indigo-500 mt-0.5 shrink-0",
-                  }),
-                  e.jsxs("div", {
-                    className: "space-y-0.5",
-                    children: [
-                      e.jsx("p", {
-                        className: "text-sm font-semibold",
-                        children: a(
-                          "settings:timemachine.teaser.feature2Title",
-                        ),
-                      }),
-                      e.jsx("p", {
-                        className: "text-xs text-muted-foreground",
-                        children: a("settings:timemachine.teaser.feature2Desc"),
-                      }),
-                    ],
-                  }),
-                ],
-              }),
-            ],
-          }),
-          e.jsxs("div", {
-            className: "pt-2 flex flex-col gap-3",
-            children: [
-              e.jsxs(N, {
-                onClick: s,
-                className:
-                  "w-full h-11 bg-indigo-600 hover:bg-indigo-700 text-white font-bold shadow-md transition-all active:scale-[0.98]",
-                children: [
-                  e.jsx(Ae, {
-                    className: "w-4 h-4 mr-2",
-                    fill: "currentColor",
-                  }),
-                  a("settings:timemachine.teaser.upgradeButton"),
-                  e.jsx(_e, { className: "w-4 h-4 ml-1" }),
-                ],
-              }),
-              e.jsx("p", {
-                className: "text-[11px] text-center text-muted-foreground",
-                children: a("settings:timemachine.teaser.userTrustText"),
-              }),
-            ],
-          }),
-        ],
-      }),
+      null,
     ],
   });
 }
@@ -5441,7 +4953,7 @@ function lr() {
                         e.jsx("span", {
                           className:
                             "ml-auto text-[10px] font-bold uppercase tracking-wider text-indigo-500 flex items-center gap-1",
-                          children: e.jsx(K, {}),
+                          children: null,
                         }),
                       ],
                     }),
@@ -5638,7 +5150,7 @@ function lr() {
                     e.jsx("span", {
                       className:
                         "ml-auto text-[10px] font-bold uppercase tracking-wider text-indigo-500 flex items-center gap-1",
-                      children: e.jsx(K, {}),
+                      children: null,
                     }),
                   ],
                 }),
@@ -5685,221 +5197,10 @@ function lr() {
     : e.jsxs("div", {
         className: "space-y-6",
         children: [
-          e.jsx(or, { onUpgrade: () => k(!0) }),
-          e.jsx(te, { open: g, onOpenChange: k }),
+          null,
+          null,
         ],
       });
-}
-function cr({ onRegister: s }) {
-  const { t: a } = D(["settings"]),
-    t = [
-      { date: "01-01", syncs: 12, added: 40, deleted: 5 },
-      { date: "01-02", syncs: 8, added: 20, deleted: 12 },
-      { date: "01-03", syncs: 15, added: 65, deleted: 8 },
-      { date: "01-04", syncs: 10, added: 30, deleted: 4 },
-      { date: "01-05", syncs: 18, added: 80, deleted: 15 },
-    ],
-    i = [
-      {
-        time: "10 min ago",
-        device: "MacBook Pro",
-        added: 12,
-        updated: 5,
-        deleted: 0,
-      },
-      {
-        time: "2 hours ago",
-        device: "iPhone 15",
-        added: 3,
-        updated: 1,
-        deleted: 1,
-      },
-    ];
-  return e.jsxs(T, {
-    className:
-      "overflow-hidden border-blue-100 dark:border-blue-900/50 bg-gradient-to-b from-white to-blue-50/20 dark:from-background dark:to-blue-950/10",
-    children: [
-      e.jsxs(_, {
-        className: "pb-4 text-center sm:text-left",
-        children: [
-          e.jsxs(L, {
-            className:
-              "text-2xl flex items-center justify-center sm:justify-start gap-2",
-            children: [
-              e.jsx(Ie, { className: "w-6 h-6 text-blue-500" }),
-              a("history.teaser.title"),
-            ],
-          }),
-          e.jsx(z, {
-            className: "max-w-md",
-            children: a("history.teaser.description"),
-          }),
-        ],
-      }),
-      e.jsxs(P, {
-        className: "space-y-6",
-        children: [
-          e.jsxs("div", {
-            className: "grid grid-cols-1 lg:grid-cols-2 gap-6",
-            children: [
-              e.jsxs("div", {
-                className: "space-y-3",
-                children: [
-                  e.jsx("div", {
-                    className: "flex items-center justify-between",
-                    children: e.jsxs("p", {
-                      className:
-                        "text-xs font-semibold text-muted-foreground flex items-center gap-2",
-                      children: [
-                        e.jsx(Ie, { className: "w-3 h-3" }),
-                        a("history.teaser.chartPreview"),
-                      ],
-                    }),
-                  }),
-                  e.jsx("div", {
-                    className:
-                      "h-[180px] w-full bg-background/50 rounded-xl border p-4 opacity-50 grayscale-[0.5]",
-                    children: e.jsx(Cs, {
-                      width: "100%",
-                      height: "100%",
-                      children: e.jsxs(ks, {
-                        data: t,
-                        children: [
-                          e.jsx(Ss, {
-                            strokeDasharray: "3 3",
-                            vertical: !1,
-                            opacity: 0.2,
-                          }),
-                          e.jsx(Ts, { dataKey: "date", hide: !0 }),
-                          e.jsx(Ps, { hide: !0 }),
-                          e.jsx(we, {
-                            dataKey: "added",
-                            fill: "rgb(59 130 246)",
-                            radius: [2, 2, 0, 0],
-                          }),
-                          e.jsx(we, {
-                            dataKey: "syncs",
-                            fill: "rgb(147 197 253)",
-                            radius: [2, 2, 0, 0],
-                          }),
-                        ],
-                      }),
-                    }),
-                  }),
-                ],
-              }),
-              e.jsxs("div", {
-                className: "space-y-3 relative overflow-hidden",
-                children: [
-                  e.jsxs("p", {
-                    className:
-                      "text-xs font-semibold text-muted-foreground flex items-center gap-2",
-                    children: [
-                      e.jsx(ie, { className: "w-3 h-3" }),
-                      a("history.teaser.logPreview"),
-                    ],
-                  }),
-                  e.jsx("div", {
-                    className: "space-y-2",
-                    children: i.map((n, r) =>
-                      e.jsxs(
-                        "div",
-                        {
-                          className:
-                            "flex items-center justify-between p-3 rounded-lg border bg-background/50 opacity-40",
-                          children: [
-                            e.jsxs("div", {
-                              className: "flex items-center gap-3",
-                              children: [
-                                e.jsx("div", {
-                                  className:
-                                    "w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0",
-                                  children: e.jsx(Rs, {
-                                    className: "w-4 h-4 text-blue-500",
-                                  }),
-                                }),
-                                e.jsxs("div", {
-                                  className: "space-y-0.5",
-                                  children: [
-                                    e.jsxs("p", {
-                                      className: "text-[11px] font-semibold",
-                                      children: [n.time, " \xB7 ", n.device],
-                                    }),
-                                    e.jsxs("div", {
-                                      className:
-                                        "flex items-center gap-2 text-[10px] text-muted-foreground",
-                                      children: [
-                                        e.jsxs("span", {
-                                          className: "text-green-600",
-                                          children: ["+", n.added],
-                                        }),
-                                        e.jsxs("span", {
-                                          className: "text-blue-500",
-                                          children: ["~", n.updated],
-                                        }),
-                                        e.jsxs("span", {
-                                          className: "text-red-500",
-                                          children: ["-", n.deleted],
-                                        }),
-                                      ],
-                                    }),
-                                  ],
-                                }),
-                              ],
-                            }),
-                            e.jsx(Me, {
-                              className:
-                                "w-3 h-3 text-muted-foreground opacity-30",
-                            }),
-                          ],
-                        },
-                        r,
-                      ),
-                    ),
-                  }),
-                  e.jsx("div", {
-                    className:
-                      "absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-background/90 to-transparent flex items-end justify-center pb-1",
-                    children: e.jsx("span", {
-                      className:
-                        "text-[10px] text-blue-500/70 font-medium italic",
-                      children: a("history.teaser.unlockText"),
-                    }),
-                  }),
-                ],
-              }),
-            ],
-          }),
-          e.jsxs("div", {
-            className: "pt-2 flex flex-col gap-3 max-w-sm mx-auto sm:mx-0",
-            children: [
-              e.jsxs(N, {
-                onClick: s,
-                className:
-                  "w-full h-11 bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-md transition-all active:scale-[0.98]",
-                children: [
-                  a("thistory.easer.registerButton"),
-                  e.jsx(_e, { className: "w-4 h-4 ml-1" }),
-                ],
-              }),
-              e.jsxs("p", {
-                className:
-                  "text-[11px] text-center sm:text-left text-muted-foreground",
-                children: [
-                  a("history.teaser.loginText"),
-                  e.jsx("button", {
-                    className: "text-blue-500 hover:underline",
-                    onClick: s,
-                    children: a("history.teaser.loginButton"),
-                  }),
-                ],
-              }),
-            ],
-          }),
-        ],
-      }),
-    ],
-  });
 }
 function dr() {
   const { hasPermission: s, isPro: a } = Y(),
@@ -6424,14 +5725,14 @@ function dr() {
               }),
             ],
           }),
-          e.jsx(te, { open: f, onOpenChange: h }),
+          null,
         ],
       })
     : e.jsxs("div", {
         className: "space-y-6",
         children: [
-          e.jsx(cr, { onRegister: () => h(!0) }),
-          e.jsx(te, { open: f, onOpenChange: h }),
+          null,
+          null,
         ],
       });
 }
@@ -7223,238 +6524,6 @@ function Er(s) {
         })
   );
 }
-function Ir() {
-  var o, u, x;
-  const { isMobile: s } = Se(),
-    { session: a, isPro: t } = Y(),
-    { t: i } = D(["common"]),
-    { updateSettings: n, loading: r } = ue(),
-    l = (o = a.data) == null ? void 0 : o.user,
-    m = t();
-  return l
-    ? e.jsx(le, {
-        children: e.jsx(ce, {
-          children: e.jsxs(wt, {
-            children: [
-              e.jsx(Ct, {
-                asChild: !0,
-                children: e.jsxs(de, {
-                  size: "lg",
-                  className:
-                    "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground",
-                  children: [
-                    e.jsxs(Ze, {
-                      className: "h-8 w-8 rounded-lg",
-                      children: [
-                        e.jsx(es, { src: l.image || "", alt: l.name || "" }),
-                        e.jsx(ss, {
-                          className: "rounded-lg",
-                          children:
-                            ((u = l.name) == null
-                              ? void 0
-                              : u.substring(0, 2).toUpperCase()) || "US",
-                        }),
-                      ],
-                    }),
-                    e.jsxs("div", {
-                      className: "grid flex-1 text-left text-sm leading-tight",
-                      children: [
-                        e.jsx("span", {
-                          className: "truncate font-semibold",
-                          children: l.name,
-                        }),
-                        e.jsx("span", {
-                          className: "truncate text-xs",
-                          children: l.email,
-                        }),
-                      ],
-                    }),
-                    e.jsx(fa, { className: "ml-auto size-4" }),
-                  ],
-                }),
-              }),
-              e.jsxs(kt, {
-                className:
-                  "w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg",
-                side: s ? "bottom" : "right",
-                align: "end",
-                sideOffset: 4,
-                children: [
-                  e.jsx(St, {
-                    className: "p-0 font-normal",
-                    children: e.jsxs("div", {
-                      className:
-                        "flex items-center gap-2 px-1 py-1.5 text-left text-sm",
-                      children: [
-                        e.jsxs(Ze, {
-                          className: "h-8 w-8 rounded-lg",
-                          children: [
-                            e.jsx(es, {
-                              src: l.image || "",
-                              alt: l.name || "",
-                            }),
-                            e.jsx(ss, {
-                              className: "rounded-lg",
-                              children:
-                                ((x = l.name) == null
-                                  ? void 0
-                                  : x.substring(0, 2).toUpperCase()) || "US",
-                            }),
-                          ],
-                        }),
-                        e.jsxs("div", {
-                          className:
-                            "grid flex-1 text-left text-sm leading-tight",
-                          children: [
-                            e.jsx("span", {
-                              className: "truncate font-semibold",
-                              children: l.name,
-                            }),
-                            e.jsx("span", {
-                              className: "truncate text-xs",
-                              children: l.email,
-                            }),
-                          ],
-                        }),
-                      ],
-                    }),
-                  }),
-                  e.jsx(ts, {}),
-                  e.jsxs(Tt, {
-                    children: [
-                      e.jsxs(ze, {
-                        onClick: () => Z("/dashboard/settings"),
-                        children: [
-                          e.jsx(ba, { className: "mr-2 h-4 w-4" }),
-                          i("common:navUser.accountSettings"),
-                        ],
-                      }),
-                      e.jsxs(ze, {
-                        onClick: () => Z("/dashboard/billing"),
-                        children: [
-                          e.jsx(As, { className: "mr-2 h-4 w-4" }),
-                          i(
-                            m
-                              ? "common:navUser.manageSubscription"
-                              : "common:navUser.upgradePro",
-                          ),
-                        ],
-                      }),
-                    ],
-                  }),
-                  e.jsx(ts, {}),
-                  e.jsxs(ze, {
-                    onClick: async () => {
-                      await Ce.signOut();
-                      try {
-                        !r && n({ enableAutoSync: !1 }),
-                          await F.runtime.sendMessage({
-                            type: "CLEAR_SYNC_ALARMS",
-                          });
-                      } catch {}
-                    },
-                    children: [
-                      e.jsx(ja, { className: "mr-2 h-4 w-4" }),
-                      i("common:navUser.logout"),
-                    ],
-                  }),
-                ],
-              }),
-            ],
-          }),
-        }),
-      })
-    : e.jsx(le, {
-        children: e.jsx(ce, {
-          children: e.jsxs(de, {
-            size: "lg",
-            className:
-              "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground",
-            onClick: () => Z("/login"),
-            children: [
-              e.jsx("div", {
-                className:
-                  "flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground",
-                children: e.jsx(ws, { className: "size-4" }),
-              }),
-              e.jsxs("div", {
-                className: "grid flex-1 text-left text-sm leading-tight",
-                children: [
-                  e.jsx("span", {
-                    className: "truncate font-semibold",
-                    children: i("common:navUser.notLoggedIn"),
-                  }),
-                  e.jsx("span", {
-                    className: "truncate text-xs",
-                    children: i("common:navUser.clickToLogin"),
-                  }),
-                ],
-              }),
-            ],
-          }),
-        }),
-      });
-}
-function Mr({ onClick: s, className: a }) {
-  const { isPro: t } = Y(),
-    { t: i } = D("common");
-  return t()
-    ? null
-    : e.jsxs("div", {
-        className: j(
-          "mx-2 mb-4 p-4 rounded-xl bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white shadow-lg relative overflow-hidden group cursor-pointer transition-all hover:scale-[1.02] active:scale-95",
-          a,
-        ),
-        onClick: s,
-        children: [
-          e.jsx("div", {
-            className:
-              "absolute top-0 right-0 -mt-4 -mr-4 w-20 h-20 bg-white opacity-10 rounded-full blur-2xl group-hover:bg-yellow-400 group-hover:opacity-20 transition-all duration-700",
-          }),
-          e.jsx("div", {
-            className:
-              "absolute bottom-0 left-0 -mb-4 -ml-4 w-16 h-16 bg-blue-400 opacity-20 rounded-full blur-xl",
-          }),
-          e.jsxs("div", {
-            className: "relative z-10 flex flex-col gap-3",
-            children: [
-              e.jsxs("div", {
-                className: "flex items-center gap-2",
-                children: [
-                  e.jsx("div", {
-                    className: "p-1.5 bg-white/20 rounded-lg backdrop-blur-md",
-                    children: e.jsx(be, {
-                      className: "w-4 h-4 text-yellow-300",
-                    }),
-                  }),
-                  e.jsx("span", {
-                    className: "font-bold text-sm tracking-wide",
-                    children: i("upgradeCard.title"),
-                  }),
-                  e.jsx(As, {
-                    className: "w-3 h-3 text-yellow-200 animate-pulse ml-auto",
-                  }),
-                ],
-              }),
-              e.jsx("p", {
-                className: "text-xs text-indigo-50 leading-relaxed font-medium",
-                children: i("upgradeCard.description"),
-              }),
-              e.jsx(N, {
-                variant: "secondary",
-                size: "sm",
-                className:
-                  "w-full bg-white text-indigo-700 hover:bg-indigo-50 border-none font-bold text-xs h-8",
-                onClick: (n) => {
-                  n.stopPropagation(), s();
-                },
-                children: i("upgradeCard.button"),
-              }),
-            ],
-          }),
-        ],
-      });
-}
 function Or({ activeTab: s, onTabChange: a, ...t }) {
   const { t: i } = D(["common", "settings"]),
     [n, r] = c.useState(!1),
@@ -7561,13 +6630,13 @@ function Or({ activeTab: s, onTabChange: a, ...t }) {
           e.jsx(Er, {}),
           e.jsx(Te, {
             className: "mt-auto",
-            children: e.jsx(Mr, { onClick: () => r(!0) }),
+            children: null,
           }),
           e.jsx(Ar, { items: l.navSecondary }),
         ],
       }),
-      e.jsx(nt, { children: e.jsx(Ir, {}) }),
-      e.jsx(te, { open: n, onOpenChange: r }),
+      e.jsx(nt, { children: null }),
+      null,
     ],
   });
 }

@@ -4,8 +4,6 @@
         "syncing": "正在同步...",
         "settings": "设置",
         "more": "更多",
-        "login": "登录",
-        "logout": "退出登录",
         "save": "保存",
         "cancel": "取消",
         "confirm": "确认",
@@ -13,8 +11,7 @@
         "edit": "编辑",
         "close": "关闭",
         "back": "返回",
-        "next": "下一步",
-        "upgrade": "升级"
+        "next": "下一步"
     },
     "labels": {
         "language": "语言",
@@ -30,8 +27,7 @@
         "lastSync": "上次同步",
         "status": "状态",
         "localBookmarks": "本地书签",
-        "remoteStorage": "远程存储",
-        "pro": "专业版"
+        "remoteStorage": "远程存储"
     },
     "status": {
         "syncing": "正在进行",
@@ -104,14 +100,6 @@
         "feedback": "问题反馈",
         "activities": "通知"
     },
-    "navUser": {
-        "notLoggedIn": "未登录",
-        "clickToLogin": "点击登录账号",
-        "accountSettings": "账号设置",
-        "manageSubscription": "管理订阅",
-        "upgradePro": "升级专业版",
-        "logout": "退出登录"
-    },
     "activityGraph": {
         "title": "近期同步活动",
         "subtitle": "过去 10 个月的书签同步频率统计",
@@ -122,78 +110,6 @@
         "wed": "三",
         "fri": "五",
         "syncCount": "{{date}}: {{count}} 次同步"
-    },
-    "upgradeDialog": {
-        "title": "升级到专业版",
-        "subtitle": "解锁更多高级功能，提升书签管理体验",
-        "proMember": "尊贵的专业版会员",
-        "proMemberDesc": "您已解锁所有高级功能，感谢您的支持！",
-        "close": "关闭",
-        "refreshStatus": "刷新状态",
-        "refreshing": "正在刷新...",
-        "paidNote": "已完成支付？点击右侧刷新按钮",
-        "goToPricing": "前往官网订阅",
-        "accountPromotion": "开通专业版账号",
-        "accountPromotionDesc": "专业版功能绑定于您的书签同步账号。请前往官网订阅，完成后在此刷新状态即可解锁所有高级功能。",
-        "features": {
-            "storage": {
-                "title": "私有存储接入",
-                "desc": "支持 GitHub 仓库与 WebDAV 协议，将数据掌握在自己手中。"
-            },
-            "autoSync": {
-                "title": "全自动同步",
-                "desc": "无需手动操作，书签变更自动同步到云端，多终端实时更新。"
-            },
-            "configSync": {
-                "title": "配置项云同步",
-                "desc": "插件设置、同步规则等配置项随账号同步，换机无需重新配置。"
-            },
-            "encryption": {
-                "title": "全链路数据加密",
-                "desc": "使用 AES-256-GCM 算法，在同步前对数据进行军事级加密。"
-            },
-            "timeMachine": {
-                "title": "书签时间机",
-                "desc": "基于 Git 的版本控制，一键回滚到任意历史时间点的状态。"
-            },
-            "syncControl": {
-                "title": "进阶同步控制",
-                "desc": "灵活的强制上传/下载控制，即刻解决跨设备同步冲突。"
-            },
-            "audit": {
-                "title": "同步审计日志",
-                "desc": "详细的同步历史图表与活动轨迹，让书签变动清晰透明。"
-            },
-            "more": {
-                "title": "更多高级特性",
-                "desc": "优先功能更新与专业技术支持，为您的书签体验保驾护航。"
-            }
-        }
-    },
-    "upgradeCard": {
-        "title": "升级专业版",
-        "description": "解锁 GitHub/WebDAV 存储、配置云同步、私有加密、时光机回滚等高级功能。",
-        "button": "立即解锁"
-    },
-    "registrationDialog": {
-        "title": "解锁自动同步",
-        "subtitle": "注册订阅即可享受以下功能",
-        "login": "登录账号",
-        "later": "稍后再说",
-        "features": {
-            "autoSync": {
-                "title": "自动同步",
-                "desc": "每 10 分钟自动同步书签"
-            },
-            "history": {
-                "title": "同步历史",
-                "desc": "查看最近 100 条同步记录"
-            },
-            "cloudBackup": {
-                "title": "云端备份",
-                "desc": "设置自动备份到云端，多设备同步配置"
-            }
-        }
     },
     "messages": {
         "startingSync": "开始同步...",

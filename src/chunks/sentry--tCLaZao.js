@@ -125,39 +125,39 @@ const it = {
         owner: "",
         repo: "",
         branch: "main",
-        filePath: "bookmarkhub.json",
+        filePath: "bookmarksync.json",
       },
       webdav: {
         url: "",
         username: "",
         password: "",
-        filePath: "bookmarkhub.json",
+        filePath: "bookmarksync.json",
       },
-      gist: { token: "", gistId: "", fileName: "bookmarkhub.json" },
+      gist: { token: "", gistId: "", fileName: "bookmarksync.json" },
       gitee: {
         token: "",
         owner: "",
         repo: "",
         branch: "master",
-        filePath: "bookmarkhub.json",
+        filePath: "bookmarksync.json",
       },
       gitlab: {
         token: "",
         projectId: "",
         branch: "main",
-        filePath: "bookmarkhub.json",
+        filePath: "bookmarksync.json",
         baseUrl: "https://gitlab.com",
       },
-      googledrive: { accessToken: "", fileName: "bookmarkhub.json" },
-      dropbox: { accessToken: "", filePath: "/bookmarkhub.json" },
-      onedrive: { accessToken: "", filePath: "bookmarkhub.json" },
+      googledrive: { accessToken: "", fileName: "bookmarksync.json" },
+      dropbox: { accessToken: "", filePath: "/bookmarksync.json" },
+      onedrive: { accessToken: "", filePath: "bookmarksync.json" },
       s3: {
         accessKeyId: "",
         secretAccessKey: "",
         bucket: "",
         region: "us-east-1",
         endpoint: "",
-        filePath: "bookmarkhub.json",
+        filePath: "bookmarksync.json",
         forcePathStyle: !1,
       },
     },
@@ -1374,7 +1374,7 @@ Symbol.dispose && (De.prototype[Symbol.dispose] = De.prototype.free);
 function Qn() {
   return {
     __proto__: null,
-    "./bookmarkhub_core_bg.js": {
+    "./bookmarksync_core_bg.js": {
       __proto__: null,
       __wbg_Error_8c4e43fe74559d73: function (t, e) {
         return Error(W(t, e));
@@ -1791,7 +1791,7 @@ async function ss(t) {
         )),
     t === void 0 &&
       (t = new URL(
-        "/assets/bookmarkhub_core_bg-Cl4sWNse.wasm",
+        "/assets/bookmarksync_core_bg-Cl4sWNse.wasm",
         import.meta.url,
       ));
   const e = Qn();

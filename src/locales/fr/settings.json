@@ -109,7 +109,7 @@
             "branchLabel": "Branche (Optionnel)",
             "branchPlaceholder": "main",
             "pathLabel": "Chemin du fichier",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Adresse du dépôt :"
         },
         "webdav": {
@@ -124,7 +124,7 @@
             "passwordLabel": "Mot de passe d'application",
             "passwordNote": "Il est fortement recommandé d'utiliser un 'Mot de passe d'application' au lieu de votre mot de passe principal.",
             "pathLabel": "Chemin du fichier",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "Configuration GitHub Gist",
@@ -137,7 +137,7 @@
             "gistIdLabel": "ID Gist",
             "gistIdPlaceholder": "Chaîne hexadécimale de 32 caractères",
             "filenameLabel": "Nom du fichier",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Créer un Gist",
             "creatingGist": "Création...",
             "gistAddr": "Adresse du Gist :",
@@ -161,7 +161,7 @@
             "branchLabel": "Branche (Optionnel)",
             "branchPlaceholder": "master",
             "pathLabel": "Chemin du fichier",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Adresse du dépôt :"
         },
         "gitlab": {
@@ -177,7 +177,7 @@
             "branchLabel": "Branche (Optionnel)",
             "branchPlaceholder": "main",
             "pathLabel": "Chemin du fichier",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Adresse du dépôt :"
         },
         "googledrive": {
@@ -188,7 +188,7 @@
             "tokenPlaceholder": "Token d'accès OAuth2",
             "authorize": "Autoriser",
             "filenameLabel": "Nom du fichier",
-            "filenamePlaceholder": "bookmarkhub.json"
+            "filenamePlaceholder": "bookmarksync.json"
         },
         "dropbox": {
             "title": "Configuration Dropbox",
@@ -198,7 +198,7 @@
             "tokenPlaceholder": "Token d'accès Dropbox",
             "authorize": "Autoriser",
             "pathLabel": "Chemin du fichier",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "onedrive": {
             "title": "Configuration OneDrive",
@@ -208,7 +208,7 @@
             "tokenPlaceholder": "Token Microsoft Graph",
             "authorize": "Autoriser",
             "pathLabel": "Chemin du fichier",
-            "pathPlaceholder": "bookmarkhub.json"
+            "pathPlaceholder": "bookmarksync.json"
         },
         "s3": {
             "title": "Configuration stockage compatible S3",
@@ -316,9 +316,6 @@
         "support": {
             "title": "Soutenir le développement continu",
             "description": "BookmarkSync est un projet open source maintenu par des développeurs individuels. Votre soutien est la plus grande motivation pour les mises à jour continues.",
-            "proTitle": "Vous voulez des fonctionnalités plus avancées ?",
-            "proDescription": "Abonnez-vous à la version Pro pour débloquer les instantanés d'historique, les sauvegardes automatiques, plus de nœuds de stockage et le support technique prioritaire.",
-            "proButton": "En savoir plus sur Pro",
             "feedbackTitle": "Commentaires et suggestions",
             "feedbackDescription": "Vous avez rencontré un problème ou souhaitez fournir des suggestions ? N'hésitez pas à soumettre un Issue sur GitHub ou à visiter la page du projet.",
             "githubButton": "GitHub",
@@ -336,9 +333,6 @@
     "dashboard": {
         "title": "Tableau de bord",
         "subtitle": "Aperçu de la santé et du statut du système",
-        "proVersion": "Version Pro",
-        "freeVersion": "Version gratuite",
-        "upgrade": "Passer à Pro",
         "bookmarkCount": "Total des signets",
         "bookmarkCountDesc": "Signets actuellement enregistrés dans le navigateur",
         "storageType": "Service de stockage",
@@ -420,33 +414,6 @@
         "errorInvalidData": "Format de données de sauvegarde invalide",
         "errorRestoreFailed": "Échec de la restauration",
         "gistVersionMessage": "Version du {{date}}",
-        "githubUser": "Utilisateur GitHub",
-        "teaser": {
-            "title": "Machine à remonter le temps des signets",
-            "description": "Remontez dans le temps vers n'importe quel état de signets. Gardez chaque moment de synchronisation sûr et traçable.",
-            "previewTitle": "Aperçu de l'historique (Démo)",
-            "unlockText": "Passez à Pro pour voir l'historique complet",
-            "feature1Title": "Versionnement natif",
-            "feature1Desc": "Basé sur les commits GitHub, données jamais perdues",
-            "feature2Title": "Restauration en un clic",
-            "feature2Desc": "Reversement intelligent vers n'importe quel point spécifique dans le temps",
-            "upgradeButton": "Débloquer la machine à remonter le temps maintenant",
-            "userTrustText": "Rejoignez plus de 10 000 utilisateurs pour une gestion de signets plus sûre",
-            "premiumFeature": "Fonctionnalité premium",
-            "mock": {
-                "v1": "Il y a 10 min",
-                "v1Msg": "Synchronisation depuis Chrome",
-                "v2": "Il y a 1 heure",
-                "v2Msg": "Ajouté 12 liens",
-                "v3": "Hier 12:45",
-                "v3Msg": "Nettoyage hebdomadaire",
-                "v4": "Il y a 2 jours 16:02",
-                "v4Msg": "Ajouté 11 liens",
-                "v5": "Il y a 2 jours 09:29",
-                "v5Msg": "Mis à jour 20 liens",
-                "authorWork": "Travail",
-                "authorMobile": "Mobile"
-            }
-        }
+        "githubUser": "Utilisateur GitHub"
     }
 }

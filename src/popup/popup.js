@@ -27,7 +27,6 @@ import {
   t as ue,
   v as he,
   w as pe,
-  P as je,
   S as ge,
   x as fe,
   R as Ne,
@@ -119,80 +118,6 @@ function N({ icon: s, title: i, description: a }) {
         ],
       }),
     ],
-  });
-}
-function Ve({ open: s, onOpenChange: i }) {
-  const { t: a } = S(["common"]);
-  return e.jsx(G, {
-    open: s,
-    onOpenChange: i,
-    children: e.jsxs(W, {
-      className: "max-w-md h-full",
-      children: [
-        e.jsxs(J, {
-          children: [
-            e.jsx("div", {
-              className:
-                "mx-auto h-12 w-12 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-2",
-              children: e.jsx(we, { className: "h-6 w-6 text-orange-600" }),
-            }),
-            e.jsx(V, {
-              className: "text-center text-xl",
-              children: a("common:registrationDialog.title"),
-            }),
-            e.jsx(X, {
-              className: "text-center",
-              children: a("common:registrationDialog.subtitle"),
-            }),
-          ],
-        }),
-        e.jsxs("div", {
-          className: "space-y-2",
-          children: [
-            e.jsx(N, {
-              icon: e.jsx(_, { className: "h-5 w-5" }),
-              title: a("common:registrationDialog.features.autoSync.title"),
-              description: a(
-                "common:registrationDialog.features.autoSync.desc",
-              ),
-            }),
-            e.jsx(N, {
-              icon: e.jsx(ve, { className: "h-5 w-5" }),
-              title: a("common:registrationDialog.features.history.title"),
-              description: a("common:registrationDialog.features.history.desc"),
-            }),
-            e.jsx(N, {
-              icon: e.jsx(ke, { className: "h-5 w-5" }),
-              title: a("common:registrationDialog.features.cloudBackup.title"),
-              description: a(
-                "common:registrationDialog.features.cloudBackup.desc",
-              ),
-            }),
-          ],
-        }),
-        e.jsxs(ee, {
-          className: "flex-col gap-2 sm:flex-col",
-          children: [
-            e.jsxs(m, {
-              className: "w-full bg-gradient-to-r from-blue-600 to-indigo-600",
-              onClick: () => {
-                o("/login");
-              },
-              children: [
-                e.jsx(Ce, { className: "h-4 w-4 mr-2" }),
-                a("common:registrationDialog.login"),
-              ],
-            }),
-            e.jsx(m, {
-              variant: "ghost",
-              className: "w-full",
-              onClick: () => i(!1),
-              children: a("common:registrationDialog.later"),
-            }),
-          ],
-        }),
-      ],
-    }),
   });
 }
 function Xe() {
@@ -302,98 +227,7 @@ function Xe() {
                     }),
                   ],
                 }),
-                e.jsx("div", {
-                  className: "flex items-center",
-                  children: O
-                    ? e.jsx("div", {
-                        className:
-                          "w-7 h-7 bg-muted animate-pulse rounded-full",
-                      })
-                    : !0
-                      ? e.jsxs(T, {
-                          children: [
-                            e.jsx(D, {
-                              asChild: !0,
-                              children: e.jsx("button", {
-                                className: "focus:outline-none",
-                                children: e.jsxs(oe, {
-                                  className:
-                                    "w-7 h-7 border border-border hover:ring-2 ring-primary/20 transition-all",
-                                  children: [
-                                    e.jsx(de, {
-                                      src: (n == null ? void 0 : n.image) || "",
-                                    }),
-                                    e.jsx(me, {
-                                      className: "bg-primary/5 text-[12px]",
-                                      children:
-                                        ((v = n == null ? void 0 : n.name) ==
-                                        null
-                                          ? void 0
-                                          : v.substring(0, 2).toUpperCase()) ||
-                                        e.jsx(Se, { className: "w-3 h-3" }),
-                                    }),
-                                  ],
-                                }),
-                              }),
-                            }),
-                            e.jsxs(L, {
-                              align: "end",
-                              className: "w-48 font-xs",
-                              children: [
-                                e.jsx(xe, {
-                                  className: "font-normal",
-                                  children: e.jsxs("div", {
-                                    className: "flex flex-col space-y-1",
-                                    children: [
-                                      e.jsx("p", {
-                                        className:
-                                          "text-xs font-medium leading-none",
-                                        children: n == null ? void 0 : n.name,
-                                      }),
-                                      e.jsx("p", {
-                                        className:
-                                          "text-xs leading-none text-muted-foreground",
-                                        children: n == null ? void 0 : n.email,
-                                      }),
-                                    ],
-                                  }),
-                                }),
-                                e.jsx(g, {}),
-                                e.jsxs(c, {
-                                  onClick: () => {},
-                                  children: [
-                                    e.jsx(Te, { className: "mr-2 h-4 w-4" }),
-                                    e.jsx("span", {
-                                      className: "text-xs",
-                                      children: s("popup:menu.dashboard"),
-                                    }),
-                                  ],
-                                }),
-                                e.jsx(g, {}),
-                                e.jsxs(c, {
-                                  onClick: () => {},
-                                  children: [
-                                    e.jsx(De, { className: "mr-2 h-4 w-4" }),
-                                    e.jsx("span", {
-                                      className: "text-xs",
-                                      children: s("common:buttons.logout"),
-                                    }),
-                                  ],
-                                }),
-                              ],
-                            }),
-                          ],
-                        })
-                      : e.jsxs("button", {
-                          onClick: () => p(!0),
-                          className:
-                            "flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-primary transition-colors px-2 py-1 h-7 rounded-md hover:bg-muted",
-                          children: [
-                            e.jsx(Le, { className: "w-3.5 h-3.5" }),
-                            s("common:buttons.login"),
-                          ],
-                        }),
-                }),
+                null,
               ],
             }),
           }),
@@ -635,7 +469,7 @@ function Xe() {
                                 htmlFor: "auto-sync",
                                 children: s("popup:autoSync.title"),
                               }),
-                              e.jsx(je, { size: "xs" }),
+                              null,
                             ],
                           }),
                           e.jsx("div", {
@@ -835,7 +669,7 @@ function Xe() {
           }),
         ],
       }),
-      e.jsx(Ve, { open: U, onOpenChange: p }),
+      null,
     ],
   });
 }
