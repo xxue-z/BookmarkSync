@@ -274,10 +274,7 @@
         "support": {
             "title": "Підтримка",
             "description": "Проект з відкритим кодом.",
-            "feedbackTitle": "Відгук",
-            "feedbackDescription": "Проблеми? Issue на GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "Відгук",
             "thanksTitle": "Подяка",
             "thanksDescription": "Дякуємо всім, хто зробив внесок"
         },

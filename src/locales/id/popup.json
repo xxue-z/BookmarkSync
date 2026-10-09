@@ -1,8 +1,27 @@
 {
     "title": "BookmarkSync",
-    "menu": { "dashboard": "Dasbor", "helpDocs": "Dokumen", "feedback": "Masukan", "donate": "Donasi", "rate": "Beri nilai", "community": "Komunitas", "website": "Situs web", "support": "Dukungan", "terms": "Ketentuan" },
-    "stats": { "localBookmarks": "Markah lokal", "storageType": "Jenis penyimpanan", "lastStatus": "Status terakhir", "lastSync": "Sinkronisasi terakhir" },
-    "autoSync": { "title": "Sinkronisasi otomatis", "description": "Jaga konsistensi data antar perangkat" },
-    "safetyWarning": { "title": "Penghapusan massal diblokir", "description": "Periksa pengaturan dan sinkronkan secara manual" },
+    "menu": {
+        "dashboard": "Dasbor",
+        "donate": "Donasi",
+        "rate": "Beri nilai",
+        "community": "Komunitas",
+        "website": "Situs web",
+        "support": "Dukungan",
+        "terms": "Ketentuan"
+    },
+    "stats": {
+        "localBookmarks": "Markah lokal",
+        "storageType": "Jenis penyimpanan",
+        "lastStatus": "Status terakhir",
+        "lastSync": "Sinkronisasi terakhir"
+    },
+    "autoSync": {
+        "title": "Sinkronisasi otomatis",
+        "description": "Jaga konsistensi data antar perangkat"
+    },
+    "safetyWarning": {
+        "title": "Penghapusan massal diblokir",
+        "description": "Periksa pengaturan dan sinkronkan secara manual"
+    },
     "version": "V{{version}}"
 }

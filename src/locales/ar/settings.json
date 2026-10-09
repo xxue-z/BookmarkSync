@@ -279,10 +279,7 @@
         "support": {
             "title": "الدعم",
             "description": "مشروع مفتوح المصدر.",
-            "feedbackTitle": "الملاحظات",
-            "feedbackDescription": "مشاكل؟ Issue على GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "ملاحظة",
             "thanksTitle": "شكر",
             "thanksDescription": "شكراً لكل المساهمين"
         },

@@ -95,9 +95,7 @@
         "timeMachine": "Tijdmachine",
         "syncHistory": "Synchronisatiegeschiedenis",
         "tools": "Hulpmiddelen",
-        "about": "Over",
-        "tutorial": "Handleiding",
-        "feedback": "Feedback"
+        "about": "Over"
     },
     "activityGraph": {
         "title": "Recente synchronisatieactiviteit",

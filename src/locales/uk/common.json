@@ -95,9 +95,7 @@
         "timeMachine": "Машина часу",
         "syncHistory": "Історія синхронізації",
         "tools": "Інструменти",
-        "about": "Про",
-        "tutorial": "Посібник",
-        "feedback": "Відгук"
+        "about": "Про"
     },
     "activityGraph": {
         "title": "Остання активність синхронізації",

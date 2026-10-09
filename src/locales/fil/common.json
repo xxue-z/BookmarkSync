@@ -95,9 +95,7 @@
         "timeMachine": "Time machine",
         "syncHistory": "Kasaysayan ng sync",
         "tools": "Mga tool",
-        "about": "Tungkol",
-        "tutorial": "Tutorial",
-        "feedback": "Feedback"
+        "about": "Tungkol"
     },
     "activityGraph": {
         "title": "Kamakailang aktibidad ng sync",

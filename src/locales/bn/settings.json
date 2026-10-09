@@ -274,10 +274,7 @@
         "support": {
             "title": "সাপোর্ট",
             "description": "ওপেন সোর্স প্রজেক্ট।",
-            "feedbackTitle": "প্রতিক্রিয়া",
-            "feedbackDescription": "সমস্যা? GitHub-এ ইস্যু",
             "githubButton": "GitHub",
-            "feedbackButton": "প্রতিক্রিয়া",
             "thanksTitle": "ধন্যবাদ",
             "thanksDescription": "সমস্ত কন্ট্রিবিউটরদের ধন্যবাদ"
         },

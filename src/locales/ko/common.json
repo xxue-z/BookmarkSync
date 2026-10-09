@@ -97,9 +97,7 @@
         "timeMachine": "타임머신",
         "syncHistory": "동기화 기록",
         "tools": "도구",
-        "about": "정보",
-        "tutorial": "가이드",
-        "feedback": "피드백"
+        "about": "정보"
     },
     "activityGraph": {
         "title": "최근 동기화 활동",

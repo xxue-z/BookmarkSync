@@ -1,8 +1,27 @@
 {
     "title": "BookmarkSync",
-    "menu": { "dashboard": "डैशबोर्ड", "helpDocs": "दस्तावेज़", "feedback": "फीडबैक", "donate": "दान करें", "rate": "रेटिंग दें", "community": "समुदाय", "website": "वेबसाइट", "support": "सहायता", "terms": "नियम" },
-    "stats": { "localBookmarks": "स्थानीय बुकमार्क", "storageType": "स्टोरेज प्रकार", "lastStatus": "अंतिम स्थिति", "lastSync": "अंतिम सिंक" },
-    "autoSync": { "title": "स्वचालित सिंक", "description": "डिवाइस के बीच डेटा सुसंगत रखें" },
-    "safetyWarning": { "title": "बड़े पैमाने पर हटाना ब्लॉक", "description": "सेटिंग्स जांचें और मैन्युअल सिंक करें" },
+    "menu": {
+        "dashboard": "डैशबोर्ड",
+        "donate": "दान करें",
+        "rate": "रेटिंग दें",
+        "community": "समुदाय",
+        "website": "वेबसाइट",
+        "support": "सहायता",
+        "terms": "नियम"
+    },
+    "stats": {
+        "localBookmarks": "स्थानीय बुकमार्क",
+        "storageType": "स्टोरेज प्रकार",
+        "lastStatus": "अंतिम स्थिति",
+        "lastSync": "अंतिम सिंक"
+    },
+    "autoSync": {
+        "title": "स्वचालित सिंक",
+        "description": "डिवाइस के बीच डेटा सुसंगत रखें"
+    },
+    "safetyWarning": {
+        "title": "बड़े पैमाने पर हटाना ब्लॉक",
+        "description": "सेटिंग्स जांचें और मैन्युअल सिंक करें"
+    },
     "version": "V{{version}}"
 }

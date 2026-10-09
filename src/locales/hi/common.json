@@ -95,9 +95,7 @@
         "timeMachine": "टाइम मशीन",
         "syncHistory": "सिंक इतिहास",
         "tools": "टूल्स",
-        "about": "बारे में",
-        "tutorial": "ट्यूटोरियल",
-        "feedback": "फीडबैक"
+        "about": "बारे में"
     },
     "activityGraph": {
         "title": "हाल की सिंक गतिविधि",

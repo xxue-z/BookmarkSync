@@ -274,10 +274,7 @@
         "support": {
             "title": "Suporta",
             "description": "Open-source na project.",
-            "feedbackTitle": "Feedback",
-            "feedbackDescription": "May problema? Issue sa GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "Feedback",
             "thanksTitle": "Salamat",
             "thanksDescription": "Salamat sa lahat ng contributors"
         },

@@ -95,9 +95,7 @@
         "timeMachine": "Mașina timpului",
         "syncHistory": "Istoric sincronizare",
         "tools": "Instrumente",
-        "about": "Despre",
-        "tutorial": "Tutorial",
-        "feedback": "Feedback"
+        "about": "Despre"
     },
     "activityGraph": {
         "title": "Activitate sincronizare recentă",

@@ -274,10 +274,7 @@
         "support": {
             "title": "سپورٹ",
             "description": "اوپن سورس پروجیکٹ۔",
-            "feedbackTitle": "فیڈ بیک",
-            "feedbackDescription": "مسائل؟ GitHub پر اسسو",
             "githubButton": "GitHub",
-            "feedbackButton": "فیڈ بیک",
             "thanksTitle": "شکریہ",
             "thanksDescription": "تمام تعاون کرنے والوں کا شکریہ"
         },

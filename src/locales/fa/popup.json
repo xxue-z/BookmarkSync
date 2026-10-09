@@ -1,8 +1,27 @@
 {
     "title": "BookmarkSync",
-    "menu": { "dashboard": "داشبورد", "helpDocs": "مستندات", "feedback": "بازخورد", "donate": "کمک", "rate": "امتیاز", "community": "جامعه", "website": "وب‌سایت", "support": "پشتیبانی", "terms": "شرایط" },
-    "stats": { "localBookmarks": "نشانک‌های محلی", "storageType": "نوع ذخیره‌سازی", "lastStatus": "آخرین وضعیت", "lastSync": "آخرین همگام‌سازی" },
-    "autoSync": { "title": "همگام‌سازی خودکار", "description": "ثبات داده‌ها بین دستگاه‌ها" },
-    "safetyWarning": { "title": "حذف انبوه مسدود شد", "description": "تنظیمات را بررسی و همگام‌سازی دستی کنید" },
+    "menu": {
+        "dashboard": "داشبورد",
+        "donate": "کمک",
+        "rate": "امتیاز",
+        "community": "جامعه",
+        "website": "وب‌سایت",
+        "support": "پشتیبانی",
+        "terms": "شرایط"
+    },
+    "stats": {
+        "localBookmarks": "نشانک‌های محلی",
+        "storageType": "نوع ذخیره‌سازی",
+        "lastStatus": "آخرین وضعیت",
+        "lastSync": "آخرین همگام‌سازی"
+    },
+    "autoSync": {
+        "title": "همگام‌سازی خودکار",
+        "description": "ثبات داده‌ها بین دستگاه‌ها"
+    },
+    "safetyWarning": {
+        "title": "حذف انبوه مسدود شد",
+        "description": "تنظیمات را بررسی و همگام‌سازی دستی کنید"
+    },
     "version": "V{{version}}"
 }

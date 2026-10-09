@@ -274,10 +274,7 @@
         "support": {
             "title": "支援",
             "description": "開源專案。",
-            "feedbackTitle": "回饋",
-            "feedbackDescription": "問題？GitHub上回報",
             "githubButton": "GitHub",
-            "feedbackButton": "回饋",
             "thanksTitle": "感謝",
             "thanksDescription": "感謝所有貢獻者"
         },

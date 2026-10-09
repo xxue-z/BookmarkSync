@@ -97,9 +97,7 @@
         "timeMachine": "آلة الزمن",
         "syncHistory": "سجل المزامنة",
         "tools": "الأدوات",
-        "about": "حول",
-        "tutorial": "الدليل",
-        "feedback": "الملاحظات"
+        "about": "حول"
     },
     "activityGraph": {
         "title": "نشاط المزامنة الأخير",

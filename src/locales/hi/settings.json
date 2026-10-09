@@ -274,10 +274,7 @@
         "support": {
             "title": "सहायता",
             "description": "ओपन-सोर्स प्रोजेक्ट।",
-            "feedbackTitle": "फीडबैक",
-            "feedbackDescription": "समस्या? GitHub पर इश्यू",
             "githubButton": "GitHub",
-            "feedbackButton": "फीडबैक",
             "thanksTitle": "धन्यवाद",
             "thanksDescription": "सभी योगदानकर्ताओं को धन्यवाद"
         },

@@ -274,10 +274,7 @@
         "support": {
             "title": "תמיכה",
             "description": "פרויקט קוד פתוח.",
-            "feedbackTitle": "משוב",
-            "feedbackDescription": "בעיות? Issue ב-GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "משוב",
             "thanksTitle": "תודה",
             "thanksDescription": "תודה לכל התורמים"
         },

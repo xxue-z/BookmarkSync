@@ -589,26 +589,8 @@ function Xe() {
                       side: "top",
                       className: "w-48 mb-1",
                       children: [
-                        e.jsxs(c, {
-                          onClick: () => o("/docs"),
-                          children: [
-                            e.jsx(Oe, { className: "mr-2 h-4 w-4" }),
-                            e.jsx("span", {
-                              className: "text-xs",
-                              children: s("popup:menu.helpDocs"),
-                            }),
-                          ],
-                        }),
-                        e.jsxs(c, {
-                          onClick: () => f(`${M.APP_GITHUB_URL}/issues`),
-                          children: [
-                            e.jsx(Fe, { className: "mr-2 h-4 w-4" }),
-                            e.jsx("span", {
-                              className: "text-xs",
-                              children: s("popup:menu.feedback"),
-                            }),
-                          ],
-                        }),
+                        null,
+                        null,
                         e.jsxs(c, {
                           onClick: () => o("/supportus"),
                           children: [

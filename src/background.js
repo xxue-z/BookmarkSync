@@ -466,8 +466,6 @@ o.runtime.onInstalled.addListener(async (s) => {
   try {
     if ((await A(), s.reason === "install")) {
       await Y(), await q();
-      const t = `${Q.APP_URL}/getting-started`;
-      o.tabs.create({ url: t });
     } else s.reason === "update" && (await Y(), await q());
     await x(), await rt();
   } catch (t) {

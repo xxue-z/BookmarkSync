@@ -1,8 +1,27 @@
 {
     "title": "BookmarkSync",
-    "menu": { "dashboard": "Panel", "helpDocs": "Dokumentacja", "feedback": "Opinia", "donate": "Darowizna", "rate": "Oceń", "community": "Społeczność", "website": "Strona internetowa", "support": "Wsparcie", "terms": "Warunki" },
-    "stats": { "localBookmarks": "Zakładki lokalne", "storageType": "Typ magazynu", "lastStatus": "Ostatni status", "lastSync": "Ostatnia synchronizacja" },
-    "autoSync": { "title": "Automatyczna synchronizacja", "description": "Utrzymuj spójność danych między urządzeniami" },
-    "safetyWarning": { "title": "Masowe usuwanie zablokowane", "description": "Sprawdź ustawienia i synchronizuj ręcznie" },
+    "menu": {
+        "dashboard": "Panel",
+        "donate": "Darowizna",
+        "rate": "Oceń",
+        "community": "Społeczność",
+        "website": "Strona internetowa",
+        "support": "Wsparcie",
+        "terms": "Warunki"
+    },
+    "stats": {
+        "localBookmarks": "Zakładki lokalne",
+        "storageType": "Typ magazynu",
+        "lastStatus": "Ostatni status",
+        "lastSync": "Ostatnia synchronizacja"
+    },
+    "autoSync": {
+        "title": "Automatyczna synchronizacja",
+        "description": "Utrzymuj spójność danych między urządzeniami"
+    },
+    "safetyWarning": {
+        "title": "Masowe usuwanie zablokowane",
+        "description": "Sprawdź ustawienia i synchronizuj ręcznie"
+    },
     "version": "V{{version}}"
 }

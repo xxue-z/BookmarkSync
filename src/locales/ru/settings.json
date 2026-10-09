@@ -315,10 +315,7 @@
         "support": {
             "title": "Поддержка",
             "description": "BookmarkSync - проект с открытым исходным кодом.",
-            "feedbackTitle": "Отзывы",
-            "feedbackDescription": "Проблемы? Создайте Issue на GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "Отзыв",
             "thanksTitle": "Благодарности",
             "thanksDescription": "Спасибо всем кто помог"
         },

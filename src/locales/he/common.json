@@ -95,9 +95,7 @@
         "timeMachine": "מכונת זמן",
         "syncHistory": "היסטוריית סנכרון",
         "tools": "כלים",
-        "about": "אודות",
-        "tutorial": "מדריך",
-        "feedback": "משוב"
+        "about": "אודות"
     },
     "activityGraph": {
         "title": "פעילות סנכרון אחרונה",

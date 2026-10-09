@@ -274,10 +274,7 @@
         "support": {
             "title": "Support",
             "description": "Öppenskällat projekt.",
-            "feedbackTitle": "Feedback",
-            "feedbackDescription": "Problem? Issue på GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "Feedback",
             "thanksTitle": "Tack",
             "thanksDescription": "Tack till alla bidragsgivare"
         },

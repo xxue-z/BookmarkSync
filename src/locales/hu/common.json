@@ -95,9 +95,7 @@
         "timeMachine": "Időgép",
         "syncHistory": "Szinkronizálási előzmények",
         "tools": "Eszközök",
-        "about": "Névjegy",
-        "tutorial": "Útmutató",
-        "feedback": "Visszajelzés"
+        "about": "Névjegy"
     },
     "activityGraph": {
         "title": "Legutóbbi szinkronizálási tevékenység",

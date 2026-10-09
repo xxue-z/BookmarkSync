@@ -274,10 +274,7 @@
         "support": {
             "title": "Υποστήριξη",
             "description": "Έργο ανοιχτού κώδικα.",
-            "feedbackTitle": "Σχόλια",
-            "feedbackDescription": "Προβλήματα; Issue στο GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "Σχόλια",
             "thanksTitle": "Ευχαριστίες",
             "thanksDescription": "Ευχαριστούμε όλους τους συντελεστές"
         },

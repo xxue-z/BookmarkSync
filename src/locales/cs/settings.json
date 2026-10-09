@@ -274,10 +274,7 @@
         "support": {
             "title": "Podpora",
             "description": "Open-source projekt.",
-            "feedbackTitle": "Zpětná vazba",
-            "feedbackDescription": "Problémy? Issue na GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "Zpětná vazba",
             "thanksTitle": "Poděkování",
             "thanksDescription": "Děkujeme všem přispěvatelům"
         },

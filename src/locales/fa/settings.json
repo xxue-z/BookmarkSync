@@ -279,10 +279,7 @@
         "support": {
             "title": "پشتیبانی",
             "description": "پروژه منبع باز.",
-            "feedbackTitle": "بازخورد",
-            "feedbackDescription": "مشکل؟ Issue در GitHub",
             "githubButton": "GitHub",
-            "feedbackButton": "بازخورد",
             "thanksTitle": "تشکر",
             "thanksDescription": "از همه مشارکت‌کنندگان متشکریم"
         },
