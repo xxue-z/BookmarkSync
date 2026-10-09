@@ -2,9 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "대시보드",
-        "donate": "후원",
         "rate": "평가",
-        "community": "커뮤니티",
         "website": "웹사이트",
         "support": "지원",
         "terms": "약관"

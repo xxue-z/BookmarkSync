@@ -2,9 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Tableau de bord",
-        "donate": "Soutenez-nous",
         "rate": "Notez-nous",
-        "community": "Rejoindre la communauté",
         "website": "Site officiel",
         "support": "Support technique",
         "terms": "Conditions d'utilisation"

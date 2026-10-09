@@ -2,9 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "ダッシュボード",
-        "donate": "支援する",
         "rate": "評価する",
-        "community": "コミュニティに参加",
         "website": "公式サイト",
         "support": "技術サポート",
         "terms": "利用規約"

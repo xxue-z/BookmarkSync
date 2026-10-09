@@ -591,27 +591,7 @@ function Xe() {
                       children: [
                         null,
                         null,
-                        e.jsxs(c, {
-                          onClick: () => o("/supportus"),
-                          children: [
-                            e.jsx(He, { className: "mr-2 h-4 w-4" }),
-                            e.jsx("span", {
-                              className: "text-xs",
-                              children: s("popup:menu.donate"),
-                            }),
-                          ],
-                        }),
-                        e.jsx(g, {}),
-                        e.jsxs(c, {
-                          onClick: () => o("/community"),
-                          children: [
-                            e.jsx(Ke, { className: "mr-2 h-4 w-4" }),
-                            e.jsx("span", {
-                              className: "text-xs",
-                              children: s("popup:menu.community"),
-                            }),
-                          ],
-                        }),
+null,
                         e.jsxs(c, {
                           onClick: () => o("/"),
                           children: [

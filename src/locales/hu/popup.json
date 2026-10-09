@@ -2,9 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Irányítópult",
-        "donate": "Adomány",
         "rate": "Értékelés",
-        "community": "Közösség",
         "website": "Weboldal",
         "support": "Támogatás",
         "terms": "Feltételek"
