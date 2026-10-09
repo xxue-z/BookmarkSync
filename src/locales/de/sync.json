@@ -1,0 +1,49 @@
+{
+    "messages": {
+        "syncing": "Synchronisiere...",
+        "syncSuccess": "Synchronisation erfolgreich",
+        "syncFailed": "Synchronisation fehlgeschlagen",
+        "forcePushing": "Erzwungenes Hochladen in die Cloud...",
+        "forcePulling": "Erzwogenes Wiederherstellen aus der Cloud...",
+        "creatingBackup": "Lokales Backup wird erstellt...",
+        "backupComplete": "Backup abgeschlossen, Synchronisation wird fortgesetzt...",
+        "syncedTo": "Synchronisiert mit {{storageType}}",
+        "noChanges": "Keine Änderungen erkannt",
+        "localChanges": "{{count}} lokale Änderung",
+        "localChanges_other": "{{count}} lokale Änderungen",
+        "remoteChanges": "{{count}} Remote-Änderung",
+        "remoteChanges_other": "{{count}} Remote-Änderungen",
+        "added": "{{count}} hinzugefügt",
+        "updated": "{{count}} aktualisiert",
+        "deleted": "{{count}} gelöscht",
+        "firstSyncComplete": "Erste Synchronisation abgeschlossen: Lokale Lesezeichen zu Remote hochgeladen",
+        "forcePullComplete": "Erzwogenes Herunterladen abgeschlossen: Cloud-Daten vollständig mit lokal überschrieben",
+        "localSyncComplete": "Synchronisation abgeschlossen: Lokale Änderungen zu Remote hochgeladen",
+        "mergeSyncComplete": "Synchronisation abgeschlossen: Fusionsergebnis zu Remote hochgeladen",
+        "noUpdatesNeeded": "Synchronisation abgeschlossen: Lokal und Remote sind konsistent, keine Updates nötig",
+        "newDeviceSyncComplete": "Erste Synchronisation des neuen Geräts abgeschlossen: Lokale und Remote-Lesezeichen intelligent zusammengeführt, Duplikate automatisch entfernt",
+        "performingMerge": "Synchronisiere: Mehrweg-Zusammenführung wird ausgeführt",
+        "syncInterrupted": "Synchronisation unerwartet unterbrochen"
+    },
+    "notifications": {
+        "syncSuccess": "Synchronisation erfolgreich",
+        "syncFailed": "Synchronisation fehlgeschlagen",
+        "forcePushSuccess": "Erzwogenes Hochladen erfolgreich",
+        "forcePullSuccess": "Erzwogenes Wiederherstellen erfolgreich",
+        "forcePushFailed": "Erzwogenes Hochladen fehlgeschlagen",
+        "forcePullFailed": "Erzwogenes Wiederherstellen fehlgeschlagen",
+        "safetyProtection": "Synchronisationssicherheitsschutz",
+        "safetyBlocked": "Synchronisation blockiert: {{count}} Lesezeichen werden gelöscht. Bitte in Einstellungen bestätigen.",
+        "safetyBlockedGeneric": "Synchronisation blockiert: Große Anzahl von Änderungen erkannt.",
+        "autoSyncDisabled": "BookmarkHub - Automatische Synchronisation nicht aktiviert",
+        "autoSyncRequiresRegistration": "Automatische Synchronisation erfordert Kontoanmeldung, bitte in Einstellungen registrieren",
+        "autoSyncPaused": "Automatische Synchronisation pausiert",
+        "operationCancelled": "Vorgang abgebrochen",
+        "backupFailed": "Automatisches Backup fehlgeschlagen, erzwungene Synchronisation zum Schutz der Daten abgebrochen. Bitte überprüfen Sie den Gerätespeicherplatz."
+    },
+    "errors": {
+        "unsupportedStorageType": "Nicht unterstützter Speichertyp: {{type}}",
+        "autoSyncBlocked": "AUTO_SYNC_BLOCKED: {{reason}}",
+        "safetyError": "Erkannt, dass die Zusammenführung eine große Anzahl von Lesezeichen löschen würde, Synchronisation wurde schützend blockiert."
+    }
+}

@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "एक्सटेंशन का विवरण",
+      "message": "BookmarkHub, ब्राउज़र में बुकमार्क सिंक करें"
+   },
+   "appName": {
+      "description": "एक्सटेंशन का नाम",
+      "message": "BookmarkHub - बुकमार्क सिंक करें"
+   }
+}

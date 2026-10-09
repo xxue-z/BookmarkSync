@@ -1,0 +1,211 @@
+{
+    "buttons": {
+        "sync": "Synchroniser maintenant",
+        "syncing": "Synchronisation...",
+        "settings": "Paramètres",
+        "more": "Plus",
+        "login": "Connexion",
+        "logout": "Déconnexion",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "confirm": "Confirmer",
+        "delete": "Supprimer",
+        "edit": "Modifier",
+        "close": "Fermer",
+        "back": "Retour",
+        "next": "Suivant",
+        "upgrade": "Mettre à niveau"
+    },
+    "labels": {
+        "language": "Langue",
+        "theme": "Thème",
+        "deviceName": "Nom de l'appareil",
+        "autoSync": "Synchronisation automatique",
+        "syncInterval": "Intervalle de synchronisation",
+        "notifications": "Notifications",
+        "encryption": "Chiffrement",
+        "encryptionKey": "Clé de chiffrement",
+        "conflictStrategy": "Stratégie de conflit",
+        "storageType": "Type de stockage",
+        "lastSync": "Dernière synchronisation",
+        "status": "Statut",
+        "localBookmarks": "Signets locaux",
+        "remoteStorage": "Stockage distant",
+        "pro": "Pro"
+    },
+    "status": {
+        "syncing": "Synchronisation",
+        "success": "Succès",
+        "failure": "Échec",
+        "ready": "Prêt",
+        "never": "Jamais synchronisé"
+    },
+    "themes": {
+        "light": "Clair",
+        "dark": "Sombre",
+        "system": "Système"
+    },
+    "languages": {
+        "zh": "简体中文",
+        "en": "English",
+        "es": "Español",
+        "fr": "Français",
+        "de": "Deutsch",
+        "ja": "日本語",
+        "pt": "Português",
+        "ru": "Русский",
+        "ar": "العربية",
+        "it": "Italiano",
+        "ko": "한국어",
+        "zh-TW": "繁體中文",
+        "id": "Bahasa Indonesia",
+        "tr": "Türkçe",
+        "vi": "Tiếng Việt",
+        "th": "ไทย",
+        "pl": "Polski",
+        "nl": "Nederlands",
+        "hi": "हिन्दी",
+        "fa": "فارسی",
+        "sv": "Svenska",
+        "uk": "Українська",
+        "fil": "Filipino",
+        "cs": "Čeština",
+        "ro": "Română",
+        "hu": "Magyar",
+        "bn": "বাংলা",
+        "ur": "اردو",
+        "el": "Ελληνικά",
+        "he": "עברית"
+    },
+    "time": {
+        "minutes": "{{count}} minute",
+        "minutes_other": "{{count}} minutes",
+        "hours": "{{count}} heure",
+        "hours_other": "{{count}} heures"
+    },
+    "tabs": {
+        "dashboard": "Tableau de bord",
+        "general": "Paramètres généraux",
+        "storage": "Paramètres de stockage",
+        "history": "Machine à remonter le temps",
+        "logs": "Historique de synchronisation",
+        "tools": "Boîte à outils",
+        "about": "À propos"
+    },
+    "sidebar": {
+        "dashboard": "Tableau de bord",
+        "settings": "Paramètres",
+        "general": "Général",
+        "storage": "Stockage",
+        "data": "Données",
+        "timeMachine": "Machine à remonter le temps",
+        "syncHistory": "Journaux de synchronisation",
+        "tools": "Outils",
+        "about": "À propos",
+        "tutorial": "Tutoriel",
+        "feedback": "Commentaires"
+    },
+    "navUser": {
+        "notLoggedIn": "Non connecté",
+        "clickToLogin": "Cliquez pour vous connecter",
+        "accountSettings": "Paramètres du compte",
+        "manageSubscription": "Gérer l'abonnement",
+        "upgradePro": "Passer à Pro",
+        "logout": "Se déconnecter"
+    },
+    "activityGraph": {
+        "title": "Activité de synchronisation récente",
+        "subtitle": "Fréquence de synchronisation des signets au cours des 10 derniers mois",
+        "loading": "Chargement des données d'activité...",
+        "less": "Moins",
+        "more": "Plus",
+        "mon": "Lun",
+        "wed": "Mer",
+        "fri": "Ven",
+        "syncCount": "{{date}}: {{count}} synchronisations"
+    },
+    "upgradeDialog": {
+        "title": "Passer à Pro",
+        "subtitle": "Débloquez des fonctionnalités avancées et améliorez la gestion de vos signets",
+        "proMember": "Membre professionnel",
+        "proMemberDesc": "Vous avez débloqué toutes les fonctionnalités premium. Merci pour votre soutien !",
+        "close": "Fermer",
+        "refreshStatus": "Actualiser le statut",
+        "refreshing": "Actualisation...",
+        "paidNote": "Déjà payé ? Cliquez sur actualiser à droite",
+        "goToPricing": "S'abonner sur le site",
+        "accountPromotion": "Mettez à niveau votre compte",
+        "accountPromotionDesc": "Les fonctionnalités Pro sont liées à votre compte de synchronisation. Abonnez-vous sur notre site, puis actualisez ici pour tout débloquer.",
+        "features": {
+            "storage": {
+                "title": "Stockage privé",
+                "desc": "Support pour GitHub et WebDAV. Gardez vos données entre vos mains."
+            },
+            "autoSync": {
+                "title": "Synchronisation automatique",
+                "desc": "Synchronisez les signets automatiquement sans intervention manuelle, mises à jour en temps réel sur tous les appareils."
+            },
+            "configSync": {
+                "title": "Synchronisation cloud des paramètres",
+                "desc": "Les paramètres et les règles de synchronisation sont synchronisés avec votre compte, pas besoin de reconfigurer sur les nouveaux appareils."
+            },
+            "encryption": {
+                "title": "Chiffrement de bout en bout",
+                "desc": "Chiffrement militaire AES-256-GCM avant la synchronisation."
+            },
+            "timeMachine": {
+                "title": "Machine à remonter le temps",
+                "desc": "Contrôle de version basé sur Git. Revenez à n'importe quel moment."
+            },
+            "syncControl": {
+                "title": "Contrôle de synchronisation avancé",
+                "desc": "Téléchargement/chargement forcé manuel pour résoudre instantanément les conflits."
+            },
+            "audit": {
+                "title": "Journaux d'audit de synchronisation",
+                "desc": "Graphiques détaillés de l'historique de synchronisation et suivi d'activité."
+            },
+            "more": {
+                "title": "Plus de fonctionnalités premium",
+                "desc": "Mises à jour prioritaires et support technique professionnel."
+            }
+        }
+    },
+    "upgradeCard": {
+        "title": "Passer à Pro",
+        "description": "Débloquez des fonctionnalités avancées comme le stockage GitHub/WebDAV, la synchronisation cloud des paramètres, le chiffrement privé et la restauration par machine à remonter le temps.",
+        "button": "Débloquer maintenant"
+    },
+    "registrationDialog": {
+        "title": "Débloquer la synchronisation automatique",
+        "subtitle": "Abonnez-vous pour profiter des fonctionnalités suivantes",
+        "login": "Connexion à votre compte",
+        "later": "Peut-être plus tard",
+        "features": {
+            "autoSync": {
+                "title": "Synchronisation automatique",
+                "desc": "Synchronisez automatiquement les signets toutes les 10 minutes"
+            },
+            "history": {
+                "title": "Historique de synchronisation",
+                "desc": "Voir les 100 derniers enregistrements de synchronisation"
+            },
+            "cloudBackup": {
+                "title": "Sauvegarde cloud",
+                "desc": "Configurez des sauvegardes automatiques cloud et la synchronisation multi-appareils"
+            }
+        }
+    },
+    "messages": {
+        "startingSync": "Démarrage de la synchronisation...",
+        "triggerSyncFailed": "Échec du déclenchement de la synchronisation",
+        "settingsSaved": "Paramètres enregistrés automatiquement",
+        "saveFailed": "Échec de l'enregistrement des paramètres",
+        "statusHint": "Note de statut",
+        "error": "Erreur",
+        "safetyWarningTriggered": "Protection de sécurité de synchronisation déclenchée",
+        "safetyWarningDesc": "La synchronisation automatique a détecté un grand nombre de signets à supprimer et a été bloquée pour protection. Veuillez vérifier si vos données sont correctes. Si vous n'êtes pas sûr, exportez d'abord une sauvegarde dans la boîte à outils.",
+        "confirmAndSync": "Confirmer et synchroniser manuellement",
+        "loading": "Chargement..."
+    }
+}

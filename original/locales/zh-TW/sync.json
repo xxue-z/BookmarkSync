@@ -1,0 +1,53 @@
+{
+    "messages": {
+        "syncing": "同步中...",
+        "syncSuccess": "同步成功",
+        "syncFailed": "同步失敗",
+        "forcePushing": "強制上傳中...",
+        "forcePulling": "強制下載中...",
+        "creatingBackup": "建立本地備份...",
+        "backupComplete": "備份完成，繼續同步...",
+        "syncedTo": "已同步至{{storageType}}",
+        "noChanges": "未偵測到變更",
+        "localChanges": "{{count}}個本地變更",
+        "localChanges_other": "{{count}}個本地變更",
+        "remoteChanges": "{{count}}個遠端變更",
+        "remoteChanges_other": "{{count}}個遠端變更",
+        "added": "已新增{{count}}",
+        "updated": "已更新{{count}}",
+        "deleted": "已刪除{{count}}",
+        "firstSyncComplete": "首次同步完成：本地書籤已上傳",
+        "forcePullComplete": "強制下載完成：本地資料已完全覆蓋",
+        "localSyncComplete": "同步完成：本地變更已上傳",
+        "mergeSyncComplete": "同步完成：合併結果已上傳",
+        "noUpdatesNeeded": "同步完成：資料已一致",
+        "newDeviceSyncComplete": "新裝置首次同步完成：已智能合併本地和遠端書籤，自動去除重複項",
+        "performingMerge": "正在同步：已執行多方合併",
+        "syncInterrupted": "同步意外中斷",
+        "historyDescription": {
+            "stats": "(新增:{{added}}, 更新:{{updated}}, 刪除:{{deleted}})",
+            "terminal": "來自 {{clientName}}"
+        }
+    },
+    "notifications": {
+        "syncSuccess": "同步成功",
+        "syncFailed": "同步失敗",
+        "forcePushSuccess": "強制上傳成功",
+        "forcePullSuccess": "強制下載成功",
+        "forcePushFailed": "強制上傳失敗",
+        "forcePullFailed": "強制下載失敗",
+        "safetyProtection": "安全保護",
+        "safetyBlocked": "同步已阻止：將刪除{{count}}個書籤。請在設定中確認。",
+        "safetyBlockedGeneric": "同步已阻止：偵測到大量變更。",
+        "autoSyncDisabled": "BookmarkHub - 自動同步未啟用",
+        "autoSyncRequiresRegistration": "自動同步需要註冊帳戶",
+        "autoSyncPaused": "自動同步已暫停",
+        "operationCancelled": "操作已取消",
+        "backupFailed": "備份失敗"
+    },
+    "errors": {
+        "unsupportedStorageType": "不支援的儲存類型：{{type}}",
+        "autoSyncBlocked": "AUTO_SYNC_BLOCKED：{{reason}}",
+        "safetyError": "合併將刪除大量書籤，同步已阻止。"
+    }
+}

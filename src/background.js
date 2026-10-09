@@ -1,0 +1,784 @@
+var V = Object.defineProperty;
+var W = (s, t, e) =>
+  t in s
+    ? V(s, t, { enumerable: !0, configurable: !0, writable: !0, value: e })
+    : (s[t] = e);
+var y = (s, t, e) => W(s, typeof t != "symbol" ? t + "" : t, e);
+import {
+  u as r,
+  v as M,
+  s as g,
+  t as D,
+  b as o,
+  h as b,
+  k as v,
+  j as E,
+  g as k,
+  w as _,
+  S as I,
+  D as S,
+  i as A,
+  A as Q,
+  x as O,
+  y as B,
+  z as X,
+} from "./chunks/sentry--tCLaZao.js";
+import {
+  g as Z,
+  d as U,
+  c as tt,
+  L as et,
+  S as p,
+} from "./chunks/hash-Cx2ffm9Z.js";
+import "./chunks/vendor-utils-bU8bXqsc.js";
+import "./chunks/vendor-ui-Piys8gOI.js";
+import "./chunks/vendor-sentry-B3P1rFJ6.js";
+(function () {
+  try {
+    var s =
+      typeof window < "u"
+        ? window
+        : typeof global < "u"
+          ? global
+          : typeof globalThis < "u"
+            ? globalThis
+            : typeof self < "u"
+              ? self
+              : {};
+    s.SENTRY_RELEASE = { id: "bookmarkhub-extension@dev" };
+    var t = new s.Error().stack;
+    t &&
+      ((s._sentryDebugIds = s._sentryDebugIds || {}),
+      (s._sentryDebugIds[t] = "3d738f72-a4dc-4d19-9312-952d7393bb29"),
+      (s._sentryDebugIdIdentifier =
+        "sentry-dbid-3d738f72-a4dc-4d19-9312-952d7393bb29"));
+  } catch {}
+})();
+class P extends Error {
+  constructor(e, a, i = "") {
+    super(i);
+    y(this, "stats");
+    y(this, "threshold");
+    y(this, "message");
+    (this.stats = e),
+      (this.threshold = a),
+      (this.message = i),
+      (this.name = "SyncSafetyError");
+  }
+}
+class L {
+  constructor(t) {
+    y(this, "adapter");
+    y(this, "deviceName");
+    y(this, "encryptionConfig");
+    y(this, "formatJson");
+    y(this, "safeMode");
+    y(this, "isAutoSync", !1);
+    y(this, "STORAGE_KEY", "syncState");
+    y(this, "remoteTree", null);
+    y(this, "appSettings");
+    t.language && r.language !== t.language && r.changeLanguage(t.language),
+      (this.appSettings = t),
+      (this.adapter = Z(this.appSettings)),
+      (this.deviceName = t.deviceName),
+      (this.encryptionConfig = t.enableEncryption
+        ? { enabled: !0, key: t.encryptionKey }
+        : { enabled: !1 }),
+      (this.formatJson = t.formatJson),
+      (this.safeMode = {
+        enabled: t.enableSafeMode !== !1,
+        threshold: t.safeModeThreshold || 20,
+      }),
+      (this.remoteTree = null);
+  }
+  async sync(t = !1) {
+    try {
+      (this.isAutoSync = t), await M();
+      const e = await this.getSyncState();
+      let a = null;
+      try {
+        a = await this.adapter.downloadFile();
+      } catch (c) {
+        throw c;
+      }
+      let i,
+        n = null;
+      if (a && a.trim() !== "")
+        try {
+          n = await this.parseRemoteTree(a);
+        } catch (c) {
+          console.error("Failed to parse remote tree, treating as empty:", c),
+            (n = null);
+        }
+      return (
+        n
+          ? ((this.remoteTree = n),
+            e.lastRemoteSha && this.remoteTree.sha === e.lastRemoteSha
+              ? (i = await this.performLocalSync(e))
+              : (i = await this.performMerge(e)))
+          : (i = await this.performFirstSync(e)),
+        i
+      );
+    } catch (e) {
+      throw (console.error("Sync failed:", e), e);
+    }
+  }
+  async calculateChangeStats(t, e) {
+    return await g.secureCalculateStats(t, e);
+  }
+  async forcePush() {
+    await M();
+    let t;
+    return (
+      await g.register("force_sync", async () => {
+        t = await this._internalForcePush();
+      }),
+      await g.trigger("force_sync"),
+      t
+    );
+  }
+  async _internalForcePush() {
+    const t = await this.getSyncState();
+    return await this.performFirstSync(t);
+  }
+  async forcePull() {
+    await M();
+    let t;
+    return (
+      await g.register("force_sync", async () => {
+        t = await this._internalForcePull();
+      }),
+      await g.trigger("force_sync"),
+      t
+    );
+  }
+  async _internalForcePull() {
+    const t = await this.adapter.downloadFile(),
+      e = await this.parseRemoteTree(t);
+    if (!e) throw new Error(r.t("sync:errors.invalidRemoteData"));
+    const a = D(e.nodes),
+      i = await this.getSyncState(),
+      n = await o.bookmarks.getTree(),
+      { nodes: c } = b(n, i.idMapping || {}),
+      l = await this.calculateChangeStats(c, a),
+      d = await U(a, i.idMapping || {}, !0);
+    return (
+      await this.saveSyncState({
+        lastRemoteSha: e.sha,
+        uniqueId: e.uniqueId,
+        idMapping: d,
+        lastSyncedNodes: a,
+      }),
+      { message: r.t("sync:messages.forcePullComplete"), stats: l }
+    );
+  }
+  async performFirstSync(t) {
+    var u;
+    const e = await o.bookmarks.getTree(),
+      { nodes: a, idMapping: i } = b(e, t.idMapping || {}),
+      n = t.uniqueId || v(),
+      c = {
+        version: k(),
+        uniqueId: n,
+        clientInfo: { lastSyncedBy: this.deviceName, syncedAt: Date.now() },
+        sha: "",
+        nodes: E(a),
+      },
+      l = await this.calculateChangeStats(t.lastSyncedNodes || [], a),
+      { content: d, finalTree: C } = await this.prepareTreeForUpload(c);
+    return (
+      await ((u = this.adapter) == null ? void 0 : u.downloadFile()),
+      await this.adapter.uploadFile(
+        d,
+        await this.formatHistoryDescription(
+          r.t("sync:messages.firstSyncComplete"),
+          l,
+        ),
+      ),
+      await this.saveSyncState({
+        lastRemoteSha: C.sha,
+        uniqueId: n,
+        idMapping: i,
+        lastSyncedNodes: a,
+      }),
+      { message: r.t("sync:messages.firstSyncComplete"), stats: l }
+    );
+  }
+  async performLocalSync(t) {
+    const e = await o.bookmarks.getTree(),
+      { nodes: a, idMapping: i } = b(e, t.idMapping || {}),
+      n = await this.calculateChangeStats(t.lastSyncedNodes || [], a);
+    if (n.added === 0 && n.updated === 0 && n.deleted === 0)
+      return { message: r.t("sync:messages.noUpdatesNeeded"), stats: n };
+    await this.checkSafety(n);
+    const c = {
+        uniqueId: t.uniqueId,
+        version: k(),
+        clientInfo: { lastSyncedBy: this.deviceName, syncedAt: Date.now() },
+        sha: "",
+        nodes: E(a),
+      },
+      { content: l, finalTree: d } = await this.prepareTreeForUpload(c);
+    return (
+      await this.adapter.uploadFile(
+        l,
+        await this.formatHistoryDescription(
+          r.t("sync:messages.localSyncComplete"),
+          n,
+        ),
+      ),
+      await this.saveSyncState({
+        lastRemoteSha: d.sha,
+        uniqueId: t.uniqueId,
+        idMapping: i,
+        lastSyncedNodes: a,
+      }),
+      { message: r.t("sync:messages.localSyncComplete"), stats: n }
+    );
+  }
+  async performMerge(t) {
+    const e = this.remoteTree,
+      a = D(e == null ? void 0 : e.nodes),
+      i = await o.bookmarks.getTree(),
+      { nodes: n, idMapping: c } = b(i, t.idMapping || {}),
+      l = !t.lastRemoteSha && n.length > 0;
+    let d, C;
+    if (l)
+      (d = await g.smartMergeNewDevice(n, a)),
+        (C = r.t("sync:messages.newDeviceSyncComplete"));
+    else {
+      const z = t.lastSyncedNodes || [];
+      (d = await g.secureMergeNodes(z, n, a)),
+        (C = r.t("sync:messages.performingMerge"));
+    }
+    const u = await this.calculateChangeStats(n, d);
+    if (u.added === 0 && u.updated === 0 && u.deleted === 0)
+      return (
+        await this.saveSyncState({
+          lastRemoteSha: e.sha,
+          uniqueId: e.uniqueId,
+          idMapping: c,
+          lastSyncedNodes: n,
+        }),
+        { message: r.t("sync:messages.noUpdatesNeeded"), stats: u }
+      );
+    await this.checkSafety(u);
+    const G = await U(d, c, !1),
+      $ = {
+        ...e,
+        version: k(),
+        clientInfo: { lastSyncedBy: this.deviceName, syncedAt: Date.now() },
+        sha: "",
+        nodes: E(d),
+      },
+      { content: H, finalTree: j } = await this.prepareTreeForUpload($);
+    return (
+      await this.adapter.uploadFile(
+        H,
+        await this.formatHistoryDescription(
+          l
+            ? r.t("sync:messages.newDeviceSyncComplete")
+            : r.t("sync:messages.mergeSyncComplete"),
+          u,
+        ),
+      ),
+      (C = r.t("sync:messages.mergeSyncComplete")),
+      await this.saveSyncState({
+        lastRemoteSha: j.sha,
+        uniqueId: e.uniqueId,
+        idMapping: G,
+        lastSyncedNodes: d,
+      }),
+      { message: C, stats: u }
+    );
+  }
+  async parseRemoteTree(t) {
+    if (!t || t.trim() === "") return null;
+    try {
+      const e = JSON.parse(t);
+      if (e && e.bookmarks && !e.nodes)
+        return (
+          console.warn(
+            `Detected legacy data format (v${e.version}), migrating...`,
+          ),
+          this.migrateOldVersionData(e)
+        );
+      const a = e;
+      if (!a || !a.nodes)
+        return (
+          console.error("Invalid bookmark tree structure: missing nodes"), null
+        );
+      if (typeof a.nodes == "string") {
+        if (!this.encryptionConfig.enabled || !this.encryptionConfig.key)
+          throw new Error(
+            "Detected encrypted data, please input the correct encryption key in settings",
+          );
+        const i = await g.decryptUserNodes(a.nodes, this.encryptionConfig.key);
+        a.nodes = JSON.parse(i);
+      }
+      return a;
+    } catch (e) {
+      return console.error("Failed to parse remote content as JSON:", e), null;
+    }
+  }
+  async prepareTreeForUpload(t) {
+    const e = { ...t };
+    if (this.encryptionConfig.enabled && this.encryptionConfig.key) {
+      const n = JSON.stringify(e.nodes),
+        c = await g.encryptUserNodes(n, this.encryptionConfig.key);
+      e.nodes = c;
+    }
+    const a = typeof e.nodes == "string" ? e.nodes : JSON.stringify(e.nodes);
+    e.sha = await tt(a);
+    const i = this.formatJson ? 2 : void 0;
+    return { content: JSON.stringify(e, null, i), finalTree: e };
+  }
+  async getSyncState() {
+    return (
+      (await o.storage.local.get(this.STORAGE_KEY))[this.STORAGE_KEY] || {}
+    );
+  }
+  async checkSafety(t) {
+    if (!this.safeMode.enabled || !this.isAutoSync || t.deleted <= 0) return;
+    const e = t.totalBefore;
+    if (e <= 0) return;
+    const a = (t.deleted / e) * 100;
+    if (t.deleted > 10 && a >= this.safeMode.threshold)
+      throw (
+        (console.warn(
+          `[Safety Check] Blocked sync: ${t.deleted} deletes (${a.toFixed(2)}%) exceeds threshold ${this.safeMode.threshold}%`,
+        ),
+        new P(t, this.safeMode.threshold, r.t("sync:errors.safetyError")))
+      );
+  }
+  async saveSyncState(t) {
+    await o.storage.local.set({ [this.STORAGE_KEY]: t });
+  }
+  async formatHistoryDescription(t, e) {
+    const a = await _(),
+      i = r.t("sync:messages.historyDescription.stats", {
+        added: e.added,
+        updated: e.updated,
+        deleted: e.deleted,
+      }),
+      n = r.t("sync:messages.historyDescription.terminal", { clientName: a });
+    return `${t} ${i} ${n}`.trim();
+  }
+  migrateOldVersionData(t) {
+    const e = [],
+      a = {
+        ToolbarFolder: I.BAR,
+        UnfiledFolder: I.OTHER,
+        MobileFolder: I.MOBILE,
+      },
+      i = (n, c) => {
+        const l = {
+          id: c || v(),
+          title: n.title || "",
+          dateModified: t.createDate || Date.now(),
+        };
+        return (
+          n.url && (l.url = n.url),
+          n.children &&
+            Array.isArray(n.children) &&
+            (l.children = n.children.map((d) => i(d))),
+          l
+        );
+      };
+    return (
+      Array.isArray(t.bookmarks) &&
+        t.bookmarks.forEach((n) => {
+          const c = a[n.title];
+          c && e.push(i(n, c));
+        }),
+      {
+        version: k(),
+        uniqueId: v(),
+        clientInfo: {
+          lastSyncedBy: t.browser || "Legacy Browser",
+          syncedAt: t.createDate || Date.now(),
+        },
+        sha: "",
+        nodes: e,
+      }
+    );
+  }
+}
+async function q() {
+  try {
+    const s = await o.storage.sync.get("options");
+    if (!s.options) return !1;
+    let t;
+    try {
+      const i = s.options,
+        n = et.decompressFromEncodedURIComponent(i);
+      if (!n) throw new Error("Decompression returned empty string");
+      t = JSON.parse(n);
+    } catch (i) {
+      return (
+        console.error(
+          "[Migration] Failed to decompress or parse old settings:",
+          i,
+        ),
+        !1
+      );
+    }
+    const e = await o.storage.local.get("appSettings"),
+      a = { ...S, ...((e == null ? void 0 : e.appSettings) || {}) };
+    return (
+      t.githubToken &&
+        ((a.storageConfigs.gist.token = t.githubToken),
+        (a.storageType = "gist")),
+      t.gistID && (a.storageConfigs.gist.gistId = t.gistID),
+      t.gistFileName && (a.storageConfigs.gist.fileName = t.gistFileName),
+      await o.storage.local.set({ appSettings: a }),
+      await o.storage.sync.set({ options_migrated_backup: s.options }),
+      await o.storage.sync.remove("options"),
+      !0
+    );
+  } catch (s) {
+    return console.error("[Migration] Critical error during migration:", s), !1;
+  }
+}
+const N = "auto-sync-alarm",
+  F = "auth-check-alarm",
+  R = 3e3,
+  f = {
+    SYNCING: "#3B82F6",
+    SUCCESS: "#10B981",
+    ERROR: "#EF4444",
+    WARNING: "#F59E0B",
+  };
+let T = null;
+async function Y() {
+  var s;
+  if (
+    !((s = await o.storage.local.get("appSettings")) != null && s.appSettings)
+  ) {
+    const t = X(),
+      e = await _();
+    await o.storage.local.set({
+      appSettings: { ...S, language: t, deviceName: e },
+    });
+  }
+}
+o.runtime.onInstalled.addListener(async (s) => {
+  try {
+    if ((await A(), s.reason === "install")) {
+      await Y(), await q();
+      const t = `${Q.APP_URL}/getting-started`;
+      o.tabs.create({ url: t });
+    } else s.reason === "update" && (await Y(), await q());
+    await x(), await rt();
+  } catch (t) {
+    console.error("Error during onInstalled initialization:", t);
+  }
+}),
+  o.runtime.onMessage.addListener((s, t, e) => (at(s, e), !0)),
+  o.alarms.onAlarm.addListener((s) => {
+    s.name === N ? ot() : s.name === F && ct();
+  }),
+  o.storage.onChanged.addListener(async (s, t) => {
+    try {
+      t === "local" && s.appSettings && (await x());
+    } catch (e) {
+      console.error("Error handling storage changes:", e);
+    }
+  }),
+  A();
+async function J() {
+  var s, t, e;
+  try {
+    const a = (await o.storage.local.get("syncState")).syncState || {};
+    ((s = a.syncStatus) == null ? void 0 : s.lastStatus) === "syncing" &&
+      (t = a.syncStatus) != null &&
+      t.lastSyncTime &&
+      Date.now() - ((e = a.syncStatus) == null ? void 0 : e.lastSyncTime) >
+        3e5 &&
+      (console.warn("Recovering stuck sync state from previous session"),
+      await h({
+        lastStatus: "failure",
+        lastMessage: r.t(
+          "sync:messages.syncInterrupted",
+          "Sync interrupted unexpectedly",
+        ),
+      }),
+      await w("", "#000000"));
+  } catch (a) {
+    console.error("Failed to recover sync state:", a);
+  }
+}
+J();
+async function at(s, t) {
+  try {
+    if (typeof s != "object" || s === null || !("type" in s)) return;
+    const e = s;
+    if (e.type === "CLEAR_SYNC_ALARMS") {
+      await o.alarms.clear(N), t({ success: !0 });
+      return;
+    }
+    if (e.type === "SYNC_BOOKMARKS") {
+      const a = await o.storage.local.get("appSettings"),
+        i = e.settings || { ...S, ...(a.appSettings || {}) };
+      await nt();
+      const n = await K(i);
+      t({ success: !0, message: n });
+      return;
+    }
+    if (e.type === "FORCE_PUSH" || e.type === "FORCE_PULL") {
+      const a = e.type === "FORCE_PUSH" ? "push" : "pull",
+        i = await o.storage.local.get("appSettings"),
+        n = { ...S, ...(i.appSettings || {}) };
+      await g.register("force_sync", () => it(n, a));
+      const c = await g.trigger("force_sync");
+      t({ success: !0, message: c });
+      return;
+    }
+    if (e.type === "CHECK_STUCK_SYNC") {
+      await J(), t({ success: !0 });
+      return;
+    }
+  } catch (e) {
+    console.error("Message handling error:", e),
+      t({ success: !1, error: e instanceof Error ? e.message : String(e) });
+  }
+}
+async function h(s) {
+  const t = (await o.storage.local.get("syncState")).syncState || {},
+    e = t.syncStatus || {
+      lastSyncTime: 0,
+      lastStatus: "syncing",
+      lastMessage: "",
+    };
+  (t.syncStatus = {
+    ...e,
+    ...s,
+    lastSyncTime: s.lastStatus === "syncing" ? e.lastSyncTime : Date.now(),
+  }),
+    await o.storage.local.set({ syncState: t });
+}
+async function w(s, t, e) {
+  T && (clearTimeout(T), (T = null));
+  try {
+    await o.action.setBadgeText({ text: s }),
+      await o.action.setBadgeBackgroundColor({ color: t }),
+      e &&
+        (T = setTimeout(async () => {
+          await o.action.setBadgeText({ text: "" }), (T = null);
+        }, e));
+  } catch (a) {
+    console.error("Failed to update action badge:", a);
+  }
+}
+async function K(s, t = !1) {
+  let e;
+  try {
+    await w("\u21BB", f.SYNCING),
+      await h({
+        lastStatus: "syncing",
+        lastMessage: r.t("sync:messages.syncing"),
+      });
+    const a = new L(s),
+      { snapshot: i, count: n } = await p.captureSnapshot();
+    e = await p.addRecord({
+      timestamp: Date.now(),
+      type: t ? "auto" : "manual",
+      status: "syncing",
+      message: r.t("sync:messages.syncing"),
+      deviceName: s.deviceName || "Unknown Device",
+      storageType: s.storageType,
+      snapshot: i,
+      snapshotCount: n,
+      systemIdMapping: O(),
+    });
+    const { message: c, stats: l } = await a.sync(t);
+    return (
+      await w("\u2714", f.SUCCESS, R),
+      await h({ lastStatus: "success", lastMessage: c, lastChangeStats: l }),
+      e &&
+        (await p.updateRecord(e, { status: "success", message: c, stats: l })),
+      await m(
+        r.t("sync:notifications.syncSuccess"),
+        r.t("sync:messages.syncedTo", { storageType: s.storageType }),
+      ),
+      c
+    );
+  } catch (a) {
+    console.error("Sync failed:", a), await w("\u2718", f.ERROR, R);
+    const i = a instanceof Error ? a.message : String(a);
+    throw (
+      (await h({ lastStatus: "failure", lastMessage: i }),
+      e !== void 0
+        ? await p.updateRecord(e, { status: "failure", message: i })
+        : await p.addRecord({
+            timestamp: Date.now(),
+            type: t ? "auto" : "manual",
+            status: "failure",
+            message: i,
+            deviceName: s.deviceName || "Unknown Device",
+            storageType: s.storageType,
+          }),
+      await m(r.t("sync:notifications.syncFailed"), i),
+      a)
+    );
+  }
+}
+async function st(s) {
+  await w("!", f.ERROR);
+  const t = s
+    ? r.t("sync:notifications.safetyBlocked", { count: s.deleted })
+    : r.t("sync:notifications.safetyBlockedGeneric");
+  await m(r.t("sync:notifications.safetyProtection"), t);
+  const e = (await o.storage.local.get("syncState")).syncState || {};
+  (e.pendingSyncConfirmation = !0), await o.storage.local.set({ syncState: e });
+}
+async function nt() {
+  await w("", "#000000");
+  const s = (await o.storage.local.get("syncState")).syncState || {};
+  delete s.pendingSyncConfirmation, await o.storage.local.set({ syncState: s });
+}
+async function it(s, t) {
+  let e;
+  try {
+    const a =
+      t === "push"
+        ? r.t("sync:messages.forcePushing")
+        : r.t("sync:messages.forcePulling");
+    await w("\u21BB", f.SYNCING),
+      await h({ lastStatus: "syncing", lastMessage: a });
+    const i = new L(s);
+    try {
+      await h({
+        lastStatus: "syncing",
+        lastMessage: r.t("sync:messages.creatingBackup"),
+      });
+      const { snapshot: l, count: d } = await p.captureSnapshot();
+      (e = await p.addRecord({
+        timestamp: Date.now(),
+        type: t === "push" ? "force_push" : "force_pull",
+        status: "syncing",
+        message: r.t("sync:messages.creatingBackup"),
+        deviceName: s.deviceName || "Unknown Device",
+        storageType: s.storageType,
+        snapshot: l,
+        snapshotCount: d,
+        systemIdMapping: O(),
+      })),
+        await h({
+          lastStatus: "syncing",
+          lastMessage: r.t("sync:messages.backupComplete"),
+        });
+    } catch (l) {
+      console.error("Safety backup failed:", l);
+      const d = r.t("sync:notifications.backupFailed");
+      throw (
+        (await m(r.t("sync:notifications.operationCancelled"), d), new Error(d))
+      );
+    }
+    const { message: n, stats: c } =
+      t === "push" ? await i.forcePush() : await i.forcePull();
+    return (
+      await w("\u2714", f.SUCCESS, R),
+      await h({ lastStatus: "success", lastMessage: n, lastChangeStats: c }),
+      e !== void 0 &&
+        (await p.updateRecord(e, { status: "success", message: n, stats: c })),
+      await m(
+        t === "push"
+          ? r.t("sync:notifications.forcePushSuccess")
+          : r.t("sync:notifications.forcePullSuccess"),
+        n,
+      ),
+      n
+    );
+  } catch (a) {
+    console.error(`Force ${t} failed:`, a), await w("\u2718", f.ERROR, R);
+    const i = a instanceof Error ? a.message : String(a);
+    throw (
+      (await h({ lastStatus: "failure", lastMessage: i }),
+      e !== void 0 &&
+        (await p.updateRecord(e, { status: "failure", message: i })),
+      await m(
+        t === "push"
+          ? r.t("sync:notifications.forcePushFailed")
+          : r.t("sync:notifications.forcePullFailed"),
+        i,
+      ),
+      a)
+    );
+  }
+}
+async function ot() {
+  try {
+    const s = await o.storage.local.get("appSettings"),
+      t = { ...S, ...(s.appSettings || {}) };
+    if (!t.enableAutoSync) return;
+    const e = await B();
+    if (!e || !e.userId) {
+      console.warn("Auto-sync requires user registration"),
+        await m(
+          r.t("sync:notifications.autoSyncDisabled"),
+          r.t("sync:notifications.autoSyncRequiresRegistration"),
+        );
+      return;
+    }
+    await g.register("auto_sync", async () => {
+      await K(t, !0);
+    });
+    try {
+      await g.trigger("auto_sync");
+    } catch (a) {
+      if (a instanceof P) {
+        console.warn("[AutoSync] Blocked by safety threshold:", a.message),
+          await st(a.stats);
+        return;
+      }
+      if (a instanceof Error && a.message.startsWith("AUTO_SYNC_BLOCKED:")) {
+        const i = a.message.replace("AUTO_SYNC_BLOCKED: ", "");
+        await m(r.t("sync:notifications.autoSyncPaused"), i);
+      } else console.error("[Background] Auto-sync gate denied access:", a);
+    }
+  } catch (s) {
+    console.error("Automated sync wrapper failed:", s);
+  }
+}
+async function m(s, t) {
+  const e = await o.storage.local.get("appSettings");
+  ({ ...S, ...(e.appSettings || {}) }).enableNotifications &&
+    o.notifications.create({
+      type: "basic",
+      iconUrl: o.runtime.getURL("icons/dark/128.png"),
+      title: s,
+      message: t,
+    });
+}
+async function x() {
+  const s = await o.storage.local.get("appSettings"),
+    t = { ...S, ...(s.appSettings || {}) };
+  await o.alarms.clear(N),
+    t.enableAutoSync &&
+      t.syncInterval >= 5 &&
+      o.alarms.create(N, { periodInMinutes: t.syncInterval });
+}
+async function rt() {
+  await o.alarms.clear(F), o.alarms.create(F, { periodInMinutes: 60 });
+}
+async function ct() {
+  try {
+    const s = await B(),
+      t = s.type === "pro";
+    if ((!s.userId || !t) && (await o.alarms.get(N))) {
+      console.warn(
+        "Non-pro or unauthenticated user found with active sync alarm. Clearing...",
+      ),
+        await o.alarms.clear(N);
+      const e = (await o.storage.local.get("appSettings")).appSettings;
+      e != null &&
+        e.enableAutoSync &&
+        (await o.storage.local.set({
+          appSettings: { ...e, enableAutoSync: !1 },
+        }));
+    }
+  } catch (s) {
+    console.error("Failed to run auth check and cleanup:", s);
+  }
+}

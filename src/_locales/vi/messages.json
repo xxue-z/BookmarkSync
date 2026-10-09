@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "Mô tả extension",
+      "message": "BookmarkHub, đồng bộ bookmark giữa các trình duyệt"
+   },
+   "appName": {
+      "description": "Tên extension",
+      "message": "BookmarkHub - đồng bộ bookmark"
+   }
+}

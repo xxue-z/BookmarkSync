@@ -1,0 +1,51 @@
+{
+    "messages": {
+        "syncing": "Syncing...",
+        "syncSuccess": "Sync successful",
+        "syncFailed": "Sync failed",
+        "forcePushing": "Force uploading to cloud...",
+        "forcePulling": "Force restoring from cloud...",
+        "creatingBackup": "Creating local backup...",
+        "backupComplete": "Backup complete, continuing sync...",
+        "syncedTo": "Synced to {{storageType}}",
+        "noChanges": "No changes detected",
+        "localChanges": "{{count}} local change",
+        "localChanges_other": "{{count}} local changes",
+        "remoteChanges": "{{count}} remote change",
+        "remoteChanges_other": "{{count}} remote changes",
+        "added": "Added {{count}}",
+        "updated": "Updated {{count}}",
+        "deleted": "Deleted {{count}}",
+        "firstSyncComplete": "First sync completed: local bookmarks uploaded to remote",
+        "forcePullComplete": "Force download completed: cloud data fully overwritten to local",
+        "localSyncComplete": "Sync completed: local changes uploaded to remote",
+        "mergeSyncComplete": "Sync completed: merge result uploaded to remote",
+        "noUpdatesNeeded": "Sync completed: local and remote are consistent, no updates needed",
+        "newDeviceSyncComplete": "New device first sync completed: intelligently merged local and remote bookmarks, automatically removed duplicates",
+        "performingMerge": "Syncing: multi-way merge executed",
+        "syncInterrupted": "Sync interrupted unexpectedly"
+    },
+    "notifications": {
+        "syncSuccess": "Sync Successful",
+        "syncFailed": "Sync Failed",
+        "forcePushSuccess": "Force Upload Successful",
+        "forcePullSuccess": "Force Restore Successful",
+        "forcePushFailed": "Force Upload Failed",
+        "forcePullFailed": "Force Restore Failed",
+        "safetyProtection": "Sync Safety Protection",
+        "safetyBlocked": "Sync blocked: will delete {{count}} bookmarks. Please confirm in settings.",
+        "safetyBlockedGeneric": "Sync blocked: large number of changes detected.",
+        "autoSyncDisabled": "BookmarkHub - Auto Sync Not Enabled",
+        "autoSyncRequiresRegistration": "Auto sync requires account registration, please register in settings",
+        "autoSyncPaused": "Auto Sync Paused",
+        "operationCancelled": "Operation Cancelled",
+        "backupFailed": "Auto backup failed, force sync aborted to protect data. Please check device storage space."
+    },
+    "errors": {
+        "unsupportedStorageType": "Unsupported storage type: {{type}}",
+        "autoSyncBlocked": "AUTO_SYNC_BLOCKED: {{reason}}",
+        "safetyError": "Detected that merge will delete a large number of bookmarks, sync has been protectively blocked.",
+        "encryptionRequired": "Detected encrypted data, please input the correct encryption key in settings",
+        "decryptionFailed": "Decryption failed, please check if the encryption key is correct"
+    }
+}

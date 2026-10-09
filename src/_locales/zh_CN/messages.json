@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "扩展描述",
+      "message": "BookmarkHub，跨浏览器书签同步插件"
+   },
+   "appName": {
+      "description": "扩展名称",
+      "message": "BookmarkHub - 书签同步"
+   }
+}

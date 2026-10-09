@@ -1,0 +1,29 @@
+{
+    "title": "BookmarkHub",
+    "menu": {
+        "dashboard": "控制台",
+        "helpDocs": "帮助文档",
+        "feedback": "反馈问题",
+        "donate": "支持我们",
+        "rate": "好评支持",
+        "community": "加入社区",
+        "website": "官方网站",
+        "support": "技术支持",
+        "terms": "使用条款"
+    },
+    "stats": {
+        "localBookmarks": "本地书签",
+        "storageType": "存储方式",
+        "lastStatus": "最后状态",
+        "lastSync": "上次同步"
+    },
+    "autoSync": {
+        "title": "自动同步",
+        "description": "实时保持多端数据一致性"
+    },
+    "safetyWarning": {
+        "title": "已拦截大量删除",
+        "description": "请在设置中检查并手动同步"
+    },
+    "version": "V{{version}}"
+}

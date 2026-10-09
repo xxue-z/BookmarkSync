@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the extension",
+      "message": "BookmarkHub,sync bookmarks across browsers"
+   },
+   "appName": {
+      "description": "The name of the extension",
+      "message": "BookmarkHub - sync bookmarks "
+   }
+}

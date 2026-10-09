@@ -1,0 +1,29 @@
+{
+    "title": "BookmarkHub",
+    "menu": {
+        "dashboard": "ダッシュボード",
+        "helpDocs": "ヘルプドキュメント",
+        "feedback": "フィードバック",
+        "donate": "支援する",
+        "rate": "評価する",
+        "community": "コミュニティに参加",
+        "website": "公式サイト",
+        "support": "技術サポート",
+        "terms": "利用規約"
+    },
+    "stats": {
+        "localBookmarks": "ローカルブックマーク",
+        "storageType": "ストレージタイプ",
+        "lastStatus": "最終ステータス",
+        "lastSync": "最終同期"
+    },
+    "autoSync": {
+        "title": "自動同期",
+        "description": "デバイス間でリアルタイムにデータを一貫性に保つ"
+    },
+    "safetyWarning": {
+        "title": "大量削除がブロックされました",
+        "description": "設定で確認して手動で同期してください"
+    },
+    "version": "V{{version}}"
+}

@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "Die Beschreibung der Erweiterung",
+      "message": "BookmarkHub, Lesezeichen zwischen Browsern synchronisieren"
+   },
+   "appName": {
+      "description": "Der Name der Erweiterung",
+      "message": "BookmarkHub - Lesezeichen synchronisieren"
+   }
+}

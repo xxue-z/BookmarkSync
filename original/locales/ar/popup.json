@@ -1,0 +1,29 @@
+{
+    "title": "BookmarkHub",
+    "menu": {
+        "dashboard": "لوحة التحكم",
+        "helpDocs": "التوثيق",
+        "feedback": "الملاحظات",
+        "donate": "دعمنا",
+        "rate": "قيمنا",
+        "community": "انضم للمجتمع",
+        "website": "الموقع الرسمي",
+        "support": "الدعم",
+        "terms": "الشروط"
+    },
+    "stats": {
+        "localBookmarks": "الإشارات المحلية",
+        "storageType": "نوع التخزين",
+        "lastStatus": "آخر حالة",
+        "lastSync": "آخر مزامنة"
+    },
+    "autoSync": {
+        "title": "المزامنة التلقائية",
+        "description": "حافظ على تناسق البيانات عبر الأجهزة"
+    },
+    "safetyWarning": {
+        "title": "تم حظر الحذف الجماعي",
+        "description": "تحقق من الإعدادات ومزامنة يدوياً"
+    },
+    "version": "V{{version}}"
+}

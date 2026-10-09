@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "擴充功能描述",
+      "message": "BookmarkHub，跨瀏覽器書籤同步工具"
+   },
+   "appName": {
+      "description": "擴充功能名稱",
+      "message": "BookmarkHub - 書籤同步"
+   }
+}

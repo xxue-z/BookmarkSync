@@ -1,0 +1,29 @@
+{
+    "title": "BookmarkHub",
+    "menu": {
+        "dashboard": "Tableau de bord",
+        "helpDocs": "Documentation d'aide",
+        "feedback": "Commentaires",
+        "donate": "Soutenez-nous",
+        "rate": "Notez-nous",
+        "community": "Rejoindre la communauté",
+        "website": "Site officiel",
+        "support": "Support technique",
+        "terms": "Conditions d'utilisation"
+    },
+    "stats": {
+        "localBookmarks": "Signets locaux",
+        "storageType": "Type de stockage",
+        "lastStatus": "Dernier statut",
+        "lastSync": "Dernière synchronisation"
+    },
+    "autoSync": {
+        "title": "Synchronisation automatique",
+        "description": "Gardez les données cohérentes entre les appareils en temps réel"
+    },
+    "safetyWarning": {
+        "title": "Suppression massive bloquée",
+        "description": "Veuillez vérifier dans les paramètres et synchroniser manuellement"
+    },
+    "version": "V{{version}}"
+}

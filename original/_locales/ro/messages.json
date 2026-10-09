@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "Descrierea extensiei",
+      "message": "BookmarkHub, sincronizează semnele de carte între browsere"
+   },
+   "appName": {
+      "description": "Numele extensiei",
+      "message": "BookmarkHub - sincronizare semne de carte"
+   }
+}

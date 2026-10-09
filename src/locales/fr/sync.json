@@ -1,0 +1,49 @@
+{
+    "messages": {
+        "syncing": "Synchronisation...",
+        "syncSuccess": "Synchronisation réussie",
+        "syncFailed": "Synchronisation échouée",
+        "forcePushing": "Téléchargement forcé vers le cloud...",
+        "forcePulling": "Restauration forcée depuis le cloud...",
+        "creatingBackup": "Création de la sauvegarde locale...",
+        "backupComplete": "Sauvegarde terminée, continuation de la synchronisation...",
+        "syncedTo": "Synchronisé avec {{storageType}}",
+        "noChanges": "Aucun changement détecté",
+        "localChanges": "{{count}} changement local",
+        "localChanges_other": "{{count}} changements locaux",
+        "remoteChanges": "{{count}} changement distant",
+        "remoteChanges_other": "{{count}} changements distants",
+        "added": "Ajouté {{count}}",
+        "updated": "Mis à jour {{count}}",
+        "deleted": "Supprimé {{count}}",
+        "firstSyncComplete": "Première synchronisation terminée : signets locaux téléchargés vers le distant",
+        "forcePullComplete": "Téléchargement forcé terminé : données cloud entièrement écrasées en local",
+        "localSyncComplete": "Synchronisation terminée : changements locaux téléchargés vers le distant",
+        "mergeSyncComplete": "Synchronisation terminée : résultat de la fusion téléchargé vers le distant",
+        "noUpdatesNeeded": "Synchronisation terminée : local et distant sont cohérents, aucune mise à jour nécessaire",
+        "newDeviceSyncComplete": "Première synchronisation du nouvel appareil terminée : signets locaux et distants intelligemment fusionnés, doublons automatiquement supprimés",
+        "performingMerge": "Synchronisation : fusion multiple exécutée",
+        "syncInterrupted": "Synchronisation interrompue de manière inattendue"
+    },
+    "notifications": {
+        "syncSuccess": "Synchronisation réussie",
+        "syncFailed": "Synchronisation échouée",
+        "forcePushSuccess": "Téléchargement forcé réussi",
+        "forcePullSuccess": "Restauration forcée réussie",
+        "forcePushFailed": "Échec du téléchargement forcé",
+        "forcePullFailed": "Échec de la restauration forcée",
+        "safetyProtection": "Protection de sécurité de synchronisation",
+        "safetyBlocked": "Synchronisation bloquée : {{count}} signets seront supprimés. Veuillez confirmer dans les paramètres.",
+        "safetyBlockedGeneric": "Synchronisation bloquée : un grand nombre de changements détectés.",
+        "autoSyncDisabled": "BookmarkHub - Synchronisation automatique non activée",
+        "autoSyncRequiresRegistration": "La synchronisation automatique nécessite un enregistrement de compte, veuillez vous enregistrer dans les paramètres",
+        "autoSyncPaused": "Synchronisation automatique en pause",
+        "operationCancelled": "Opération annulée",
+        "backupFailed": "Sauvegarde automatique échouée, synchronisation forcée abandonnée pour protéger les données. Veuillez vérifier l'espace de stockage de l'appareil."
+    },
+    "errors": {
+        "unsupportedStorageType": "Type de stockage non pris en charge : {{type}}",
+        "autoSyncBlocked": "AUTO_SYNC_BLOCKED : {{reason}}",
+        "safetyError": "Détection que la fusion supprimera un grand nombre de signets, la synchronisation a été bloquée de manière protective."
+    }
+}
