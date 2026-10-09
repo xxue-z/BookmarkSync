@@ -2,9 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Панель",
-        "donate": "Поддержать",
         "rate": "Оценить",
-        "community": "Сообщество",
         "website": "Веб-сайт",
         "support": "Поддержка",
         "terms": "Условия"

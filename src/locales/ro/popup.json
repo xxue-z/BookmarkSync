@@ -2,9 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Panou",
-        "donate": "Donație",
         "rate": "Evaluare",
-        "community": "Comunitate",
         "website": "Site",
         "support": "Suport",
         "terms": "Termeni"

@@ -2,9 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Πίνακας ελέγχου",
-        "donate": "Δωρεά",
         "rate": "Βαθμολογία",
-        "community": "Κοινότητα",
         "website": "Ιστοσελίδα",
         "support": "Υποστήριξη",
         "terms": "Όροι"
