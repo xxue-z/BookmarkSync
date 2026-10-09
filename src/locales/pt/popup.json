@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Painel",
-        "rate": "Avalie-nos",
-        "website": "Site oficial",
-        "support": "Suporte técnico",
-        "terms": "Termos de serviço"
+        "rate": "Avalie-nos"
     },
     "stats": {
         "localBookmarks": "Favoritos locais",

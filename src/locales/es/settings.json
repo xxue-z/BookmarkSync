@@ -321,9 +321,6 @@
             "thanksDescription": "Gracias a todos los usuarios que enviaron código, reportaron errores y proporcionaron sugerencias. También gracias a excelentes proyectos de código abierto como lucide-react, shadcn/ui por su ayuda."
         },
         "footer": {
-            "terms": "Términos de servicio",
-            "privacy": "Política de privacidad",
-            "website": "Sitio web oficial",
             "copyright": "© {{year}} BookmarkSync. Liberado con amor."
         }
     },

@@ -279,9 +279,6 @@
             "thanksDescription": "Ευχαριστούμε όλους τους συντελεστές"
         },
         "footer": {
-            "terms": "Όροι",
-            "privacy": "Ιδιωτικότητα",
-            "website": "Ιστοσελίδα",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

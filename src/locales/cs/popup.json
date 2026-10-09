@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Dashboard",
-        "rate": "Ohodnotit",
-        "website": "Webová stránka",
-        "support": "Podpora",
-        "terms": "Podmínky"
+        "rate": "Ohodnotit"
     },
     "stats": {
         "localBookmarks": "Místní záložky",

@@ -284,9 +284,6 @@
             "thanksDescription": "شكراً لكل المساهمين"
         },
         "footer": {
-            "terms": "الشروط",
-            "privacy": "الخصوصية",
-            "website": "الموقع",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

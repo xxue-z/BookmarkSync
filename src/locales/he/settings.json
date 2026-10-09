@@ -279,9 +279,6 @@
             "thanksDescription": "תודה לכל התורמים"
         },
         "footer": {
-            "terms": "תנאים",
-            "privacy": "פרטיות",
-            "website": "אתר",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Dashboard",
-        "rate": "Mag-rate",
-        "website": "Website",
-        "support": "Suporta",
-        "terms": "Mga termino"
+        "rate": "Mag-rate"
     },
     "stats": {
         "localBookmarks": "Mga lokal na bookmark",

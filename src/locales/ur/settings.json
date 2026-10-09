@@ -279,9 +279,6 @@
             "thanksDescription": "تمام تعاون کرنے والوں کا شکریہ"
         },
         "footer": {
-            "terms": "شرائط",
-            "privacy": "رازداری",
-            "website": "ویب سائٹ",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

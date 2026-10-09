@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Dashboard",
-        "rate": "Bewerten Sie uns",
-        "website": "Offizielle Website",
-        "support": "Technischer Support",
-        "terms": "Nutzungsbedingungen"
+        "rate": "Bewerten Sie uns"
     },
     "stats": {
         "localBookmarks": "Lokale Lesezeichen",

@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "대시보드",
-        "rate": "평가",
-        "website": "웹사이트",
-        "support": "지원",
-        "terms": "약관"
+        "rate": "평가"
     },
     "stats": {
         "localBookmarks": "로컬 북마크",

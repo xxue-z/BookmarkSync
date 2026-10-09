@@ -279,9 +279,6 @@
             "thanksDescription": "Cảm ơn tất cả người đóng góp"
         },
         "footer": {
-            "terms": "Điều khoản",
-            "privacy": "Quyền riêng tư",
-            "website": "Trang web",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

@@ -279,9 +279,6 @@
             "thanksDescription": "Köszönjük minden közreműködőnek"
         },
         "footer": {
-            "terms": "Feltételek",
-            "privacy": "Adatvédelem",
-            "website": "Weboldal",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

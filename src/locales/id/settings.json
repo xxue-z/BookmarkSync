@@ -284,9 +284,6 @@
             "thanksDescription": "Terima kasih untuk semua kontributor"
         },
         "footer": {
-            "terms": "Ketentuan",
-            "privacy": "Privasi",
-            "website": "Situs web",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

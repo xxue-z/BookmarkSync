@@ -279,9 +279,6 @@
             "thanksDescription": "感謝所有貢獻者"
         },
         "footer": {
-            "terms": "條款",
-            "privacy": "隱私",
-            "website": "網站",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

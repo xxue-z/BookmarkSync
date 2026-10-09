@@ -320,9 +320,6 @@
             "thanksDescription": "Спасибо всем кто помог"
         },
         "footer": {
-            "terms": "Условия",
-            "privacy": "Политика",
-            "website": "Сайт",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

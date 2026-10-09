@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Dashboard",
-        "rate": "Beoordelen",
-        "website": "Website",
-        "support": "Ondersteuning",
-        "terms": "Voorwaarden"
+        "rate": "Beoordelen"
     },
     "stats": {
         "localBookmarks": "Lokale bladwijzers",

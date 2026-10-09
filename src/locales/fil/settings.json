@@ -279,9 +279,6 @@
             "thanksDescription": "Salamat sa lahat ng contributors"
         },
         "footer": {
-            "terms": "Mga termino",
-            "privacy": "Privacy",
-            "website": "Website",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Πίνακας ελέγχου",
-        "rate": "Βαθμολογία",
-        "website": "Ιστοσελίδα",
-        "support": "Υποστήριξη",
-        "terms": "Όροι"
+        "rate": "Βαθμολογία"
     },
     "stats": {
         "localBookmarks": "Τοπικοί σελιδοδείκτες",

@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Panel",
-        "rate": "Califícanos",
-        "website": "Sitio web oficial",
-        "support": "Soporte técnico",
-        "terms": "Términos de servicio"
+        "rate": "Califícanos"
     },
     "stats": {
         "localBookmarks": "Marcadores locales",

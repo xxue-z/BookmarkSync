@@ -279,9 +279,6 @@
             "thanksDescription": "기여자에게 감사"
         },
         "footer": {
-            "terms": "약관",
-            "privacy": "개인정보",
-            "website": "웹사이트",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

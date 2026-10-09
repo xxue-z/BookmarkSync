@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Irányítópult",
-        "rate": "Értékelés",
-        "website": "Weboldal",
-        "support": "Támogatás",
-        "terms": "Feltételek"
+        "rate": "Értékelés"
     },
     "stats": {
         "localBookmarks": "Helyi könyvjelzők",

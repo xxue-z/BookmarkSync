@@ -279,9 +279,6 @@
             "thanksDescription": "Dank aan alle bijdragers"
         },
         "footer": {
-            "terms": "Voorwaarden",
-            "privacy": "Privacy",
-            "website": "Website",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

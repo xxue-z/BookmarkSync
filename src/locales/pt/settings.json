@@ -321,9 +321,6 @@
             "thanksDescription": "Obrigado a todos os usuários que enviaram código, reportaram bugs e forneceram sugestões."
         },
         "footer": {
-            "terms": "Termos de serviço",
-            "privacy": "Política de privacidade",
-            "website": "Site oficial",
             "copyright": "© {{year}} BookmarkSync."
         }
     },

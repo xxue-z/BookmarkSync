@@ -3733,38 +3733,7 @@ function Za() {
       e.jsxs("div", {
         className: "flex flex-col items-center gap-4 pt-4 text-center",
         children: [
-          e.jsxs("div", {
-            className: "flex items-center gap-6",
-            children: [
-              e.jsx("a", {
-                href: "#",
-                onClick: (n) => {
-                  n.preventDefault(), Z("/terms");
-                },
-                className:
-                  "text-sm text-muted-foreground hover:text-primary transition-colors",
-                children: s("about.footer.terms"),
-              }),
-              e.jsx("a", {
-                href: "#",
-                onClick: (n) => {
-                  n.preventDefault(), Z("/privacy");
-                },
-                className:
-                  "text-sm text-muted-foreground hover:text-primary transition-colors",
-                children: s("about.footer.privacy"),
-              }),
-              e.jsx("a", {
-                href: "#",
-                onClick: (n) => {
-                  n.preventDefault(), Z("/");
-                },
-                className:
-                  "text-sm text-muted-foreground hover:text-primary transition-colors",
-                children: s("about.footer.website"),
-              }),
-            ],
-          }),
+null,
           e.jsx("p", {
             className: "text-xs text-muted-foreground",
             children: s("about.footer.copyright", {

@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Bảng điều khiển",
-        "rate": "Đánh giá",
-        "website": "Trang web",
-        "support": "Hỗ trợ",
-        "terms": "Điều khoản"
+        "rate": "Đánh giá"
     },
     "stats": {
         "localBookmarks": "Đánh dấu cục bộ",

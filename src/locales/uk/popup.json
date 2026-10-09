@@ -2,10 +2,7 @@
     "title": "BookmarkSync",
     "menu": {
         "dashboard": "Панель",
-        "rate": "Оцінити",
-        "website": "Веб-сайт",
-        "support": "Підтримка",
-        "terms": "Умови"
+        "rate": "Оцінити"
     },
     "stats": {
         "localBookmarks": "Локальні закладки",
