@@ -108,7 +108,7 @@
             "branchLabel": "الفرع",
             "branchPlaceholder": "main",
             "pathLabel": "المسار",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "العنوان:"
         },
         "webdav": {
@@ -121,7 +121,7 @@
             "usernamePlaceholder": "اسم المستخدم",
             "passwordLabel": "كلمة المرور",
             "pathLabel": "المسار",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist",
@@ -133,7 +133,7 @@
             "gistIdLabel": "معرف Gist",
             "gistIdPlaceholder": "32 حرف",
             "filenameLabel": "اسم الملف",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "إنشاء Gist",
             "createSuccess": "تم! المعرف: {{id}}",
             "createError": "فشل"
@@ -279,9 +279,6 @@
         "support": {
             "title": "الدعم",
             "description": "مشروع مفتوح المصدر.",
-            "proTitle": "نسخة Pro",
-            "proDescription": "اشترك للميزات الإضافية",
-            "proButton": "المزيد",
             "feedbackTitle": "الملاحظات",
             "feedbackDescription": "مشاكل؟ Issue على GitHub",
             "githubButton": "GitHub",
@@ -299,9 +296,6 @@
     "dashboard": {
         "title": "لوحة التحكم",
         "subtitle": "نظرة عامة",
-        "proVersion": "Pro",
-        "freeVersion": "مجاني",
-        "upgrade": "ترقية",
         "bookmarkCount": "إجمالي الإشارات",
         "bookmarkCountDesc": "الإشارات في المتصفح",
         "storageType": "التخزين",
@@ -379,33 +373,6 @@
         "errorInvalidData": "صيغة خاطئة",
         "errorRestoreFailed": "فشل الاستعادة",
         "gistVersionMessage": "الإصدار {{date}}",
-        "githubUser": "المستخدم",
-        "teaser": {
-            "title": "آلة الزمن",
-            "description": "عُد للوراء",
-            "previewTitle": "معاينة",
-            "unlockText": "ارقي إلى Pro",
-            "feature1Title": "إصدارات Git",
-            "feature1Desc": "لا تفقد بياناتك",
-            "feature2Title": "نقرة واحدة",
-            "feature2Desc": "استعادة سريعة",
-            "upgradeButton": "إطلاق",
-            "userTrustText": "أكثر من 10,000 مستخدم",
-            "premiumFeature": "ميزة مميزة",
-            "mock": {
-                "v1": "منذ 10 دقائق",
-                "v1Msg": "من Chrome",
-                "v2": "من ساعة",
-                "v2Msg": "+12 رابط",
-                "v3": "أمس",
-                "v3Msg": "تنظيف",
-                "v4": "من يومين",
-                "v4Msg": "+11",
-                "v5": "من يومين",
-                "v5Msg": "+20",
-                "authorWork": "العمل",
-                "authorMobile": "الهاتف"
-            }
-        }
+        "githubUser": "المستخدم"
     }
 }

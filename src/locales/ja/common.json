@@ -4,8 +4,6 @@
         "syncing": "同期中...",
         "settings": "設定",
         "more": "もっと",
-        "login": "ログイン",
-        "logout": "ログアウト",
         "save": "保存",
         "cancel": "キャンセル",
         "confirm": "確認",
@@ -13,8 +11,7 @@
         "edit": "編集",
         "close": "閉じる",
         "back": "戻る",
-        "next": "次へ",
-        "upgrade": "アップグレード"
+        "next": "次へ"
     },
     "labels": {
         "language": "言語",
@@ -30,8 +27,7 @@
         "lastSync": "最終同期",
         "status": "ステータス",
         "localBookmarks": "ローカルブックマーク",
-        "remoteStorage": "リモートストレージ",
-        "pro": "プロ"
+        "remoteStorage": "リモートストレージ"
     },
     "status": {
         "syncing": "同期中",
@@ -105,14 +101,6 @@
         "tutorial": "チュートリアル",
         "feedback": "フィードバック"
     },
-    "navUser": {
-        "notLoggedIn": "未ログイン",
-        "clickToLogin": "クリックしてログイン",
-        "accountSettings": "アカウント設定",
-        "manageSubscription": "サブスクリプション管理",
-        "upgradePro": "プロにアップグレード",
-        "logout": "ログアウト"
-    },
     "activityGraph": {
         "title": "最近の同期アクティビティ",
         "subtitle": "過去10ヶ月のブックマーク同期頻度",
@@ -123,78 +111,6 @@
         "wed": "水",
         "fri": "金",
         "syncCount": "{{date}}: {{count}}回の同期"
-    },
-    "upgradeDialog": {
-        "title": "プロにアップグレード",
-        "subtitle": "高度な機能をロック解除してブックマーク管理を強化",
-        "proMember": "プロフェッショナルメンバー",
-        "proMemberDesc": "すべてのプレミアム機能をロック解除しました。ご支援ありがとうございます！",
-        "close": "閉じる",
-        "refreshStatus": "ステータス更新",
-        "refreshing": "更新中...",
-        "paidNote": "すでに支払いましたか？右側で更新をクリック",
-        "goToPricing": "ウェブサイトで購読",
-        "accountPromotion": "アカウントをアップグレード",
-        "accountPromotionDesc": "プロ機能は同期アカウントにリンクされています。ウェブサイトで購読してから、ここを更新してすべてをロック解除してください。",
-        "features": {
-            "storage": {
-                "title": "プライベートストレージ",
-                "desc": "GitHubとWebDAVをサポート。データを自分の手で管理。"
-            },
-            "autoSync": {
-                "title": "自動同期",
-                "desc": "ブックマークを自動的に手動介入なしで同期、リアルタイム更新。"
-            },
-            "configSync": {
-                "title": "設定クラウド同期",
-                "desc": "設定と同期ルールはアカウントと同期 нов устройства."
-            },
-            "encryption": {
-                "title": "エンドツーエンド暗号化",
-                "desc": "同期前に軍用AES-256-GCM暗号化。"
-            },
-            "timeMachine": {
-                "title": "タイムマシン",
-                "desc": "Gitベースのバージョン管理。任意の時点でロールバック。"
-            },
-            "syncControl": {
-                "title": "高度な同期コントロール",
-                "desc": "競合を即座に解決するための手動強制アップロード/ダウンロード。"
-            },
-            "audit": {
-                "title": "同期監査ログ",
-                "desc": "詳細な同期履歴グラフとアクティビティ追跡。"
-            },
-            "more": {
-                "title": "その他のプレミアム機能",
-                "desc": "優先更新とプロフェッショナルな技術サポート。"
-            }
-        }
-    },
-    "upgradeCard": {
-        "title": "プロにアップグレード",
-        "description": "GitHub/WebDAVストレージ、設定クラウド同期、プライベート暗号化、タイムマシンロールバックなどの高度な機能をロック解除。",
-        "button": "今すぐロック解除"
-    },
-    "registrationDialog": {
-        "title": "自動同期をロック解除",
-        "subtitle": "購読して以下の機能をお楽しみください",
-        "login": "アカウントにログイン",
-        "later": "後で",
-        "features": {
-            "autoSync": {
-                "title": "自動同期",
-                "desc": "10分ごとにブックマークを自動的に同期"
-            },
-            "history": {
-                "title": "同期履歴",
-                "desc": "最新の100件の同期記録を表示"
-            },
-            "cloudBackup": {
-                "title": "クラウドバックアップ",
-                "desc": "自動クラウドバックアップとマルチデバイス同期を設定"
-            }
-        }
     },
     "messages": {
         "startingSync": "同期を開始...",

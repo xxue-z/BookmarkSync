@@ -103,7 +103,7 @@
             "branchLabel": "Nhánh",
             "branchPlaceholder": "main",
             "pathLabel": "Đường dẫn",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Địa chỉ:"
         },
         "webdav": {
@@ -116,7 +116,7 @@
             "usernamePlaceholder": "người dùng",
             "passwordLabel": "Mật khẩu",
             "pathLabel": "Đường dẫn",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist",
@@ -128,7 +128,7 @@
             "gistIdLabel": "ID Gist",
             "gistIdPlaceholder": "32 ký tự",
             "filenameLabel": "Tên file",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Tạo Gist",
             "createSuccess": "Tạo thành công! ID: {{id}}",
             "createError": "Thất bại"
@@ -274,9 +274,6 @@
         "support": {
             "title": "Hỗ trợ",
             "description": "Dự án mã nguồn mở.",
-            "proTitle": "Phiên bản Pro",
-            "proDescription": "Đăng ký để có thêm tính năng",
-            "proButton": "Tìm hiểu thêm",
             "feedbackTitle": "Phản hồi",
             "feedbackDescription": "Vấn đề? Issue trên GitHub",
             "githubButton": "GitHub",
@@ -294,9 +291,6 @@
     "dashboard": {
         "title": "Bảng điều khiển",
         "subtitle": "Tổng quan",
-        "proVersion": "Pro",
-        "freeVersion": "Miễn phí",
-        "upgrade": "Nâng cấp",
         "bookmarkCount": "Tổng đánh dấu",
         "bookmarkCountDesc": "Đánh dấu trong trình duyệt",
         "storageType": "Lưu trữ",
@@ -374,33 +368,6 @@
         "errorInvalidData": "Định dạng không hợp lệ",
         "errorRestoreFailed": "Khôi phục thất bại",
         "gistVersionMessage": "Phiên bản {{date}}",
-        "githubUser": "Người dùng",
-        "teaser": {
-            "title": "Máy thời gian",
-            "description": "Quay về quá khứ",
-            "previewTitle": "Xem trước",
-            "unlockText": "Nâng cấp Pro",
-            "feature1Title": "Phiên bản Git",
-            "feature1Desc": "Không mất dữ liệu",
-            "feature2Title": "Một cú nhấp",
-            "feature2Desc": "Khôi phục nhanh",
-            "upgradeButton": "Mở khóa",
-            "userTrustText": "10.000+ người dùng",
-            "premiumFeature": "Premium",
-            "mock": {
-                "v1": "10 phút trước",
-                "v1Msg": "Từ Chrome",
-                "v2": "1 giờ trước",
-                "v2Msg": "+12 liên kết",
-                "v3": "Hôm qua",
-                "v3Msg": "Dọn dẹp",
-                "v4": "2 ngày trước",
-                "v4Msg": "+11",
-                "v5": "2 ngày trước",
-                "v5Msg": "+20",
-                "authorWork": "Công việc",
-                "authorMobile": "Di động"
-            }
-        }
+        "githubUser": "Người dùng"
     }
 }

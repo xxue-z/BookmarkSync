@@ -109,7 +109,7 @@
             "branchLabel": "Rama (Opcional)",
             "branchPlaceholder": "main",
             "pathLabel": "Ruta del archivo",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Dirección del repositorio:"
         },
         "webdav": {
@@ -124,7 +124,7 @@
             "passwordLabel": "Contraseña de aplicación",
             "passwordNote": "Se recomienda altamente usar una 'Contraseña de aplicación' en lugar de tu contraseña principal.",
             "pathLabel": "Ruta del archivo",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "Configuración de GitHub Gist",
@@ -137,7 +137,7 @@
             "gistIdLabel": "ID de Gist",
             "gistIdPlaceholder": "Cadena hexadecimal de 32 caracteres",
             "filenameLabel": "Nombre de archivo",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Crear Gist",
             "creatingGist": "Creando...",
             "gistAddr": "Dirección del Gist:",
@@ -161,7 +161,7 @@
             "branchLabel": "Rama (Opcional)",
             "branchPlaceholder": "master",
             "pathLabel": "Ruta del archivo",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Dirección del repositorio:"
         },
         "gitlab": {
@@ -177,7 +177,7 @@
             "branchLabel": "Rama (Opcional)",
             "branchPlaceholder": "main",
             "pathLabel": "Ruta del archivo",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Dirección del repositorio:"
         },
         "googledrive": {
@@ -188,7 +188,7 @@
             "tokenPlaceholder": "Token de acceso OAuth2",
             "authorize": "Autorizar",
             "filenameLabel": "Nombre de archivo",
-            "filenamePlaceholder": "bookmarkhub.json"
+            "filenamePlaceholder": "bookmarksync.json"
         },
         "dropbox": {
             "title": "Configuración de Dropbox",
@@ -198,7 +198,7 @@
             "tokenPlaceholder": "Token de acceso Dropbox",
             "authorize": "Autorizar",
             "pathLabel": "Ruta del archivo",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "onedrive": {
             "title": "Configuración de OneDrive",
@@ -208,7 +208,7 @@
             "tokenPlaceholder": "Token de Microsoft Graph",
             "authorize": "Autorizar",
             "pathLabel": "Ruta del archivo",
-            "pathPlaceholder": "bookmarkhub.json"
+            "pathPlaceholder": "bookmarksync.json"
         },
         "s3": {
             "title": "Configuración de almacenamiento compatible con S3",
@@ -316,9 +316,6 @@
         "support": {
             "title": "Apoya el desarrollo continuo",
             "description": "BookmarkSync es un proyecto de código abierto mantenido por desarrolladores individuales. Tu apoyo es la mayor motivación para las actualizaciones continuas.",
-            "proTitle": "¿Quieres funciones más avanzadas?",
-            "proDescription": "Suscríbete a la versión Pro para desbloquear instantáneas de historial, copias de seguridad automáticas, más nodos de almacenamiento y soporte técnico prioritario.",
-            "proButton": "Acerca de Pro",
             "feedbackTitle": "Comentarios y sugerencias",
             "feedbackDescription": "¿Encontraste algún problema o quieres proporcionar sugerencias? No dudes en enviar un Issue en GitHub o visitar la página del proyecto.",
             "githubButton": "GitHub",
@@ -336,9 +333,6 @@
     "dashboard": {
         "title": "Panel",
         "subtitle": "Resumen de estado y salud del sistema",
-        "proVersion": "Versión Pro",
-        "freeVersion": "Versión gratuita",
-        "upgrade": "Actualizar a Pro",
         "bookmarkCount": "Total de marcadores",
         "bookmarkCountDesc": "Marcadores actualmente guardados en el navegador",
         "storageType": "Servicio de almacenamiento",
@@ -420,33 +414,6 @@
         "errorInvalidData": "Formato de datos de respaldo inválido",
         "errorRestoreFailed": "Error en la restauración",
         "gistVersionMessage": "Versión del {{date}}",
-        "githubUser": "Usuario de GitHub",
-        "teaser": {
-            "title": "Máquina del tiempo de marcadores",
-            "description": "Viaja en el tiempo a cualquier estado de marcadores. Mantén cada momento de sincronización seguro y rastreable.",
-            "previewTitle": "Vista previa del historial (Demo)",
-            "unlockText": "Actualiza a Pro para ver el historial completo",
-            "feature1Title": "Control de versiones nativo",
-            "feature1Desc": "Basado en commits de GitHub, datos nunca perdidos",
-            "feature2Title": "Restauración con un clic",
-            "feature2Desc": "Reversión inteligente a cualquier punto específico en el tiempo",
-            "upgradeButton": "Desbloquear máquina del tiempo ahora",
-            "userTrustText": "Únete a más de 10,000 usuarios para una gestión de marcadores más segura",
-            "premiumFeature": "Función premium",
-            "mock": {
-                "v1": "Hace 10 min",
-                "v1Msg": "Sincronización desde Chrome",
-                "v2": "Hace 1 hora",
-                "v2Msg": "Agregados 12 enlaces",
-                "v3": "Ayer 12:45",
-                "v3Msg": "Limpieza semanal",
-                "v4": "Hace 2 días 16:02",
-                "v4Msg": "Agregados 11 enlaces",
-                "v5": "Hace 2 días 09:29",
-                "v5Msg": "Actualizados 20 enlaces",
-                "authorWork": "Trabajo",
-                "authorMobile": "Móvil"
-            }
-        }
+        "githubUser": "Usuario de GitHub"
     }
 }

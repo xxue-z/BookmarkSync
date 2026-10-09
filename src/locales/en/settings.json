@@ -111,7 +111,7 @@
             "branchLabel": "Branch (Optional)",
             "branchPlaceholder": "main",
             "pathLabel": "File Path",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Repo Address:"
         },
         "webdav": {
@@ -126,7 +126,7 @@
             "passwordLabel": "App Password",
             "passwordNote": "Highly recommended to use an 'App Password' instead of your main account password.",
             "pathLabel": "File Path",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist Configuration",
@@ -139,7 +139,7 @@
             "gistIdLabel": "Gist ID",
             "gistIdPlaceholder": "32-character hex string",
             "filenameLabel": "Filename",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Create Gist",
             "creatingGist": "Creating...",
             "gistAddr": "Gist Address:",
@@ -163,7 +163,7 @@
             "branchLabel": "Branch (Optional)",
             "branchPlaceholder": "master",
             "pathLabel": "File Path",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Repo Address:"
         },
         "gitlab": {
@@ -179,7 +179,7 @@
             "branchLabel": "Branch (Optional)",
             "branchPlaceholder": "main",
             "pathLabel": "File Path",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Repo Address:"
         },
         "googledrive": {
@@ -190,7 +190,7 @@
             "tokenPlaceholder": "OAuth2 access token",
             "authorize": "Authorize",
             "filenameLabel": "Filename",
-            "filenamePlaceholder": "bookmarkhub.json"
+            "filenamePlaceholder": "bookmarksync.json"
         },
         "dropbox": {
             "title": "Dropbox Configuration",
@@ -200,7 +200,7 @@
             "tokenPlaceholder": "Dropbox access token",
             "authorize": "Authorize",
             "pathLabel": "File Path",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "onedrive": {
             "title": "OneDrive Configuration",
@@ -210,7 +210,7 @@
             "tokenPlaceholder": "Microsoft Graph token",
             "authorize": "Authorize",
             "pathLabel": "File Path",
-            "pathPlaceholder": "bookmarkhub.json"
+            "pathPlaceholder": "bookmarksync.json"
         },
         "s3": {
             "title": "S3 Compatible Storage Configuration",
@@ -318,9 +318,6 @@
         "support": {
             "title": "Support Continuous Development",
             "description": "BookmarkSync is an open-source project maintained by individual developers. Your support is the greatest motivation for continuous updates.",
-            "proTitle": "Want more advanced features?",
-            "proDescription": "Subscribe to Pro version to unlock history snapshots, automatic backups, more storage nodes, and priority technical support.",
-            "proButton": "Learn About Pro",
             "feedbackTitle": "Feedback & Suggestions",
             "feedbackDescription": "Encountered issues or want to provide suggestions? Feel free to submit an Issue on GitHub or visit the project homepage.",
             "githubButton": "GitHub",
@@ -338,9 +335,6 @@
     "dashboard": {
         "title": "Dashboard",
         "subtitle": "System health and status overview",
-        "proVersion": "Pro Version",
-        "freeVersion": "Free Version",
-        "upgrade": "Upgrade to Pro",
         "bookmarkCount": "Total Bookmarks",
         "bookmarkCountDesc": "Bookmarks currently saved in browser",
         "storageType": "Storage Service",
@@ -390,17 +384,7 @@
         "colStats": "Change Stats",
         "statusSuccess": "Success",
         "statusFailure": "Failed",
-        "noHistory": "No sync history records found",
-        "teaser": {
-            "title": "Sync Stats & Logs",
-            "description": "Register a free account to track bookmark changes across devices and master every sync detail.",
-            "chartPreview": "Active Trend Preview",
-            "logPreview": "Recent Logs Preview",
-            "unlockText": "Register to unlock all sync history",
-            "registerButton": "Register Free Account",
-            "loginText": "Already have an account? ",
-            "loginButton": "Login Now"
-        }
+        "noHistory": "No sync history records found"
     },
     "timemachine": {
         "title": "Bookmark Time Machine",
@@ -424,33 +408,6 @@
         "errorInvalidData": "Invalid backup data format",
         "errorRestoreFailed": "Restore failed",
         "gistVersionMessage": "Version at {{date}}",
-        "githubUser": "GitHub User",
-        "teaser": {
-            "title": "Bookmark Time Machine",
-            "description": "Go back in time to any bookmark state. Keep every sync moment safe and traceable.",
-            "previewTitle": "History Preview (Demo)",
-            "unlockText": "Upgrade to Pro to view full history",
-            "feature1Title": "Native Versioning",
-            "feature1Desc": "Based on GitHub Commits, data never lost",
-            "feature2Title": "One-click Restore",
-            "feature2Desc": "Intelligent rollback to any specific point in time",
-            "upgradeButton": "Unlock Time Machine Now",
-            "userTrustText": "Join 10,000+ users for safer bookmark management",
-            "premiumFeature": "Premium Feature",
-            "mock": {
-                "v1": "10 min ago",
-                "v1Msg": "Sync from Chrome",
-                "v2": "1 hour ago",
-                "v2Msg": "Added 12 links",
-                "v3": "Yesterday 12:45",
-                "v3Msg": "Weekly cleanup",
-                "v4": "2 days ago 16:02",
-                "v4Msg": "Added 11 links",
-                "v5": "2 days ago 09:29",
-                "v5Msg": "Updated 20 links",
-                "authorWork": "Work",
-                "authorMobile": "Mobile"
-            }
-        }
+        "githubUser": "GitHub User"
     }
 }

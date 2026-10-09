@@ -103,7 +103,7 @@
             "branchLabel": "ব্রাঞ্চ",
             "branchPlaceholder": "main",
             "pathLabel": "পাথ",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "ঠিকানা:"
         },
         "webdav": {
@@ -116,7 +116,7 @@
             "usernamePlaceholder": "ইউজার",
             "passwordLabel": "পাসওয়ার্ড",
             "pathLabel": "পাথ",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist",
@@ -128,7 +128,7 @@
             "gistIdLabel": "Gist ID",
             "gistIdPlaceholder": "৩২ অক্ষর",
             "filenameLabel": "ফাইলনেম",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Gist তৈরি করুন",
             "createSuccess": "তৈরি হয়েছে! ID: {{id}}",
             "createError": "ব্যর্থ"
@@ -274,9 +274,6 @@
         "support": {
             "title": "সাপোর্ট",
             "description": "ওপেন সোর্স প্রজেক্ট।",
-            "proTitle": "প্রো ভার্সন",
-            "proDescription": "অতিরিক্ত বৈশিষ্ট্যের জন্য সাবস্ক্রাইব করুন",
-            "proButton": "আরও জানুন",
             "feedbackTitle": "প্রতিক্রিয়া",
             "feedbackDescription": "সমস্যা? GitHub-এ ইস্যু",
             "githubButton": "GitHub",
@@ -294,9 +291,6 @@
     "dashboard": {
         "title": "ড্যাশবোর্ড",
         "subtitle": "ওভারভিউ",
-        "proVersion": "প্রো",
-        "freeVersion": "ফ্রি",
-        "upgrade": "আপগ্রেড",
         "bookmarkCount": "মোট বুকমার্ক",
         "bookmarkCountDesc": "ব্রাউজারে বুকমার্ক",
         "storageType": "স্টোরেজ",
@@ -374,33 +368,6 @@
         "errorInvalidData": "অবৈধ ফরম্যাট",
         "errorRestoreFailed": "পুনরুদ্ধার ব্যর্থ",
         "gistVersionMessage": "ভার্সন {{date}}",
-        "githubUser": "ইউজার",
-        "teaser": {
-            "title": "টাইম মেশিন",
-            "description": "সময়ে ফিরে যান",
-            "previewTitle": "প্রিভিউ",
-            "unlockText": "প্রোতে আপগ্রেড করুন",
-            "feature1Title": "Git ভার্সন",
-            "feature1Desc": "ডেটা হারাবেন না",
-            "feature2Title": "এক ক্লিক",
-            "feature2Desc": "দ্রুত পুনরুদ্ধার",
-            "upgradeButton": "আনলক",
-            "userTrustText": "১০,০০০+ ইউজার",
-            "premiumFeature": "প্রিমিয়াম",
-            "mock": {
-                "v1": "১০ মিনিট আগে",
-                "v1Msg": "Chrome থেকে",
-                "v2": "১ ঘণ্টা আগে",
-                "v2Msg": "+১২ লিংক",
-                "v3": "গতকাল",
-                "v3Msg": "পরিষ্কার",
-                "v4": "২ দিন আগে",
-                "v4Msg": "+১১",
-                "v5": "২ দিন আগে",
-                "v5Msg": "+২০",
-                "authorWork": "কাজ",
-                "authorMobile": "মোবাইল"
-            }
-        }
+        "githubUser": "ইউজার"
     }
 }

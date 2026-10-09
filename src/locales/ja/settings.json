@@ -109,7 +109,7 @@
             "branchLabel": "ブランチ（オプション）",
             "branchPlaceholder": "main",
             "pathLabel": "ファイルパス",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "リポジトリ住所："
         },
         "webdav": {
@@ -124,7 +124,7 @@
             "passwordLabel": "アプリパスワード",
             "passwordNote": "メインアカウントパスワードの代わりに「アプリパスワード」を使用することを強く推奨。",
             "pathLabel": "ファイルパス",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist設定",
@@ -137,7 +137,7 @@
             "gistIdLabel": "Gist ID",
             "gistIdPlaceholder": "32文字の16進文字列",
             "filenameLabel": "ファイル名",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Gist作成",
             "creatingGist": "作成中...",
             "gistAddr": "Gist住所：",
@@ -161,7 +161,7 @@
             "branchLabel": "ブランチ（オプション）",
             "branchPlaceholder": "master",
             "pathLabel": "ファイルパス",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "リポジトリ住所："
         },
         "gitlab": {
@@ -177,7 +177,7 @@
             "branchLabel": "ブランチ（オプション）",
             "branchPlaceholder": "main",
             "pathLabel": "ファイルパス",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "リポジトリ住所："
         },
         "googledrive": {
@@ -188,7 +188,7 @@
             "tokenPlaceholder": "OAuth2アクセストークン",
             "authorize": "承認",
             "filenameLabel": "ファイル名",
-            "filenamePlaceholder": "bookmarkhub.json"
+            "filenamePlaceholder": "bookmarksync.json"
         },
         "dropbox": {
             "title": "Dropbox設定",
@@ -198,7 +198,7 @@
             "tokenPlaceholder": "Dropboxアクセストークン",
             "authorize": "承認",
             "pathLabel": "ファイルパス",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "onedrive": {
             "title": "OneDrive設定",
@@ -208,7 +208,7 @@
             "tokenPlaceholder": "Microsoft Graphトークン",
             "authorize": "承認",
             "pathLabel": "ファイルパス",
-            "pathPlaceholder": "bookmarkhub.json"
+            "pathPlaceholder": "bookmarksync.json"
         },
         "s3": {
             "title": "S3互換ストレージ設定",
@@ -316,9 +316,6 @@
         "support": {
             "title": "継続的な開発をサポート",
             "description": "BookmarkSyncは個人開発者によってメンテナンスされているオープンソースプロジェクトです。お客様のご支援が継続的な更新の最大の励みになります。",
-            "proTitle": "もっと高度な機能が必要ですか？",
-            "proDescription": "プロバージョンを購読して履歴スナップショット、自動バックアップ、より多くのストレージノード、優先技術サポートをロック解除。",
-            "proButton": "プロについてもっと見る",
             "feedbackTitle": "フィードバックと提案",
             "feedbackDescription": "問題が発生しましたか？または提案がありますか？GitHubでIssueを送信するか、プロジェクトページを是非ってください。",
             "githubButton": "GitHub",
@@ -336,9 +333,6 @@
     "dashboard": {
         "title": "ダッシュボード",
         "subtitle": "システム健常性とステータスの概要",
-        "proVersion": "プロバージョン",
-        "freeVersion": "無料バージョン",
-        "upgrade": "プロにアップグレード",
         "bookmarkCount": "ブックマーク総数",
         "bookmarkCountDesc": "ブラウザに保存されているブックマーク",
         "storageType": "ストレージサービス",
@@ -420,33 +414,6 @@
         "errorInvalidData": "無効なバックアップデータ形式",
         "errorRestoreFailed": "復元に失敗しました",
         "gistVersionMessage": "{{date}}のバージョン",
-        "githubUser": "GitHubユーザー",
-        "teaser": {
-            "title": "ブックマークタイムマシン",
-            "description": "ブックマークの任意の過去に時間を戻します。すべての同期瞬間を安全に追跡可能。",
-            "previewTitle": "履歴プレビュー（デモ）",
-            "unlockText": "プロにアップグレードして全履歴を表示",
-            "feature1Title": "ネイティブバージョン管理",
-            "feature1Desc": "GitHubコミットベース、データ損失なし",
-            "feature2Title": "ワンクリック復元",
-            "feature2Desc": "任意の特定の時点へのインテリジェントなロールバック",
-            "upgradeButton": "今すぐタイムマシンをロック解除",
-            "userTrustText": "1万人以上のユーザーと安全なブックマーク管理",
-            "premiumFeature": "プレミアム機能",
-            "mock": {
-                "v1": "10分前",
-                "v1Msg": "Chromeから同期",
-                "v2": "1時間前",
-                "v2Msg": "12件のリンクを追加",
-                "v3": "昨日12:45",
-                "v3Msg": "週次クリーンアップ",
-                "v4": "2日前16:02",
-                "v4Msg": "11件のリンクを追加",
-                "v5": "2日前09:29",
-                "v5Msg": "20件のリンクを更新",
-                "authorWork": "仕事",
-                "authorMobile": "モバイル"
-            }
-        }
+        "githubUser": "GitHubユーザー"
     }
 }

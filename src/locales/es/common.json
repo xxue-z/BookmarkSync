@@ -4,8 +4,6 @@
         "syncing": "Sincronizando...",
         "settings": "Configuración",
         "more": "Más",
-        "login": "Iniciar sesión",
-        "logout": "Cerrar sesión",
         "save": "Guardar",
         "cancel": "Cancelar",
         "confirm": "Confirmar",
@@ -13,8 +11,7 @@
         "edit": "Editar",
         "close": "Cerrar",
         "back": "Atrás",
-        "next": "Siguiente",
-        "upgrade": "Actualizar"
+        "next": "Siguiente"
     },
     "labels": {
         "language": "Idioma",
@@ -30,8 +27,7 @@
         "lastSync": "Última sincronización",
         "status": "Estado",
         "localBookmarks": "Marcadores locales",
-        "remoteStorage": "Almacenamiento remoto",
-        "pro": "Pro"
+        "remoteStorage": "Almacenamiento remoto"
     },
     "status": {
         "syncing": "Sincronizando",
@@ -105,14 +101,6 @@
         "tutorial": "Tutorial",
         "feedback": "Comentarios"
     },
-    "navUser": {
-        "notLoggedIn": "No iniciado sesión",
-        "clickToLogin": "Haz clic para iniciar sesión",
-        "accountSettings": "Configuración de cuenta",
-        "manageSubscription": "Gestionar suscripción",
-        "upgradePro": "Actualizar a Pro",
-        "logout": "Cerrar sesión"
-    },
     "activityGraph": {
         "title": "Actividad de sincronización reciente",
         "subtitle": "Frecuencia de sincronización de marcadores en los últimos 10 meses",
@@ -123,78 +111,6 @@
         "wed": "Mié",
         "fri": "Vie",
         "syncCount": "{{date}}: {{count}} sincronizaciones"
-    },
-    "upgradeDialog": {
-        "title": "Actualizar a Pro",
-        "subtitle": "Desbloquea funciones avanzadas y mejora la gestión de marcadores",
-        "proMember": "Miembro profesional",
-        "proMemberDesc": "Has desbloqueado todas las funciones premium. ¡Gracias por tu apoyo!",
-        "close": "Cerrar",
-        "refreshStatus": "Actualizar estado",
-        "refreshing": "Actualizando...",
-        "paidNote": "¿Ya pagaste? Haz clic en actualizar a la derecha",
-        "goToPricing": "Suscribirse en el sitio web",
-        "accountPromotion": "Actualiza tu cuenta",
-        "accountPromotionDesc": "Las funciones Pro están vinculadas a tu cuenta de sincronización. Suscríbete en nuestro sitio web, luego actualiza aquí para desbloquear todo.",
-        "features": {
-            "storage": {
-                "title": "Almacenamiento privado",
-                "desc": "Soporte para GitHub y WebDAV. Mantén los datos en tus manos."
-            },
-            "autoSync": {
-                "title": "Sincronización automática",
-                "desc": "Sincroniza marcadores automáticamente sin intervención manual, actualizaciones en tiempo real entre dispositivos."
-            },
-            "configSync": {
-                "title": "Sincronización de configuración en la nube",
-                "desc": "La configuración y las reglas de sincronización se sincronizan con tu cuenta, no es necesario reconfigurar en nuevos dispositivos."
-            },
-            "encryption": {
-                "title": "Cifrado de extremo a extremo",
-                "desc": "Cifrado militar AES-256-GCM antes de sincronizar."
-            },
-            "timeMachine": {
-                "title": "Máquina del tiempo",
-                "desc": "Control de versiones basado en Git. Revierte a cualquier momento."
-            },
-            "syncControl": {
-                "title": "Control de sincronización avanzado",
-                "desc": "Carga/descarga forzada manual para resolver conflictos instantáneamente."
-            },
-            "audit": {
-                "title": "Registros de auditoría de sincronización",
-                "desc": "Gráficos detallados del historial de sincronización y seguimiento de actividad."
-            },
-            "more": {
-                "title": "Más funciones premium",
-                "desc": "Actualizaciones prioritarias y soporte técnico profesional."
-            }
-        }
-    },
-    "upgradeCard": {
-        "title": "Actualizar a Pro",
-        "description": "Desbloquea funciones avanzadas como almacenamiento GitHub/WebDAV, sincronización de configuración en la nube, cifrado privado y reversión de máquina del tiempo.",
-        "button": "Desbloquear ahora"
-    },
-    "registrationDialog": {
-        "title": "Desbloquear sincronización automática",
-        "subtitle": "Suscríbete para disfrutar de las siguientes funciones",
-        "login": "Iniciar sesión en tu cuenta",
-        "later": "Quizás más tarde",
-        "features": {
-            "autoSync": {
-                "title": "Sincronización automática",
-                "desc": "Sincroniza marcadores automáticamente cada 10 minutos"
-            },
-            "history": {
-                "title": "Historial de sincronización",
-                "desc": "Ver los 100 registros de sincronización más recientes"
-            },
-            "cloudBackup": {
-                "title": "Copia de seguridad en la nube",
-                "desc": "Configura copias de seguridad automáticas en la nube y sincronización multidispositivo"
-            }
-        }
     },
     "messages": {
         "startingSync": "Iniciando sincronización...",

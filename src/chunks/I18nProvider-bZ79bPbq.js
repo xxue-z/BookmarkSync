@@ -12856,31 +12856,6 @@ function Bh({ i18n: d, defaultNS: h, children: k }) {
 function mp(d) {
   return $h(d);
 }
-function Hh({ className: d, onClick: h, size: k = "sm" }) {
-  const { t: c } = mp(["common"]),
-    C = {
-      xs: "h-3 w-3 text-xs",
-      sm: "h-4 w-4 text-xs",
-      md: "h-5 w-5 text-sm",
-      lg: "h-6 w-6 text-base",
-    };
-  return T.jsxs("div", {
-    className: Y(
-      "inline-flex items-center gap-1 px-2 py-0.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-medium cursor-pointer hover:from-purple-600 hover:to-pink-600 transition-all",
-      h && "hover:scale-105 active:scale-95",
-      d,
-    ),
-    onClick: h,
-    title: c("common:labels.pro"),
-    children: [
-      T.jsx(rh, { className: C[k] }),
-      T.jsx("span", {
-        className: "text-xs font-semibold uppercase",
-        children: c("common:labels.pro"),
-      }),
-    ],
-  });
-}
 function Wh() {
   const [d, h] = L.useState(null),
     [k, c] = L.useState(!1);
@@ -12963,7 +12938,6 @@ export {
   Sh as F,
   Qh as I,
   Vh as L,
-  Hh as P,
   gh as R,
   Qf as S,
   op as a,

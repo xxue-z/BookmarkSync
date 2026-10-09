@@ -103,7 +103,7 @@
             "branchLabel": "शाखा",
             "branchPlaceholder": "main",
             "pathLabel": "पथ",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "पता:"
         },
         "webdav": {
@@ -116,7 +116,7 @@
             "usernamePlaceholder": "उपयोगकर्ता",
             "passwordLabel": "पासवर्ड",
             "pathLabel": "पथ",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist",
@@ -128,7 +128,7 @@
             "gistIdLabel": "Gist ID",
             "gistIdPlaceholder": "32 अक्षर",
             "filenameLabel": "फाइल नाम",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Gist बनाएं",
             "createSuccess": "बन गया! ID: {{id}}",
             "createError": "विफल"
@@ -274,9 +274,6 @@
         "support": {
             "title": "सहायता",
             "description": "ओपन-सोर्स प्रोजेक्ट।",
-            "proTitle": "प्रो संस्करण",
-            "proDescription": "अतिरिक्त सुविधाओं के लिए सदस्यता लें",
-            "proButton": "और जानें",
             "feedbackTitle": "फीडबैक",
             "feedbackDescription": "समस्या? GitHub पर इश्यू",
             "githubButton": "GitHub",
@@ -294,9 +291,6 @@
     "dashboard": {
         "title": "डैशबोर्ड",
         "subtitle": "अवलोकन",
-        "proVersion": "प्रो",
-        "freeVersion": "फ्री",
-        "upgrade": "अपग्रेड",
         "bookmarkCount": "कुल बुकमार्क",
         "bookmarkCountDesc": "ब्राउज़र में बुकमार्क",
         "storageType": "स्टोरेज",
@@ -374,33 +368,6 @@
         "errorInvalidData": "अमान्य प्रारूप",
         "errorRestoreFailed": "पुनर्स्थापना विफल",
         "gistVersionMessage": "संस्करण {{date}}",
-        "githubUser": "उपयोगकर्ता",
-        "teaser": {
-            "title": "टाइम मशीन",
-            "description": "समय में वापस जाएं",
-            "previewTitle": "पूर्वावलोकन",
-            "unlockText": "प्रो में अपग्रेड करें",
-            "feature1Title": "Git संस्करण",
-            "feature1Desc": "डेटा न खोएं",
-            "feature2Title": "एक क्लिक",
-            "feature2Desc": "जल्दी पुनर्स्थापित",
-            "upgradeButton": "अनलॉक",
-            "userTrustText": "10,000+ उपयोगकर्ता",
-            "premiumFeature": "प्रीमियम",
-            "mock": {
-                "v1": "10 मिनट पहले",
-                "v1Msg": "Chrome से",
-                "v2": "1 घंटा पहले",
-                "v2Msg": "+12 लिंक",
-                "v3": "कल",
-                "v3Msg": "सफाई",
-                "v4": "2 दिन पहले",
-                "v4Msg": "+11",
-                "v5": "2 दिन पहले",
-                "v5Msg": "+20",
-                "authorWork": "कार्य",
-                "authorMobile": "मोबाइल"
-            }
-        }
+        "githubUser": "उपयोगकर्ता"
     }
 }

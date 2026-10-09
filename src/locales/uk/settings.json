@@ -103,7 +103,7 @@
             "branchLabel": "Гілка",
             "branchPlaceholder": "main",
             "pathLabel": "Шлях",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Адреса:"
         },
         "webdav": {
@@ -116,7 +116,7 @@
             "usernamePlaceholder": "користувач",
             "passwordLabel": "Пароль",
             "pathLabel": "Шлях",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist",
@@ -128,7 +128,7 @@
             "gistIdLabel": "ID Gist",
             "gistIdPlaceholder": "32 символи",
             "filenameLabel": "Ім'я файлу",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Створити Gist",
             "createSuccess": "Створено! ID: {{id}}",
             "createError": "Невдача"
@@ -274,9 +274,6 @@
         "support": {
             "title": "Підтримка",
             "description": "Проект з відкритим кодом.",
-            "proTitle": "Версія Pro",
-            "proDescription": "Підпишіться на додаткові функції",
-            "proButton": "Детальніше",
             "feedbackTitle": "Відгук",
             "feedbackDescription": "Проблеми? Issue на GitHub",
             "githubButton": "GitHub",
@@ -294,9 +291,6 @@
     "dashboard": {
         "title": "Панель",
         "subtitle": "Огляд",
-        "proVersion": "Pro",
-        "freeVersion": "Безкоштовна",
-        "upgrade": "Оновити",
         "bookmarkCount": "Всього закладок",
         "bookmarkCountDesc": "Закладки в браузері",
         "storageType": "Сховище",
@@ -374,33 +368,6 @@
         "errorInvalidData": "Невірний формат",
         "errorRestoreFailed": "Відновлення не вдалося",
         "gistVersionMessage": "Версія {{date}}",
-        "githubUser": "Користувач",
-        "teaser": {
-            "title": "Машина часу",
-            "description": "Поверніться в минуле",
-            "previewTitle": "Попередній перегляд",
-            "unlockText": "Оновити до Pro",
-            "feature1Title": "Git версії",
-            "feature1Desc": "Не втрачайте дані",
-            "feature2Title": "Один клік",
-            "feature2Desc": "Швидке відновлення",
-            "upgradeButton": "Розблокувати",
-            "userTrustText": "10 000+ користувачів",
-            "premiumFeature": "Преміум",
-            "mock": {
-                "v1": "10 хв тому",
-                "v1Msg": "З Chrome",
-                "v2": "1 годину тому",
-                "v2Msg": "+12 посилань",
-                "v3": "Вчора",
-                "v3Msg": "Очищення",
-                "v4": "2 дні тому",
-                "v4Msg": "+11",
-                "v5": "2 дні тому",
-                "v5Msg": "+20",
-                "authorWork": "Робота",
-                "authorMobile": "Мобільний"
-            }
-        }
+        "githubUser": "Користувач"
     }
 }

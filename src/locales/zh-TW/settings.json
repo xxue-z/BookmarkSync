@@ -103,7 +103,7 @@
             "branchLabel": "分支",
             "branchPlaceholder": "main",
             "pathLabel": "路徑",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "地址："
         },
         "webdav": {
@@ -116,7 +116,7 @@
             "usernamePlaceholder": "使用者",
             "passwordLabel": "密碼",
             "pathLabel": "路徑",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist",
@@ -128,7 +128,7 @@
             "gistIdLabel": "Gist ID",
             "gistIdPlaceholder": "32字元",
             "filenameLabel": "檔案名稱",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "建立Gist",
             "createSuccess": "已建立！ID：{{id}}",
             "createError": "失敗"
@@ -274,9 +274,6 @@
         "support": {
             "title": "支援",
             "description": "開源專案。",
-            "proTitle": "Pro版本",
-            "proDescription": "訂閱以獲得額外功能",
-            "proButton": "了解更多",
             "feedbackTitle": "回饋",
             "feedbackDescription": "問題？GitHub上回報",
             "githubButton": "GitHub",
@@ -294,9 +291,6 @@
     "dashboard": {
         "title": "儀表板",
         "subtitle": "總覽",
-        "proVersion": "Pro",
-        "freeVersion": "免費",
-        "upgrade": "升級",
         "bookmarkCount": "總書籤數",
         "bookmarkCountDesc": "瀏覽器中的書籤",
         "storageType": "儲存",
@@ -374,33 +368,6 @@
         "errorInvalidData": "格式無效",
         "errorRestoreFailed": "恢復失敗",
         "gistVersionMessage": "版本{{date}}",
-        "githubUser": "使用者",
-        "teaser": {
-            "title": "時光機",
-            "description": "回到過去",
-            "previewTitle": "預覽",
-            "unlockText": "升級Pro",
-            "feature1Title": "Git版本",
-            "feature1Desc": "不遺失資料",
-            "feature2Title": "一鍵",
-            "feature2Desc": "快速恢復",
-            "upgradeButton": "解鎖",
-            "userTrustText": "10,000+使用者",
-            "premiumFeature": "Premium",
-            "mock": {
-                "v1": "10分鐘前",
-                "v1Msg": "來自Chrome",
-                "v2": "1小時前",
-                "v2Msg": "+12連結",
-                "v3": "昨天",
-                "v3Msg": "清理",
-                "v4": "2天前",
-                "v4Msg": "+11",
-                "v5": "2天前",
-                "v5Msg": "+20",
-                "authorWork": "工作",
-                "authorMobile": "手機"
-            }
-        }
+        "githubUser": "使用者"
     }
 }

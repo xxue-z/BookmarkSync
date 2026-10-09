@@ -109,7 +109,7 @@
             "branchLabel": "Ветка",
             "branchPlaceholder": "main",
             "pathLabel": "Путь к файлу",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Адрес:"
         },
         "webdav": {
@@ -124,7 +124,7 @@
             "passwordLabel": "Пароль приложения",
             "passwordNote": "Используйте пароль приложения",
             "pathLabel": "Путь",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "gist": {
             "title": "GitHub Gist",
@@ -137,7 +137,7 @@
             "gistIdLabel": "Gist ID",
             "gistIdPlaceholder": "32-значный ID",
             "filenameLabel": "Имя файла",
-            "filenamePlaceholder": "bookmarkhub.json",
+            "filenamePlaceholder": "bookmarksync.json",
             "createGist": "Создать Gist",
             "creatingGist": "Создание...",
             "gistAddr": "Адрес:",
@@ -160,7 +160,7 @@
             "branchLabel": "Ветка",
             "branchPlaceholder": "master",
             "pathLabel": "Путь",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Адрес:"
         },
         "gitlab": {
@@ -176,7 +176,7 @@
             "branchLabel": "Ветка",
             "branchPlaceholder": "main",
             "pathLabel": "Путь",
-            "pathPlaceholder": "bookmarkhub.json",
+            "pathPlaceholder": "bookmarksync.json",
             "repoAddr": "Адрес:"
         },
         "googledrive": {
@@ -187,7 +187,7 @@
             "tokenPlaceholder": "OAuth2 токен",
             "authorize": "Авторизовать",
             "filenameLabel": "Имя файла",
-            "filenamePlaceholder": "bookmarkhub.json"
+            "filenamePlaceholder": "bookmarksync.json"
         },
         "dropbox": {
             "title": "Dropbox",
@@ -197,7 +197,7 @@
             "tokenPlaceholder": "Dropbox токен",
             "authorize": "Авторизовать",
             "pathLabel": "Путь",
-            "pathPlaceholder": "/bookmarkhub.json"
+            "pathPlaceholder": "/bookmarksync.json"
         },
         "onedrive": {
             "title": "OneDrive",
@@ -207,7 +207,7 @@
             "tokenPlaceholder": "Graph токен",
             "authorize": "Авторизовать",
             "pathLabel": "Путь",
-            "pathPlaceholder": "bookmarkhub.json"
+            "pathPlaceholder": "bookmarksync.json"
         },
         "s3": {
             "title": "S3 хранилище",
@@ -315,9 +315,6 @@
         "support": {
             "title": "Поддержка",
             "description": "BookmarkSync - проект с открытым исходным кодом.",
-            "proTitle": "Pro версия",
-            "proDescription": "Подпишитесь для доп. функций",
-            "proButton": "Подробнее",
             "feedbackTitle": "Отзывы",
             "feedbackDescription": "Проблемы? Создайте Issue на GitHub",
             "githubButton": "GitHub",
@@ -335,9 +332,6 @@
     "dashboard": {
         "title": "Панель",
         "subtitle": "Обзор системы",
-        "proVersion": "Pro версия",
-        "freeVersion": "Бесплатная",
-        "upgrade": "Обновить",
         "bookmarkCount": "Всего закладок",
         "bookmarkCountDesc": "Закладок в браузере",
         "storageType": "Хранилище",
@@ -419,33 +413,6 @@
         "errorInvalidData": "Неверный формат",
         "errorRestoreFailed": "Ошибка восстановления",
         "gistVersionMessage": "Версия {{date}}",
-        "githubUser": "Пользователь",
-        "teaser": {
-            "title": "Машина времени",
-            "description": "Вернитесь в прошлое",
-            "previewTitle": "Превью",
-            "unlockText": "Обновите до Pro",
-            "feature1Title": "Версии Git",
-            "feature1Desc": "Никогда не теряйте данные",
-            "feature2Title": "Один клик",
-            "feature2Desc": "Восстановление в один клик",
-            "upgradeButton": "Разблокировать",
-            "userTrustText": "10 000+ пользователей",
-            "premiumFeature": "Премиум",
-            "mock": {
-                "v1": "10 мин",
-                "v1Msg": "Chrome",
-                "v2": "1 час",
-                "v2Msg": "+12",
-                "v3": "Вчера",
-                "v3Msg": "Чистка",
-                "v4": "2 дня",
-                "v4Msg": "+11",
-                "v5": "2 дня",
-                "v5Msg": "+20",
-                "authorWork": "Работа",
-                "authorMobile": "Телефон"
-            }
-        }
+        "githubUser": "Пользователь"
     }
 }

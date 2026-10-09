@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync, renameSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -15,7 +15,6 @@ function replaceOnce(rel, oldText, newText, label) {
   save(rel, full.slice(0, pos) + newText + full.slice(pos + oldText.length));
   console.log(`[OK] ${label}`);
 }
-
 function replaceAll(rel, oldText, newText, label) {
   const full = load(rel);
   if (full.includes(newText)) { console.log(`[SKIP] ${label}`); return; }
@@ -24,55 +23,35 @@ function replaceAll(rel, oldText, newText, label) {
   console.log(`[OK] ${label}`);
 }
 
-function replaceLocale(rel) {
-  const text = load(rel);
-  if (!text.includes('BookmarkHub')) { console.log(`[skip] ${rel} (no match)`); return; }
-  save(rel, text.split('BookmarkHub').join('BookmarkSync'));
-  console.log(`[OK] locale ${rel}`);
-}
+// --- 剩余标识符：数据文件名 / 存储名 / wasm / homepage_url ---
+replaceAll('src/chunks/sentry--tCLaZao.js', 'bookmarkhub.json', 'bookmarksync.json', 'sentry: data filenames');
+replaceOnce('src/chunks/sentry--tCLaZao.js', '"./bookmarkhub_core_bg.js"', '"./bookmarksync_core_bg.js"', 'sentry: wasm glue js ref');
+replaceOnce('src/chunks/sentry--tCLaZao.js', '"/assets/bookmarkhub_core_bg-Cl4sWNse.wasm"', '"/assets/bookmarksync_core_bg-Cl4sWNse.wasm"', 'sentry: wasm asset ref');
+replaceOnce('src/chunks/hash-Cx2ffm9Z.js', 'super("BookmarkHub_SyncRecords")', 'super("BookmarkSync_SyncRecords")', 'hash: sync records store name');
 
-const localePatterns = [
-  ['src/_locales/', 'messages.json'],
-  ['src/locales/', 'popup.json'],
-  ['src/locales/', 'settings.json'],
-  ['src/locales/', 'sync.json'],
-];
-for (const [dir, file] of localePatterns) {
-  const base = path.join(root, dir);
-  if (!existsSync(base)) continue;
-  for (const lang of readdirSync(base)) {
-    const rel = dir + lang + '/' + file;
-    if (existsSync(path.join(root, rel))) replaceLocale(rel);
+const locBase = path.join(root, 'src', 'locales');
+if (existsSync(locBase)) {
+  for (const lang of readdirSync(locBase)) {
+    const rel = 'src/locales/' + lang + '/settings.json';
+    const p = path.join(root, rel);
+    if (existsSync(p)) {
+      const t = load(rel);
+      if (t.includes('bookmarkhub.json')) {
+        save(rel, t.split('bookmarkhub.json').join('bookmarksync.json'));
+        console.log(`[OK] locale filenames ${rel}`);
+      }
+    }
   }
 }
 
-const SENTRY_ID = '"bookmarkhub-extension@dev"';
-const SENTRY_ID_NEW = '"bookmarksync-extension@dev"';
+const mRaw = load('src/manifest.json');
+const mNew = mRaw.replace(/   "homepage_url": "[^"]*",\r?\n/, '');
+if (mNew !== mRaw) { save('src/manifest.json', mNew); console.log('[OK] manifest: homepage_url removed'); }
+else console.log('[SKIP] manifest: homepage_url already removed');
 
-replaceOnce('src/background.js', SENTRY_ID, SENTRY_ID_NEW, 'background: sentry id');
-replaceOnce('src/popup/popup.js', SENTRY_ID, SENTRY_ID_NEW, 'popup: sentry id');
-replaceOnce('src/popup/popup.js', 'children: "BookmarkHub",', 'children: "BookmarkSync",', 'popup: logo text');
-replaceOnce('src/options/options.js', SENTRY_ID, SENTRY_ID_NEW, 'options: sentry id');
-replaceOnce('src/options/options.js', 'description=BookmarkHub&scopes=repo,gist,user', 'description=BookmarkSync&scopes=repo,gist,user', 'options: github token url');
-replaceOnce('src/options/options.js', 'description=BookmarkHub-Gist&scopes=gist', 'description=BookmarkSync-Gist&scopes=gist', 'options: github gist token url');
-replaceOnce('src/options/options.js', 'name=BookmarkHub&scopes=api', 'name=BookmarkSync&scopes=api', 'options: gitlab token url');
-replaceOnce('src/options/options.js', 'bookmarkhub-backup-${H}.json', 'bookmarksync-backup-${H}.json', 'options: backup filename');
-replaceAll('src/options/options.js', 'children: "BookmarkHub",', 'children: "BookmarkSync",', 'options: headings (x2)');
-
-replaceOnce('src/chunks/sentry--tCLaZao.js', SENTRY_ID, SENTRY_ID_NEW, 'sentry chunk: sentry id');
-replaceOnce('src/chunks/sentry--tCLaZao.js', 'nn = "BookmarkHub",', 'nn = "BookmarkSync",', 'sentry chunk: APP_NAME');
-replaceOnce('src/chunks/sentry--tCLaZao.js', '[BookmarkHub] Failed to init system IDs:', '[BookmarkSync] Failed to init system IDs:', 'sentry chunk: log prefix');
-replaceOnce('src/chunks/sentry--tCLaZao.js', 'tag: e || "BookmarkHub"', 'tag: e || "BookmarkSync"', 'sentry chunk: consola tag');
-replaceOnce('src/chunks/sentry--tCLaZao.js', 'new et("BookmarkHub")', 'new et("BookmarkSync")', 'sentry chunk: consola instance');
-replaceOnce('src/chunks/sentry--tCLaZao.js', '"bookmarkhub-extension@1.0.3"', '"bookmarksync-extension@1.0.3"', 'sentry chunk: release');
-replaceOnce('src/chunks/hash-Cx2ffm9Z.js', SENTRY_ID, SENTRY_ID_NEW, 'hash chunk: sentry id');
-replaceOnce('src/chunks/hash-Cx2ffm9Z.js', '"BookmarkHub bookmark sync data"', '"BookmarkSync bookmark sync data"', 'hash chunk: gist description');
-replaceOnce('src/chunks/I18nProvider-bZ79bPbq.js', SENTRY_ID, SENTRY_ID_NEW, 'i18n chunk: sentry id');
-replaceOnce('src/chunks/vendor-sentry-B3P1rFJ6.js', SENTRY_ID, SENTRY_ID_NEW, 'vendor-sentry: sentry id');
-replaceOnce('src/chunks/vendor-ui-Piys8gOI.js', SENTRY_ID, SENTRY_ID_NEW, 'vendor-ui: sentry id');
-replaceOnce('src/chunks/vendor-utils-bU8bXqsc.js', SENTRY_ID, SENTRY_ID_NEW, 'vendor-utils: sentry id');
-
-replaceOnce('src/src/popup/index.html', '<title>BookmarkHub - Popup</title>', '<title>BookmarkSync - Popup</title>', 'popup html title');
-replaceOnce('src/src/options/index.html', '<title>Settings - BookmarkHub</title>', '<title>Settings - BookmarkSync</title>', 'options html title');
+const wasmOld = path.join(root, 'src', 'assets', 'bookmarkhub_core_bg-Cl4sWNse.wasm');
+const wasmNew = path.join(root, 'src', 'assets', 'bookmarksync_core_bg-Cl4sWNse.wasm');
+if (existsSync(wasmOld)) { renameSync(wasmOld, wasmNew); console.log('[OK] wasm file renamed'); }
+else console.log(existsSync(wasmNew) ? '[SKIP] wasm already renamed' : '[WARN] wasm file not found');
 
 console.log('\nRename done.');

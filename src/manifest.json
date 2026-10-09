@@ -50,7 +50,6 @@
    },
    "default_locale": "en",
    "description": "__MSG_appDesc__",
-   "homepage_url": "https://github.com/dudor/bookmarkhub",
    "host_permissions": [ "https://*.memoload.com/*", "https://*.github.com/*", "https://*.githubusercontent.com/*", "https://*.googleapis.com/*", "https://gitee.com/*", "https://gitlab.com/*", "https://*.microsoft.com/*", "https://*.sentry.io/*" ],
    "icons": {
       "128": "icons/dark/128.png",
