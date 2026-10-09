@@ -1,5 +1,5 @@
 {
-    "title": "BookmarkHub",
+    "title": "BookmarkSync",
     "menu": { "dashboard": "Dashboard", "helpDocs": "Documentatie", "feedback": "Feedback", "donate": "Doneren", "rate": "Beoordelen", "community": "Gemeenschap", "website": "Website", "support": "Ondersteuning", "terms": "Voorwaarden" },
     "stats": { "localBookmarks": "Lokale bladwijzers", "storageType": "Opslagtype", "lastStatus": "Laatste status", "lastSync": "Laatste synchronisatie" },
     "autoSync": { "title": "Automatische synchronisatie", "description": "Gegevens consistent houden tussen apparaten" },

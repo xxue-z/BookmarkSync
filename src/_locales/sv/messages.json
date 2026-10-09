@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "Beskrivning av tillägget",
-      "message": "BookmarkHub, synkronisera bokmärken mellan webbläsare"
+      "message": "BookmarkSync, synkronisera bokmärken mellan webbläsare"
    },
    "appName": {
       "description": "Namnet på tillägget",
-      "message": "BookmarkHub - synkronisera bokmärken"
+      "message": "BookmarkSync - synkronisera bokmärken"
    }
 }

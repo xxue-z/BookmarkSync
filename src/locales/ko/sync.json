@@ -34,7 +34,7 @@
         "safetyProtection": "안전 보호",
         "safetyBlocked": "동기화 차단됨: {{count}}개 북마크 삭제 예정. 설정에서 확인하세요.",
         "safetyBlockedGeneric": "동기화 차단됨: 많은 변경이 감지되었습니다.",
-        "autoSyncDisabled": "BookmarkHub - 자동 동기화 꺼짐",
+        "autoSyncDisabled": "BookmarkSync - 자동 동기화 꺼짐",
         "autoSyncRequiresRegistration": "자동 동기화 requires registration",
         "autoSyncPaused": "자동 동기화 일시 중지됨",
         "operationCancelled": "작업 취소됨",

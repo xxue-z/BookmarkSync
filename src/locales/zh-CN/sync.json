@@ -37,7 +37,7 @@
         "safetyProtection": "同步安全保护",
         "safetyBlocked": "同步已拦截:将删除 {{count}} 条书签。请在设置中确认。",
         "safetyBlockedGeneric": "同步已拦截:检测到大量变动。",
-        "autoSyncDisabled": "BookmarkHub - 自动同步未启用",
+        "autoSyncDisabled": "BookmarkSync - 自动同步未启用",
         "autoSyncRequiresRegistration": "自动同步功能需要注册账号,请前往设置页面注册",
         "autoSyncPaused": "自动同步已暂停",
         "operationCancelled": "操作已取消",

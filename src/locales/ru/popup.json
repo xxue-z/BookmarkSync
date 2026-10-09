@@ -1,5 +1,5 @@
 {
-    "title": "BookmarkHub",
+    "title": "BookmarkSync",
     "menu": { "dashboard": "Панель", "helpDocs": "Справка", "feedback": "Отзывы", "donate": "Поддержать", "rate": "Оценить", "community": "Сообщество", "website": "Веб-сайт", "support": "Поддержка", "terms": "Условия" },
     "stats": { "localBookmarks": "Локальные закладки", "storageType": "Тип хранилища", "lastStatus": "Последний статус", "lastSync": "Последняя синхронизация" },
     "autoSync": { "title": "Автосинхронизация", "description": "Поддерживайте данные согласованными между устройствами в реальном времени" },

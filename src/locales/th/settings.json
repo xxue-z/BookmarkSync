@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "เวอร์ชัน",
         "stable": "เสถียร",
         "description": "โซลูชันซิงโครไนซ์บุ๊กมาร์กโอเพนซอร์ซ",
@@ -288,7 +288,7 @@
             "terms": "ข้อกำหนด",
             "privacy": "ความเป็นส่วนตัว",
             "website": "เว็บไซต์",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

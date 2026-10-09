@@ -290,7 +290,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Версия",
         "stable": "Стабильная",
         "description": "Решение для синхронизации закладок с открытым исходным кодом.",
@@ -314,7 +314,7 @@
         },
         "support": {
             "title": "Поддержка",
-            "description": "BookmarkHub - проект с открытым исходным кодом.",
+            "description": "BookmarkSync - проект с открытым исходным кодом.",
             "proTitle": "Pro версия",
             "proDescription": "Подпишитесь для доп. функций",
             "proButton": "Подробнее",
@@ -329,7 +329,7 @@
             "terms": "Условия",
             "privacy": "Политика",
             "website": "Сайт",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

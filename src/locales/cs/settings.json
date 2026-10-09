@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Verze",
         "stable": "Stabilní",
         "description": "Open-source řešení pro synchronizaci záložek.",
@@ -288,7 +288,7 @@
             "terms": "Podmínky",
             "privacy": "Soukromí",
             "website": "Webová stránka",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

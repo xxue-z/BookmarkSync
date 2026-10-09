@@ -291,7 +291,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Versión",
         "stable": "Estable",
         "description": "Una solución de sincronización de marcadores de código abierto, segura y completamente controlada entre navegadores.",
@@ -315,7 +315,7 @@
         },
         "support": {
             "title": "Apoya el desarrollo continuo",
-            "description": "BookmarkHub es un proyecto de código abierto mantenido por desarrolladores individuales. Tu apoyo es la mayor motivación para las actualizaciones continuas.",
+            "description": "BookmarkSync es un proyecto de código abierto mantenido por desarrolladores individuales. Tu apoyo es la mayor motivación para las actualizaciones continuas.",
             "proTitle": "¿Quieres funciones más avanzadas?",
             "proDescription": "Suscríbete a la versión Pro para desbloquear instantáneas de historial, copias de seguridad automáticas, más nodos de almacenamiento y soporte técnico prioritario.",
             "proButton": "Acerca de Pro",
@@ -330,7 +330,7 @@
             "terms": "Términos de servicio",
             "privacy": "Política de privacidad",
             "website": "Sitio web oficial",
-            "copyright": "© {{year}} BookmarkHub. Liberado con amor."
+            "copyright": "© {{year}} BookmarkSync. Liberado con amor."
         }
     },
     "dashboard": {

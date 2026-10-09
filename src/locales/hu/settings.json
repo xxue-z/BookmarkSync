@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Verzió",
         "stable": "Stabil",
         "description": "Nyílt forráskódú könyvjelző szinkronizálási megoldás.",
@@ -288,7 +288,7 @@
             "terms": "Feltételek",
             "privacy": "Adatvédelem",
             "website": "Weboldal",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

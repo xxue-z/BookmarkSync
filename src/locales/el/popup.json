@@ -1,5 +1,5 @@
 {
-    "title": "BookmarkHub",
+    "title": "BookmarkSync",
     "menu": { "dashboard": "Πίνακας ελέγχου", "helpDocs": "Τεκμηρίωση", "feedback": "Σχόλια", "donate": "Δωρεά", "rate": "Βαθμολογία", "community": "Κοινότητα", "website": "Ιστοσελίδα", "support": "Υποστήριξη", "terms": "Όροι" },
     "stats": { "localBookmarks": "Τοπικοί σελιδοδείκτες", "storageType": "Τύπος αποθήκευσης", "lastStatus": "Τελευταία κατάσταση", "lastSync": "Τελευταίος συγχρονισμός" },
     "autoSync": { "title": "Αυτόματος συγχρονισμός", "description": "Διατηρήστε τα δεδομένα συνεπή μεταξύ συσκευών" },

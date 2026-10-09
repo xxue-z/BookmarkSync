@@ -34,7 +34,7 @@
         "safetyProtection": "حماية الأمان",
         "safetyBlocked": "تم حظر المزامنة: سيتم حذف {{count}} إشارة. يرجى التأكيد في الإعدادات.",
         "safetyBlockedGeneric": "تم حظر المزامنة: تم اكتشاف عدد كبير من التغييرات.",
-        "autoSyncDisabled": "BookmarkHub - المزامنة التلقائية غير مفعلة",
+        "autoSyncDisabled": "BookmarkSync - المزامنة التلقائية غير مفعلة",
         "autoSyncRequiresRegistration": "تتطلب المزامنة التلقائية تسجيل الحساب",
         "autoSyncPaused": "تم إيقاف المزامنة التلقائية",
         "operationCancelled": "تم إلغاء العملية",

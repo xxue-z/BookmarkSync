@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Versiune",
         "stable": "Stabil",
         "description": "Soluție open-source pentru sincronizare semne de carte.",
@@ -288,7 +288,7 @@
             "terms": "Termeni",
             "privacy": "Confidențialitate",
             "website": "Site",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

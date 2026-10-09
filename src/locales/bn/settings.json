@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "ভার্সন",
         "stable": "স্থিতিশীল",
         "description": "ওপেন সোর্স বুকমার্ক সিঙ্ক সলিউশন।",
@@ -288,7 +288,7 @@
             "terms": "শর্তাবলী",
             "privacy": "গোপনীয়তা",
             "website": "ওয়েবসাইট",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

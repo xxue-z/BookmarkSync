@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "এক্সটেনশনের বিবরণ",
-      "message": "BookmarkHub, ব্রাউজার জুড়ে বুকমার্ক সিঙ্ক করুন"
+      "message": "BookmarkSync, ব্রাউজার জুড়ে বুকমার্ক সিঙ্ক করুন"
    },
    "appName": {
       "description": "এক্সটেনশনের নাম",
-      "message": "BookmarkHub - বুকমার্ক সিঙ্ক"
+      "message": "BookmarkSync - বুকমার্ক সিঙ্ক"
    }
 }

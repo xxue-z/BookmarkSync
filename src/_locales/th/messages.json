@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "คำอธิบายส่วนขยาย",
-      "message": "BookmarkHub, ซิงค์บุ๊กมาร์กระหว่างเบราว์เซอร์"
+      "message": "BookmarkSync, ซิงค์บุ๊กมาร์กระหว่างเบราว์เซอร์"
    },
    "appName": {
       "description": "ชื่อส่วนขยาย",
-      "message": "BookmarkHub - ซิงค์บุ๊กมาร์ก"
+      "message": "BookmarkSync - ซิงค์บุ๊กมาร์ก"
    }
 }

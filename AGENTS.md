@@ -1,6 +1,6 @@
 # 仓库指南（Repository Guidelines）
 
-本仓库是 **BookmarkHub v1.0.3 还原工程**：由官方商店版编译产物还原为「可读、可编辑、可重新打包」的源码形态，并已做**本地解锁**（移除登录/订阅门禁，开放全部功能）。旧版 v0.0.6 WXT 源码保留在 git 标签 `v0.0.6`。
+本仓库是 **BookmarkSync**（BookmarkHub v1.0.3 还原工程，已本地解锁）：由官方商店版编译产物还原为「可读、可编辑、可重新打包」的源码形态，并已做**本地解锁**（移除登录/订阅门禁，开放全部功能）。旧版 v0.0.6 WXT 源码保留在 git 标签 `v0.0.6`。
 
 > 边界：这是压缩产物还原出的可维护基线（类名、方法名、i18n key 保留，变量名压缩为单字母），并非原始 TS 源码；`assets/bookmarkhub_core_bg-*.wasm` 是 Rust 同步核心（二进制，不可还原）。
 
@@ -18,7 +18,7 @@
 ## 构建与开发命令
 
 - `npm run unlock` — 应用/重申解锁补丁（幂等，可重复执行）
-- `npm run repack`（或 `powershell -ExecutionPolicy Bypass -File scripts/repack.ps1`）— 生成 `dist/` 与 `bookmarkhub-1.0.3.zip`
+- `npm run repack`（或 `powershell -ExecutionPolicy Bypass -File scripts/repack.ps1`）— 生成 `dist/` 与 `bookmarksync-1.0.3.zip`
 - `node --check <file.js>` — 修改 JS 后的语法检查（本工程为 ESM，`package.json` 有 `type: module`）
 - 无依赖安装需求；`pnpm install` 仅用于旧工程，已不需要
 

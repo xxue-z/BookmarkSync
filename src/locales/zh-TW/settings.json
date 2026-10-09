@@ -249,7 +249,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "版本",
         "stable": "穩定",
         "description": "開源書籤同步解決方案。",
@@ -288,7 +288,7 @@
             "terms": "條款",
             "privacy": "隱私",
             "website": "網站",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

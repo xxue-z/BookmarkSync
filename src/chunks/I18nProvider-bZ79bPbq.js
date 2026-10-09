@@ -67,7 +67,7 @@ import {
             : typeof self < "u"
               ? self
               : {};
-    d.SENTRY_RELEASE = { id: "bookmarkhub-extension@dev" };
+    d.SENTRY_RELEASE = { id: "bookmarksync-extension@dev" };
     var h = new d.Error().stack;
     h &&
       ((d._sentryDebugIds = d._sentryDebugIds || {}),

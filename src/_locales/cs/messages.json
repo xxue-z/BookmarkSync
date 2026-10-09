@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "Popis rozšíření",
-      "message": "BookmarkHub, synchronizujte záložky mezi prohlížeči"
+      "message": "BookmarkSync, synchronizujte záložky mezi prohlížeči"
    },
    "appName": {
       "description": "Název rozšíření",
-      "message": "BookmarkHub - synchronizovat záložky"
+      "message": "BookmarkSync - synchronizovat záložky"
    }
 }

@@ -1,7 +1,7 @@
 # Generated / build output
 dist/
 node_modules/
-bookmarkhub-1.0.3.zip
+bookmarksync-1.0.3.zip
 .output/
 .wxt/
 

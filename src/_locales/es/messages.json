@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "La descripción de la extensión",
-      "message": "BookmarkHub, sincroniza marcadores entre navegadores"
+      "message": "BookmarkSync, sincroniza marcadores entre navegadores"
    },
    "appName": {
       "description": "El nombre de la extensión",
-      "message": "BookmarkHub - sincronizar marcadores"
+      "message": "BookmarkSync - sincronizar marcadores"
    }
 }

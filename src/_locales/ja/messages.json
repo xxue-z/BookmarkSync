@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "拡張機能の説明",
-      "message": "BookmarkHub、ブラウザ間でブックマークを同期"
+      "message": "BookmarkSync、ブラウザ間でブックマークを同期"
    },
    "appName": {
       "description": "拡張機能の名前",
-      "message": "BookmarkHub - ブックマークを同期"
+      "message": "BookmarkSync - ブックマークを同期"
    }
 }

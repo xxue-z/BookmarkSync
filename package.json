@@ -1,11 +1,12 @@
 {
-  "name": "bookmarkhub",
+  "name": "bookmarksync",
   "version": "1.0.3",
   "private": true,
-  "description": "BookmarkHub v1.0.3 restored source-form project with local unlock (login/subscription gates removed).",
+  "description": "BookmarkSync — BookmarkHub v1.0.3 restored source-form project with local unlock (login/subscription gates removed).",
   "type": "module",
   "scripts": {
     "unlock": "node scripts/patch-unlock.mjs",
+    "rename": "node scripts/rename-bookmarksync.mjs",
     "repack": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/repack.ps1"
   }
 }

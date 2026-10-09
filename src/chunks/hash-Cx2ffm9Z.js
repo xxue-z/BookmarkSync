@@ -29,7 +29,7 @@ import { a as P } from "./vendor-ui-Piys8gOI.js";
             : typeof self < "u"
               ? self
               : {};
-    a.SENTRY_RELEASE = { id: "bookmarkhub-extension@dev" };
+    a.SENTRY_RELEASE = { id: "bookmarksync-extension@dev" };
     var t = new a.Error().stack;
     t &&
       ((a._sentryDebugIds = a._sentryDebugIds || {}),
@@ -94,7 +94,7 @@ class U {
     try {
       const t = {
           public: !1,
-          description: "BookmarkHub bookmark sync data",
+          description: "BookmarkSync bookmark sync data",
           files: { [this.config.fileName]: { content: "{}" } },
         },
         e = await c(this.baseUrl, {

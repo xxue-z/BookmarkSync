@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "De beschrijving van de extensie",
-      "message": "BookmarkHub, bladwijzers synchroniseren tussen browsers"
+      "message": "BookmarkSync, bladwijzers synchroniseren tussen browsers"
    },
    "appName": {
       "description": "De naam van de extensie",
-      "message": "BookmarkHub - bladwijzers synchroniseren"
+      "message": "BookmarkSync - bladwijzers synchroniseren"
    }
 }

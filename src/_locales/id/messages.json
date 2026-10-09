@@ -1,10 +1,10 @@
 {
    "appDesc": {
       "description": "Deskripsi ekstensi",
-      "message": "BookmarkHub, sinkronkan bookmark antar browser"
+      "message": "BookmarkSync, sinkronkan bookmark antar browser"
    },
    "appName": {
       "description": "Nama ekstensi",
-      "message": "BookmarkHub - sinkronkan bookmark"
+      "message": "BookmarkSync - sinkronkan bookmark"
    }
 }

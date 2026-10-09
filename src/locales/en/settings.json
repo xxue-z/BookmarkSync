@@ -293,7 +293,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Version",
         "stable": "Stable",
         "description": "An open-source, secure, and fully self-controlled cross-browser bookmark sync solution.",
@@ -317,7 +317,7 @@
         },
         "support": {
             "title": "Support Continuous Development",
-            "description": "BookmarkHub is an open-source project maintained by individual developers. Your support is the greatest motivation for continuous updates.",
+            "description": "BookmarkSync is an open-source project maintained by individual developers. Your support is the greatest motivation for continuous updates.",
             "proTitle": "Want more advanced features?",
             "proDescription": "Subscribe to Pro version to unlock history snapshots, automatic backups, more storage nodes, and priority technical support.",
             "proButton": "Learn About Pro",
@@ -332,7 +332,7 @@
             "terms": "Terms of Service",
             "privacy": "Privacy Policy",
             "website": "Official Website",
-            "copyright": "© {{year}} BookmarkHub. Released with love."
+            "copyright": "© {{year}} BookmarkSync. Released with love."
         }
     },
     "dashboard": {

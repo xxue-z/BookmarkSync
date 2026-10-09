@@ -254,7 +254,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "Versi",
         "stable": "Stabil",
         "description": "Solusi sinkronisasi markah open source.",
@@ -293,7 +293,7 @@
             "terms": "Ketentuan",
             "privacy": "Privasi",
             "website": "Situs web",
-            "copyright": "© {{year}} BookmarkHub."
+            "copyright": "© {{year}} BookmarkSync."
         }
     },
     "dashboard": {

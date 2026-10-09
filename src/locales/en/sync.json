@@ -39,7 +39,7 @@
         "safetyProtection": "Sync Safety Protection",
         "safetyBlocked": "Sync blocked: will delete {{count}} bookmarks. Please confirm in settings.",
         "safetyBlockedGeneric": "Sync blocked: large number of changes detected.",
-        "autoSyncDisabled": "BookmarkHub - Auto Sync Not Enabled",
+        "autoSyncDisabled": "BookmarkSync - Auto Sync Not Enabled",
         "autoSyncRequiresRegistration": "Auto sync requires account registration, please register in settings",
         "autoSyncPaused": "Auto Sync Paused",
         "operationCancelled": "Operation Cancelled",

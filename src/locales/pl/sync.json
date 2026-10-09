@@ -35,7 +35,7 @@
         "safetyProtection": "Ochrona bezpieczeństwa",
         "safetyBlocked": "Synchronizacja zablokowana: {{count}} zakładek zostanie usuniętych. Potwierdź w ustawieniach.",
         "safetyBlockedGeneric": "Synchronizacja zablokowana: wykryto wiele zmian.",
-        "autoSyncDisabled": "BookmarkHub - automatyczna synchronizacja wyłączona",
+        "autoSyncDisabled": "BookmarkSync - automatyczna synchronizacja wyłączona",
         "autoSyncRequiresRegistration": "Automatyczna synchronizacja wymaga rejestracji",
         "autoSyncPaused": "Automatyczna synchronizacja wstrzymana",
         "operationCancelled": "Operacja anulowana",

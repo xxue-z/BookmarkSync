@@ -35,7 +35,7 @@
         "safetyProtection": "Synchronisationssicherheitsschutz",
         "safetyBlocked": "Synchronisation blockiert: {{count}} Lesezeichen werden gelöscht. Bitte in Einstellungen bestätigen.",
         "safetyBlockedGeneric": "Synchronisation blockiert: Große Anzahl von Änderungen erkannt.",
-        "autoSyncDisabled": "BookmarkHub - Automatische Synchronisation nicht aktiviert",
+        "autoSyncDisabled": "BookmarkSync - Automatische Synchronisation nicht aktiviert",
         "autoSyncRequiresRegistration": "Automatische Synchronisation erfordert Kontoanmeldung, bitte in Einstellungen registrieren",
         "autoSyncPaused": "Automatische Synchronisation pausiert",
         "operationCancelled": "Vorgang abgebrochen",

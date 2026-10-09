@@ -291,7 +291,7 @@
         }
     },
     "about": {
-        "title": "BookmarkHub",
+        "title": "BookmarkSync",
         "version": "バージョン",
         "stable": "安定版",
         "description": "オープンソースで安全完全に自己管理型のブラウザ間ブックマーク同期ソリューション。",
@@ -315,7 +315,7 @@
         },
         "support": {
             "title": "継続的な開発をサポート",
-            "description": "BookmarkHubは個人開発者によってメンテナンスされているオープンソースプロジェクトです。お客様のご支援が継続的な更新の最大の励みになります。",
+            "description": "BookmarkSyncは個人開発者によってメンテナンスされているオープンソースプロジェクトです。お客様のご支援が継続的な更新の最大の励みになります。",
             "proTitle": "もっと高度な機能が必要ですか？",
             "proDescription": "プロバージョンを購読して履歴スナップショット、自動バックアップ、より多くのストレージノード、優先技術サポートをロック解除。",
             "proButton": "プロについてもっと見る",
@@ -330,7 +330,7 @@
             "terms": "利用規約",
             "privacy": "プライバシーポリシー",
             "website": "公式サイト",
-            "copyright": "© {{year}} BookmarkHub。愛を込めてリリース。"
+            "copyright": "© {{year}} BookmarkSync。愛を込めてリリース。"
         }
     },
     "dashboard": {
