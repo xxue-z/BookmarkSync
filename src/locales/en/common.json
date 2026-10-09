@@ -1,0 +1,212 @@
+{
+    "buttons": {
+        "sync": "Sync Now",
+        "syncing": "Syncing...",
+        "settings": "Settings",
+        "more": "More",
+        "login": "Login",
+        "logout": "Logout",
+        "save": "Save",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "delete": "Delete",
+        "edit": "Edit",
+        "close": "Close",
+        "back": "Back",
+        "next": "Next",
+        "upgrade": "Upgrade"
+    },
+    "labels": {
+        "language": "Language",
+        "theme": "Theme",
+        "deviceName": "Device Name",
+        "autoSync": "Auto Sync",
+        "syncInterval": "Sync Interval",
+        "notifications": "Notifications",
+        "encryption": "Encryption",
+        "encryptionKey": "Encryption Key",
+        "conflictStrategy": "Conflict Strategy",
+        "storageType": "Storage Type",
+        "lastSync": "Last Sync",
+        "status": "Status",
+        "localBookmarks": "Local Bookmarks",
+        "remoteStorage": "Remote Storage",
+        "pro": "Pro"
+    },
+    "status": {
+        "syncing": "Syncing",
+        "success": "Success",
+        "failure": "Failed",
+        "ready": "Ready",
+        "never": "Never synced"
+    },
+    "themes": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+    },
+    "languages": {
+        "zh": "简体中文",
+        "en": "English",
+        "es": "Español",
+        "fr": "Français",
+        "de": "Deutsch",
+        "ja": "日本語",
+        "pt": "Português",
+        "ru": "Русский",
+        "ar": "العربية",
+        "it": "Italiano",
+        "ko": "한국어",
+        "zh-TW": "繁體中文",
+        "id": "Bahasa Indonesia",
+        "tr": "Türkçe",
+        "vi": "Tiếng Việt",
+        "th": "ไทย",
+        "pl": "Polski",
+        "nl": "Nederlands",
+        "hi": "हिन्दी",
+        "fa": "فارسی",
+        "sv": "Svenska",
+        "uk": "Українська",
+        "fil": "Filipino",
+        "cs": "Čeština",
+        "ro": "Română",
+        "hu": "Magyar",
+        "bn": "বাংলা",
+        "ur": "اردو",
+        "el": "Ελληνικά",
+        "he": "עברית"
+    },
+    "time": {
+        "minutes": "{{count}} minute",
+        "minutes_other": "{{count}} minutes",
+        "hours": "{{count}} hour",
+        "hours_other": "{{count}} hours"
+    },
+    "tabs": {
+        "dashboard": "Dashboard",
+        "general": "General Settings",
+        "storage": "Storage Settings",
+        "history": "Time Machine",
+        "logs": "Sync History",
+        "tools": "Toolbox",
+        "about": "About"
+    },
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "settings": "Settings",
+        "general": "General",
+        "storage": "Storage",
+        "data": "Data",
+        "timeMachine": "Time Machine",
+        "syncHistory": "Sync Logs",
+        "tools": "Tools",
+        "about": "About",
+        "tutorial": "Tutorial",
+        "feedback": "Feedback",
+        "activities": "Notices"
+    },
+    "navUser": {
+        "notLoggedIn": "Not Logged In",
+        "clickToLogin": "Click to Logged In",
+        "accountSettings": "Account Settings",
+        "manageSubscription": "Manage Subscription",
+        "upgradePro": "Upgrade to Pro",
+        "logout": "Log Out"
+    },
+    "activityGraph": {
+        "title": "Recent Sync Activity",
+        "subtitle": "Bookmark sync frequency over the past 10 months",
+        "loading": "Loading activity data...",
+        "less": "Less",
+        "more": "More",
+        "mon": "Mon",
+        "wed": "Wed",
+        "fri": "Fri",
+        "syncCount": "{{date}}: {{count}} syncs"
+    },
+    "upgradeDialog": {
+        "title": "Upgrade to Pro",
+        "subtitle": "Unlock advanced features and enhance your bookmark management",
+        "proMember": "Professional Member",
+        "proMemberDesc": "You've unlocked all premium features. Thank you for your support!",
+        "close": "Close",
+        "refreshStatus": "Refresh Status",
+        "refreshing": "Refreshing...",
+        "paidNote": "Already paid? Click refresh on the right",
+        "goToPricing": "Subscribe on Website",
+        "accountPromotion": "Upgrade Your Account",
+        "accountPromotionDesc": "Pro features are linked to your sync account. Please subscribe on our website, then refresh here to unlock everything.",
+        "features": {
+            "storage": {
+                "title": "Private Storage",
+                "desc": "Support for GitHub and WebDAV. Keep data in your own hands."
+            },
+            "autoSync": {
+                "title": "Automatic Sync",
+                "desc": "Sync bookmarks automatically without manual intervention, real-time updates across devices."
+            },
+            "configSync": {
+                "title": "Config Cloud Sync",
+                "desc": "Settings and sync rules are synced with your account, no need to reconfigure on new devices."
+            },
+            "encryption": {
+                "title": "End-to-End Encryption",
+                "desc": "AES-256-GCM military-grade encryption before syncing."
+            },
+            "timeMachine": {
+                "title": "Time Machine",
+                "desc": "Git-based version control. Roll back to any point in time."
+            },
+            "syncControl": {
+                "title": "Advanced Sync Control",
+                "desc": "Manual force upload/download to resolve conflicts instantly."
+            },
+            "audit": {
+                "title": "Sync Audit Logs",
+                "desc": "Detailed sync history charts and activity tracking."
+            },
+            "more": {
+                "title": "More Premium Features",
+                "desc": "Priority updates and professional technical support."
+            }
+        }
+    },
+    "upgradeCard": {
+        "title": "Upgrade to Pro",
+        "description": "Unlock advanced features like GitHub/WebDAV storage, config cloud sync, private encryption, and Time Machine rollback.",
+        "button": "Unlock Now"
+    },
+    "registrationDialog": {
+        "title": "Unlock Auto Sync",
+        "subtitle": "Subscribe to enjoy the following features",
+        "login": "Login to Your Account",
+        "later": "Maybe Later",
+        "features": {
+            "autoSync": {
+                "title": "Auto Sync",
+                "desc": "Automatically sync bookmarks every 10 minutes"
+            },
+            "history": {
+                "title": "Sync History",
+                "desc": "View the most recent 100 sync records"
+            },
+            "cloudBackup": {
+                "title": "Cloud Backup",
+                "desc": "Set up automatic cloud backups and multi-device sync"
+            }
+        }
+    },
+    "messages": {
+        "startingSync": "Starting sync...",
+        "triggerSyncFailed": "Failed to trigger sync",
+        "settingsSaved": "Settings saved automatically",
+        "saveFailed": "Failed to save settings",
+        "statusHint": "Status Note",
+        "error": "Error",
+        "safetyWarningTriggered": "Sync Safety Protection Triggered",
+        "safetyWarningDesc": "Auto-sync detected a large number of bookmarks to be deleted and has been blocked for protection. Please check if your data is correct. If unsure, export a backup in the Toolbox first.",
+        "confirmAndSync": "Confirm and Sync Manually",
+        "loading": "Loading..."
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "messages": {
+        "syncing": "Sincronizzazione...",
+        "syncSuccess": "Sincronizzazione riuscita",
+        "syncFailed": "Sincronizzazione fallita",
+        "forcePushing": "Upload forzato...",
+        "forcePulling": "Download forzato...",
+        "creatingBackup": "Creazione backup locale...",
+        "backupComplete": "Backup completato, sincronizzazione...",
+        "syncedTo": "Sincronizzato con {{storageType}}",
+        "noChanges": "Nessuna modifica rilevata",
+        "localChanges": "{{count}} modifica locale",
+        "localChanges_other": "{{count}} modifiche locali",
+        "remoteChanges": "{{count}} modifica remota",
+        "remoteChanges_other": "{{count}} modifiche remote",
+        "added": "{{count}} aggiunto",
+        "updated": "{{count}} aggiornato",
+        "deleted": "{{count}} eliminato",
+        "firstSyncComplete": "Prima sincronizzazione completata",
+        "forcePullComplete": "Download forzato completato",
+        "localSyncComplete": "Sincronizzazione completata",
+        "mergeSyncComplete": "Sincronizzazione completata",
+        "noUpdatesNeeded": "Dati già coerenti",
+        "newDeviceSyncComplete": "Prima sincronizzazione nuovo dispositivo completata",
+        "performingMerge": "Sincronizzazione: merge in corso",
+        "syncInterrupted": "Sincronizzazione interrotta inaspettatamente"
+    },
+    "notifications": {
+        "syncSuccess": "Sincronizzazione riuscita",
+        "syncFailed": "Sincronizzazione fallita",
+        "forcePushSuccess": "Upload forzato riuscito",
+        "forcePullSuccess": "Download forzato riuscito",
+        "forcePushFailed": "Upload forzato fallito",
+        "forcePullFailed": "Download forzato fallito",
+        "safetyProtection": "Protezione sicurezza",
+        "safetyBlocked": "Sincronizzazione bloccata: {{count}} segnalibri da eliminare.",
+        "safetyBlockedGeneric": "Sincronizzazione bloccata.",
+        "autoSyncDisabled": "Sincronizzazione automatica non attivata",
+        "autoSyncRequiresRegistration": "Registra account per sincronizzazione automatica",
+        "autoSyncPaused": "Sincronizzazione automatica in pausa",
+        "operationCancelled": "Operazione annullata",
+        "backupFailed": "Backup automatico fallito"
+    },
+    "errors": {
+        "unsupportedStorageType": "Tipo archiviazione non supportato: {{type}}",
+        "autoSyncBlocked": "AUTO_SYNC_BLOCKED: {{reason}}",
+        "safetyError": "Merge eliminerebbe molti segnalibri, sincronizzazione bloccata."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "BookmarkHub",
+    "menu": { "dashboard": "Dashboard", "helpDocs": "Documentazione", "feedback": "Feedback", "donate": "Supportaci", "rate": "Valutaci", "community": "Community", "website": "Sito ufficiale", "support": "Supporto", "terms": "Termini" },
+    "stats": { "localBookmarks": "Segnalibri locali", "storageType": "Tipo archiviazione", "lastStatus": "Ultimo stato", "lastSync": "Ultima sincronizzazione" },
+    "autoSync": { "title": "Sincronizzazione automatica", "description": "Mantieni i dati coerenti tra i dispositivi" },
+    "safetyWarning": { "title": "Eliminazione di massa bloccata", "description": "Controlla le impostazioni e sincronizza manualmente" },
+    "version": "V{{version}}"
+}

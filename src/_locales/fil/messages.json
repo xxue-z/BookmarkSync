@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "Deskripsyon ng extension",
+      "message": "BookmarkHub, i-sync ang mga bookmark sa pagitan ng mga browser"
+   },
+   "appName": {
+      "description": "Pangalan ng extension",
+      "message": "BookmarkHub - i-sync ang mga bookmark"
+   }
+}

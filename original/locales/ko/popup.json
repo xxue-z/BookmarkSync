@@ -1,0 +1,8 @@
+{
+    "title": "BookmarkHub",
+    "menu": { "dashboard": "대시보드", "helpDocs": "문서", "feedback": "피드백", "donate": "후원", "rate": "평가", "community": "커뮤니티", "website": "웹사이트", "support": "지원", "terms": "약관" },
+    "stats": { "localBookmarks": "로컬 북마크", "storageType": "저장소 유형", "lastStatus": "마지막 상태", "lastSync": "마지막 동기화" },
+    "autoSync": { "title": "자동 동기화", "description": "기기 간 데이터 동기화 유지" },
+    "safetyWarning": { "title": "대량 삭제 차단됨", "description": "설정을 확인하고 수동 동기화" },
+    "version": "V{{version}}"
+}

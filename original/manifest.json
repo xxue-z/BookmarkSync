@@ -1,0 +1,79 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/dark/128.png",
+         "16": "icons/dark/16.png",
+         "256": "icons/dark/256.png",
+         "32": "icons/dark/32.png",
+         "48": "icons/dark/48.png",
+         "64": "icons/dark/64.png"
+      },
+      "default_popup": "src/popup/index.html",
+      "theme_icons": [ {
+         "dark": "icons/dark/16.png",
+         "light": "icons/light/16.png",
+         "size": 16
+      }, {
+         "dark": "icons/dark/32.png",
+         "light": "icons/light/32.png",
+         "size": 32
+      }, {
+         "dark": "icons/dark/48.png",
+         "light": "icons/light/48.png",
+         "size": 48
+      }, {
+         "dark": "icons/dark/64.png",
+         "light": "icons/light/64.png",
+         "size": 64
+      }, {
+         "dark": "icons/dark/128.png",
+         "light": "icons/light/128.png",
+         "size": 128
+      }, {
+         "dark": "icons/dark/256.png",
+         "light": "icons/light/256.png",
+         "size": 256
+      } ]
+   },
+   "author": "dudor \u003Cdudor@qq.com>",
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "{9c37f9a3-ea04-4a2b-9fcc-c7a814c14311}"
+      }
+   },
+   "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "homepage_url": "https://github.com/dudor/bookmarkhub",
+   "host_permissions": [ "https://*.memoload.com/*", "https://*.github.com/*", "https://*.githubusercontent.com/*", "https://*.googleapis.com/*", "https://gitee.com/*", "https://gitlab.com/*", "https://*.microsoft.com/*", "https://*.sentry.io/*" ],
+   "icons": {
+      "128": "icons/dark/128.png",
+      "16": "icons/dark/16.png",
+      "256": "icons/dark/256.png",
+      "32": "icons/dark/32.png",
+      "48": "icons/dark/48.png",
+      "64": "icons/dark/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6CgHRpLTzF7X8Gqr2lhfQofybOW6o6GdWdcHQYyhEBe75V/Tugo5K1oT+6rv7mRiiOFAnSEWG8K7O64/B6orZ6RMaxYu4vLWWkJYZoJ9BVLGh9Gi8011NJvHnPKjM5VQCXYNXRGLqcBvI4YjixtyJp4ry8K/Sa+WhXb1kIv+pzYs+xXXwXaV5gjwQivu4kidLlWkdzEweVE33Tpvn8z2efuJ7F8KlluvQQErtEKV4lC4YR1vuMhecnUa+0dIgALyCn5mgdC8PA53wizKjKyrJm/sjPZ3eNF6AptdRC1sRJYvlL0VhTuugZy4kpjlTBmroV0KV1bcE4rTHDDNlI6zUwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "optional_host_permissions": [ "https://*/*", "http://*/*" ],
+   "optional_permissions": [ "identity" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "src/options/index.html"
+   },
+   "permissions": [ "bookmarks", "storage", "alarms", "notifications" ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "1.0.3",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "locales/**/*.json" ]
+   } ]
+}

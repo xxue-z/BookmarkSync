@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "A bővítmény leírása",
+      "message": "BookmarkHub, könyvjelzők szinkronizálása böngészők között"
+   },
+   "appName": {
+      "description": "A bővítmény neve",
+      "message": "BookmarkHub - könyvjelzők szinkronizálása"
+   }
+}

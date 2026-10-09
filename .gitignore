@@ -1,20 +1,19 @@
+# Generated / build output
+dist/
+node_modules/
+bookmarkhub-1.0.3.zip
+.output/
+.wxt/
+
+# Local caches / scratch
+.temp/
+.pnpm-store/
+
 # Logs
-logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+logs/
 
-node_modules
-.output
-stats.html
-stats-*.json
-.wxt
-web-ext.config.ts
-
-# Editor directories and files
+# Editor
 .vscode/*
 !.vscode/extensions.json
 .idea

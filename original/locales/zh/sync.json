@@ -1,0 +1,51 @@
+{
+    "messages": {
+        "syncing": "正在同步...",
+        "syncSuccess": "同步成功",
+        "syncFailed": "同步失败",
+        "forcePushing": "正在覆盖上传至云端...",
+        "forcePulling": "正在从云端强制恢复...",
+        "creatingBackup": "正在创建本地备份...",
+        "backupComplete": "备份完成,继续执行同步...",
+        "syncedTo": "已同步至 {{storageType}}",
+        "noChanges": "未检测到变更",
+        "localChanges": "{{count}} 条本地变更",
+        "remoteChanges": "{{count}} 条远程变更",
+        "added": "新增 {{count}} 条",
+        "updated": "更新 {{count}} 条",
+        "deleted": "删除 {{count}} 条",
+        "firstSyncComplete": "首次同步完成：已上传本地书签到远程",
+        "forcePullComplete": "强制下载完成：已将云端数据完全覆盖至本地",
+        "localSyncComplete": "同步完成：已上传本地变更到远程",
+        "mergeSyncComplete": "同步完成：已上传合并结果到远程",
+        "noUpdatesNeeded": "同步完成：本地和远程一致，无需更新",
+        "newDeviceSyncComplete": "新设备首次同步完成：已智能合并本地和远程书签，自动去除重复项",
+        "performingMerge": "正在同步：已执行多方合并",
+        "syncInterrupted": "同步意外中断",
+        "historyDescription": {
+            "stats": "(新增:{{added}}, 更新:{{updated}}, 删除:{{deleted}})",
+            "terminal": "来自 {{clientName}}"
+        }
+    },
+    "notifications": {
+        "syncSuccess": "同步成功",
+        "syncFailed": "同步失败",
+        "forcePushSuccess": "强制上传成功",
+        "forcePullSuccess": "强制恢复成功",
+        "forcePushFailed": "强制上传失败",
+        "forcePullFailed": "强制恢复失败",
+        "safetyProtection": "同步安全保护",
+        "safetyBlocked": "同步已拦截:将删除 {{count}} 条书签。请在设置中确认。",
+        "safetyBlockedGeneric": "同步已拦截:检测到大量变动。",
+        "autoSyncDisabled": "BookmarkHub - 自动同步未启用",
+        "autoSyncRequiresRegistration": "自动同步功能需要注册账号,请前往设置页面注册",
+        "autoSyncPaused": "自动同步已暂停",
+        "operationCancelled": "操作已取消",
+        "backupFailed": "自动备份失败,已终止强制同步以保护数据。请检查设备存储空间。"
+    },
+    "errors": {
+        "unsupportedStorageType": "不支持的存储类型: {{type}}",
+        "autoSyncBlocked": "AUTO_SYNC_BLOCKED: {{reason}}",
+        "safetyError": "检测到合并后将删除大量书签，同步已保护性拦截。"
+    }
+}

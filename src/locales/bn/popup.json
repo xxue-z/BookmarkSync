@@ -1,0 +1,8 @@
+{
+    "title": "BookmarkHub",
+    "menu": { "dashboard": "ড্যাশবোর্ড", "helpDocs": "ডকুমেন্টেশন", "feedback": "প্রতিক্রিয়া", "donate": "দান", "rate": "রেটিং", "community": "কমিউনিটি", "website": "ওয়েবসাইট", "support": "সাপোর্ট", "terms": "শর্তাবলী" },
+    "stats": { "localBookmarks": "স্থানীয় বুকমার্ক", "storageType": "স্টোরেজ প্রকার", "lastStatus": "শেষ স্থিতি", "lastSync": "শেষ সিঙ্ক" },
+    "autoSync": { "title": "স্বয়ংক্রিয় সিঙ্ক", "description": "ডিভাইসের মধ্যে ডেটা সামঞ্জস্যপূর্ণ রাখুন" },
+    "safetyWarning": { "title": "মাস ডিলিট ব্লক হয়েছে", "description": "সেটিংস চেক করুন এবং ম্যানুয়ালি সিঙ্ক করুন" },
+    "version": "V{{version}}"
+}

@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "La descrizione dell'estensione",
+      "message": "BookmarkHub, sincronizza i segnalibri tra i browser"
+   },
+   "appName": {
+      "description": "Il nome dell'estensione",
+      "message": "BookmarkHub - sincronizza segnalibri"
+   }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "BookmarkHub",
+    "menu": { "dashboard": "Dashboard", "helpDocs": "Hilfedokumente", "feedback": "Feedback", "donate": "Unterstützen Sie uns", "rate": "Bewerten Sie uns", "community": "Community beitreten", "website": "Offizielle Website", "support": "Technischer Support", "terms": "Nutzungsbedingungen" },
+    "stats": { "localBookmarks": "Lokale Lesezeichen", "storageType": "Speichertyp", "lastStatus": "Letzter Status", "lastSync": "Letzte Synchronisation" },
+    "autoSync": { "title": "Automatische Synchronisation", "description": "Halten Sie Daten in Echtzeit geräteübergreifend konsistent" },
+    "safetyWarning": { "title": "Massenlöschung blockiert", "description": "Bitte überprüfen Sie die Einstellungen und synchronisieren Sie manuell" },
+    "version": "V{{version}}"
+}

@@ -1,0 +1,29 @@
+{
+    "title": "BookmarkHub",
+    "menu": {
+        "dashboard": "Dashboard",
+        "helpDocs": "Help Docs",
+        "feedback": "Feedback",
+        "donate": "Support Us",
+        "rate": "Rate Us",
+        "community": "Join Community",
+        "website": "Official Website",
+        "support": "Technical Support",
+        "terms": "Terms of Service"
+    },
+    "stats": {
+        "localBookmarks": "Local Bookmarks",
+        "storageType": "Storage Type",
+        "lastStatus": "Last Status",
+        "lastSync": "Last Sync"
+    },
+    "autoSync": {
+        "title": "Auto Sync",
+        "description": "Keep data consistent across devices in real-time"
+    },
+    "safetyWarning": {
+        "title": "Mass Deletion Blocked",
+        "description": "Please check in settings and sync manually"
+    },
+    "version": "V{{version}}"
+}
