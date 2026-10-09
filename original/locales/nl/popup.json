@@ -1,8 +1,0 @@
-{
-    "title": "BookmarkHub",
-    "menu": { "dashboard": "Dashboard", "helpDocs": "Documentatie", "feedback": "Feedback", "donate": "Doneren", "rate": "Beoordelen", "community": "Gemeenschap", "website": "Website", "support": "Ondersteuning", "terms": "Voorwaarden" },
-    "stats": { "localBookmarks": "Lokale bladwijzers", "storageType": "Opslagtype", "lastStatus": "Laatste status", "lastSync": "Laatste synchronisatie" },
-    "autoSync": { "title": "Automatische synchronisatie", "description": "Gegevens consistent houden tussen apparaten" },
-    "safetyWarning": { "title": "Massaal verwijderen geblokkeerd", "description": "Controleer instellingen en synchroniseer handmatig" },
-    "version": "V{{version}}"
-}

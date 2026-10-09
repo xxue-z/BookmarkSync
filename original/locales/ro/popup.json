@@ -1,8 +1,0 @@
-{
-    "title": "BookmarkHub",
-    "menu": { "dashboard": "Panou", "helpDocs": "Documentație", "feedback": "Feedback", "donate": "Donație", "rate": "Evaluare", "community": "Comunitate", "website": "Site", "support": "Suport", "terms": "Termeni" },
-    "stats": { "localBookmarks": "Semne de carte locale", "storageType": "Tip stocare", "lastStatus": "Ultimul status", "lastSync": "Ultima sincronizare" },
-    "autoSync": { "title": "Sincronizare automată", "description": "Menține consistența datelor între dispozitive" },
-    "safetyWarning": { "title": "Ștergere în masă blocată", "description": "Verifică setările și sincronizează manual" },
-    "version": "V{{version}}"
-}

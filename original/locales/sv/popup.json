@@ -1,8 +1,0 @@
-{
-    "title": "BookmarkHub",
-    "menu": { "dashboard": "Dashboard", "helpDocs": "Dokumentation", "feedback": "Feedback", "donate": "Donera", "rate": "Betygsätt", "community": "Gemenskap", "website": "Webbplats", "support": "Support", "terms": "Villkor" },
-    "stats": { "localBookmarks": "Lokala bokmärken", "storageType": "Lagringstyp", "lastStatus": "Senaste status", "lastSync": "Senast synkad" },
-    "autoSync": { "title": "Automatisk synkning", "description": "Håll data konsekvent mellan enheter" },
-    "safetyWarning": { "title": "Massborttagning blockerad", "description": "Kontrollera inställningar och synka manuellt" },
-    "version": "V{{version}}"
-}

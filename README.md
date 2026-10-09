@@ -11,7 +11,6 @@
 ## 目录结构
 
 ```
-├─ original/          # v1.0.3 原始编译产物备份（只读对照）
 ├─ src/               # 可编辑源码形态（美化后的 JS + 资源）
 │  ├─ background.js   # 后台：SyncEngine（class L）、SyncSafetyError（class P）、同步/自动同步/强制同步、安全阈值、通知、告警调度
 │  ├─ popup/popup.js  # 弹窗 UI：主界面 Xe 等

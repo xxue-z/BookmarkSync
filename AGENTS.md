@@ -11,7 +11,6 @@
   - `popup/popup.js`、`options/options.js` — 弹窗与设置页 UI
   - `chunks/` — 库分包。**登录/订阅门禁补丁位于 `chunks/sentry--tCLaZao.js`（许可核心）与 `chunks/I18nProvider-bZ79bPbq.js`（UI 权限上下文）**
   - `assets/`（WASM）、`icons/`、`locales/`、`_locales/`（30 种语言）、`manifest.json`
-- `original/` — v1.0.3 原始编译产物备份，**只读对照，不要修改**
 - `scripts/patch-unlock.mjs` — 本地解锁补丁（幂等）
 - `scripts/repack.ps1` — 重新打包
 
@@ -25,7 +24,7 @@
 ## 编码风格与命名约定
 
 - 还原代码继续用压缩变量名时，**新增/修改处必须写清晰注释**；能改名的局部变量就改为语义化命名
-- 只改 `src/`；`original/`、`dist/`、zip 均不手工改动
+- 只改 `src/`；`dist/`、zip 均不手工改动
 - manifest 修改后必须 `JSON.parse` 校验
 - 不要重新引入登录/订阅逻辑；`memoload.com` 权限仅用于 WASM 核心取匿名许可 token，勿动
 
