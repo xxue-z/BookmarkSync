@@ -1,8 +1,0 @@
-{
-    "title": "BookmarkHub",
-    "menu": { "dashboard": "Bảng điều khiển", "helpDocs": "Tài liệu", "feedback": "Phản hồi", "donate": "Ủng hộ", "rate": "Đánh giá", "community": "Cộng đồng", "website": "Trang web", "support": "Hỗ trợ", "terms": "Điều khoản" },
-    "stats": { "localBookmarks": "Đánh dấu cục bộ", "storageType": "Loại lưu trữ", "lastStatus": "Trạng thái cuối", "lastSync": "Đồng bộ cuối" },
-    "autoSync": { "title": "Tự động đồng bộ", "description": "Giữ dữ liệu nhất quán giữa các thiết bị" },
-    "safetyWarning": { "title": "Xóa hàng loạt bị chặn", "description": "Kiểm tra cài đặt và đồng bộ thủ công" },
-    "version": "V{{version}}"
-}

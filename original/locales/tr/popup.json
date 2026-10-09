@@ -1,8 +1,0 @@
-{
-    "title": "BookmarkHub",
-    "menu": { "dashboard": "Panel", "helpDocs": "Dokümanlar", "feedback": "Geri bildirim", "donate": "Bağış", "rate": "Değerlendir", "community": "Topluluk", "website": "Web sitesi", "support": "Destek", "terms": "Koşullar" },
-    "stats": { "localBookmarks": "Yerel yer imleri", "storageType": "Depolama türü", "lastStatus": "Son durum", "lastSync": "Son senkronizasyon" },
-    "autoSync": { "title": "Otomatik senkronizasyon", "description": "Cihazlar arasında verileri tutarlı tut" },
-    "safetyWarning": { "title": "Toplu silme engellendi", "description": "Ayarları kontrol edin ve manuel senkronize edin" },
-    "version": "V{{version}}"
-}
