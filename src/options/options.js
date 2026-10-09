@@ -4326,97 +4326,146 @@ function sr() {
   });
 }
 async function tr(s, a) {
-  var n, r;
-  if (
-    !(
-      (r = (n = await Ce.getSession()) == null ? void 0 : n.data) != null &&
-      r.user
-    )
-  )
-    throw new Error("User not logged in");
-  const t = await J.encryptData(JSON.stringify({ storageType: s, config: a })),
-    i = await Le(`${W.APP_URL}/api/timemachine/history`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ payload: t }),
-    });
-  if (!i.ok) {
-    const l = await i.text();
-    throw new Error(l || "Failed to fetch history from server");
+  if (s === "gist") {
+    const { token, gistId } = a || {};
+    if (!token || !gistId)
+      throw new Error("Gist token/ID is not configured in Storage settings");
+    const r = await fetch(
+      `https://api.github.com/gists/${gistId}/commits`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+      },
+    );
+    if (!r.ok) throw new Error((await r.text()) || "Failed to fetch gist history");
+    const commits = await r.json();
+    return (Array.isArray(commits) ? commits : [])
+      .filter((c) => c && c.version)
+      .map((c) => ({
+        id: c.version,
+        timestamp: c.committed_at ? new Date(c.committed_at).getTime() : Date.now(),
+        authorName:
+          (c.user && c.user.login) ||
+          (c.committer && c.committer.login) ||
+          "unknown",
+        message: c.change_status
+          ? `+${c.change_status.additions || 0} -${c.change_status.deletions || 0}`
+          : "",
+      }));
   }
-  return await i.json();
+  if (s === "github") {
+    const { token, owner, repo, filePath } = a || {};
+    if (!token || !owner || !repo)
+      throw new Error("GitHub owner/repo/token is not configured in Storage settings");
+    const p =
+      filePath ||
+      "bookmarksync.json";
+    const r = await fetch(
+      `https://api.github.com/repos/${owner}/${repo}/commits?path=${encodeURIComponent(p)}&per_page=50`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+      },
+    );
+    if (!r.ok) throw new Error((await r.text()) || "Failed to fetch repository history");
+    const commits = await r.json();
+    return (Array.isArray(commits) ? commits : [])
+      .map((c) => ({
+        id: c.sha,
+        timestamp:
+          c.commit && c.commit.committer && c.commit.committer.date
+            ? new Date(c.commit.committer.date).getTime()
+            : Date.now(),
+        authorName:
+          (c.commit && c.commit.author && c.commit.author.name) ||
+          (c.author && c.author.login) ||
+          "unknown",
+        message: (c.commit && c.commit.message) || "",
+      }));
+  }
+  throw new Error("This storage type does not support version history");
 }
 async function ar(s, a, t) {
-  var r, l;
-  if (
-    !(
-      (l = (r = await Ce.getSession()) == null ? void 0 : r.data) != null &&
-      l.user
-    )
-  )
-    throw new Error("User not logged in");
-  const i = await J.encryptData(JSON.stringify({ storageType: s, config: a })),
-    n = await Le(`${W.APP_URL}/api/timemachine/version`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ payload: i, versionId: t }),
-    });
-  if (!n.ok) {
-    const m = await n.text();
-    throw new Error(m || "Failed to fetch version content from server");
+  if (s === "gist") {
+    const { token, gistId, fileName } = a || {};
+    if (!token || !gistId) throw new Error("Gist token/ID is not configured");
+    const r = await fetch(
+      `https://api.github.com/gists/${gistId}/${t}`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+      },
+    );
+    if (!r.ok) throw new Error((await r.text()) || "Failed to fetch gist version");
+    const g = await r.json();
+    const files = (g && g.files) || {};
+    const name = fileName || "bookmarksync.json";
+    let entry = files[name];
+    if (!entry)
+      entry =
+        Object.values(files).find((f) => f && typeof f.content == "string") ||
+        Object.values(files)[0];
+    if (!entry) throw new Error("Gist version has no file content");
+    if (typeof entry.content == "string") return entry.content;
+    if (entry.raw_url) {
+      const raw = await fetch(entry.raw_url);
+      if (!raw.ok) throw new Error("Failed to download gist version content");
+      return await raw.text();
+    }
+    throw new Error("Gist version has no file content");
   }
-  return await n.text();
+  if (s === "github") {
+    const { token, owner, repo, filePath } = a || {};
+    if (!token || !owner || !repo)
+      throw new Error("GitHub owner/repo/token is not configured");
+    const p = filePath || "bookmarksync.json";
+    const r = await fetch(
+      `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(p)}?ref=${t}`,
+      { headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw" } },
+    );
+    if (!r.ok) throw new Error((await r.text()) || "Failed to fetch repository version");
+    return await r.text();
+  }
+  throw new Error("This storage type does not support version history");
 }
 async function rr() {
-  var a, t;
-  let s = null;
   try {
-    if (
-      !(
-        (t = (a = await Ce.getSession()) == null ? void 0 : a.data) != null &&
-        t.user
-      )
-    )
-      throw new Error("User not logged in");
-    const i = await Le(`${W.APP_URL}/api/user/data?key=app_settings`);
-    if (!i.ok) throw new Error(`Failed to fetch settings: ${i.statusText}`);
-    const n = await i.json();
+    const n = (await F.storage.local.get("settingsBackupCloud"))
+      .settingsBackupCloud;
     if (n && n.content) {
       const r = Ms.decompressFromBase64(n.content);
-      r && (s = JSON.parse(r));
+      if (r) return JSON.parse(r);
     }
   } catch (i) {
-    throw (console.error("Error fetching remote settings:", i), i);
+    console.error("Error fetching local settings backup:", i);
   }
-  return s;
+  return null;
 }
 async function ir(s) {
-  var t, i;
-  let a = !1;
   try {
-    if (
-      !(
-        (i = (t = await Ce.getSession()) == null ? void 0 : t.data) != null &&
-        i.user
-      )
-    )
-      throw new Error("User not logged in");
     const n = JSON.stringify(s),
-      r = Ms.compressToBase64(n),
-      l = await Le(`${W.APP_URL}/api/user/data`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          key: "app_settings",
-          data: { content: r, version: Ge(), timestamp: Date.now() },
-        }),
-      });
-    if (!l.ok) throw new Error(`Failed to save settings: ${l.statusText}`);
-    a = !0;
+      r = Ms.compressToBase64(n);
+    await F.storage.local.set({
+      settingsBackupCloud: {
+        content: r,
+        version: Ge(),
+        timestamp: Date.now(),
+      },
+    });
+    return !0;
   } catch (n) {
-    throw (console.error("Error saving remote settings:", n), n);
+    console.error("Error saving local settings backup:", n);
+    return !1;
   }
-  return a;
 }
 function nr() {
   const { t: s } = D(["settings", "common"]),
@@ -5035,10 +5084,7 @@ function lr() {
                       }),
                     i.map((p) => {
                       const R = new Date(p.timestamp),
-                        U =
-                          (new Date().getTime() - R.getTime()) /
-                            (1e3 * 60 * 60 * 24) >
-                          30;
+                        U = !1;
                       return e.jsxs(
                         "div",
                         {
