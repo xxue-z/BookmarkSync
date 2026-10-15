@@ -1,10 +1,6 @@
 # BookmarkSync
 
-跨浏览器书签同步扩展 — 基于 [BookmarkHub](https://github.com/dudor/BookmarkHub) v1.0.3 二次开发，已做**本地解锁**（移除登录/订阅门禁，开放全部功能）。
-
-## 上游致谢
-
-本项目基于 [dudor/BookmarkHub](https://github.com/dudor/BookmarkHub) v1.0.3 编译产物还原并二次开发，遵循原项目开源协议。项目更名记录见 `scripts/rename-bookmarksync.mjs`（幂等）。
+跨浏览器书签同步扩展 — 本地解锁版，移除登录/订阅门禁，开放全部功能。
 
 ## 诚实边界（重要）
 
@@ -52,9 +48,8 @@ npm run repack
 | `src/popup/popup.js` | 注册对话框 / 登录按钮 | 引导登录官网注册、升级 Pro |
 | `src/options/options.js` | Pro 分区（历史/自动备份/存储节点） | 订阅后才开放 |
 
-## 与上游的关系
+## 仓库
 
-- 上游官方：[dudor/BookmarkHub](https://github.com/dudor/BookmarkHub)（本仓库基于其 v1.0.3 编译产物还原并二次开发）
 - 本仓库：[xxue-z/BookmarkSync](https://github.com/xxue-z/BookmarkSync)
 - 旧版 v0.0.6 WXT 源码已存档于 git 标签 **`v0.0.6`**（迁移提交前打标）
 
