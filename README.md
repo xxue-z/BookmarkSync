@@ -20,7 +20,7 @@
 npm run repack
 ```
 
-产出：`dist/` + `bookmarksync-1.0.3.zip`
+构建时会提示选择版本号推进（patch / minor / major），产出全部位于 `dist/` 目录。
 
 ## 仓库
 
