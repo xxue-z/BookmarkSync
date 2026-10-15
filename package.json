@@ -2,7 +2,7 @@
   "name": "bookmarksync",
   "version": "1.0.3",
   "private": true,
-  "description": "BookmarkSync — cross-browser bookmark sync extension, local unlock edition.",
+  "description": "BookmarkSync — cross-browser bookmark sync extension.",
   "type": "module",
   "scripts": {
     "unlock": "node scripts/patch-unlock.mjs",
