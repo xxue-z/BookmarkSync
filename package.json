@@ -2,7 +2,7 @@
   "name": "bookmarksync",
   "version": "1.0.3",
   "private": true,
-  "description": "BookmarkSync — cross-browser bookmark sync extension, based on BookmarkHub v1.0.3 with local unlock (login/subscription gates removed).",
+  "description": "BookmarkSync — cross-browser bookmark sync extension, local unlock edition.",
   "type": "module",
   "scripts": {
     "unlock": "node scripts/patch-unlock.mjs",
