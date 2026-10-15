@@ -24,10 +24,10 @@ function replaceAll(rel, oldText, newText, label) {
 }
 
 // --- 剩余标识符：数据文件名 / 存储名 / wasm / homepage_url ---
-replaceAll('src/chunks/sentry--tCLaZao.js', 'bookmarkhub.json', 'bookmarksync.json', 'sentry: data filenames');
-replaceOnce('src/chunks/sentry--tCLaZao.js', '"./bookmarkhub_core_bg.js"', '"./bookmarksync_core_bg.js"', 'sentry: wasm glue js ref');
-replaceOnce('src/chunks/sentry--tCLaZao.js', '"/assets/bookmarkhub_core_bg-Cl4sWNse.wasm"', '"/assets/bookmarksync_core_bg-Cl4sWNse.wasm"', 'sentry: wasm asset ref');
-replaceOnce('src/chunks/hash-Cx2ffm9Z.js', 'super("BookmarkHub_SyncRecords")', 'super("BookmarkSync_SyncRecords")', 'hash: sync records store name');
+replaceAll('src/chunks/sentry--tCLaZao.js', 'bookmarksync.json', 'bookmarksync.json', 'sentry: data filenames');
+replaceOnce('src/chunks/sentry--tCLaZao.js', '"./bookmarksync_core_bg.js"', '"./bookmarksync_core_bg.js"', 'sentry: wasm glue js ref');
+replaceOnce('src/chunks/sentry--tCLaZao.js', '"/assets/bookmarksync_core_bg-Cl4sWNse.wasm"', '"/assets/bookmarksync_core_bg-Cl4sWNse.wasm"', 'sentry: wasm asset ref');
+replaceOnce('src/chunks/hash-Cx2ffm9Z.js', 'super("BookmarkSync_SyncRecords")', 'super("BookmarkSync_SyncRecords")', 'hash: sync records store name');
 
 const locBase = path.join(root, 'src', 'locales');
 if (existsSync(locBase)) {
@@ -36,8 +36,8 @@ if (existsSync(locBase)) {
     const p = path.join(root, rel);
     if (existsSync(p)) {
       const t = load(rel);
-      if (t.includes('bookmarkhub.json')) {
-        save(rel, t.split('bookmarkhub.json').join('bookmarksync.json'));
+      if (t.includes('bookmarksync.json')) {
+        save(rel, t.split('bookmarksync.json').join('bookmarksync.json'));
         console.log(`[OK] locale filenames ${rel}`);
       }
     }
@@ -49,7 +49,7 @@ const mNew = mRaw.replace(/   "homepage_url": "[^"]*",\r?\n/, '');
 if (mNew !== mRaw) { save('src/manifest.json', mNew); console.log('[OK] manifest: homepage_url removed'); }
 else console.log('[SKIP] manifest: homepage_url already removed');
 
-const wasmOld = path.join(root, 'src', 'assets', 'bookmarkhub_core_bg-Cl4sWNse.wasm');
+const wasmOld = path.join(root, 'src', 'assets', 'bookmarksync_core_bg-Cl4sWNse.wasm');
 const wasmNew = path.join(root, 'src', 'assets', 'bookmarksync_core_bg-Cl4sWNse.wasm');
 if (existsSync(wasmOld)) { renameSync(wasmOld, wasmNew); console.log('[OK] wasm file renamed'); }
 else console.log(existsSync(wasmNew) ? '[SKIP] wasm already renamed' : '[WARN] wasm file not found');

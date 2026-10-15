@@ -1,6 +1,10 @@
-# BookmarkSync — BookmarkHub v1.0.3 还原工程（本地解锁版）
+# BookmarkSync
 
-本仓库（BookmarkSync）是把**官方商店版 BookmarkHub v1.0.3（编译产物，源自 `.temp/1.0.3_0`）**还原为「可读、可编辑、可重新打包」的源码形态工程，并已做**本地解锁**：移除登录/订阅门禁，开放全部功能。项目更名记录见 `scripts/rename-bookmarksync.mjs`（幂等）。
+跨浏览器书签同步扩展 — 基于 [BookmarkHub](https://github.com/dudor/BookmarkHub) v1.0.3 二次开发，已做**本地解锁**（移除登录/订阅门禁，开放全部功能）。
+
+## 上游致谢
+
+本项目基于 [dudor/BookmarkHub](https://github.com/dudor/BookmarkHub) v1.0.3 编译产物还原并二次开发，遵循原项目开源协议。项目更名记录见 `scripts/rename-bookmarksync.mjs`（幂等）。
 
 ## 诚实边界（重要）
 
@@ -48,9 +52,10 @@ npm run repack
 | `src/popup/popup.js` | 注册对话框 / 登录按钮 | 引导登录官网注册、升级 Pro |
 | `src/options/options.js` | Pro 分区（历史/自动备份/存储节点） | 订阅后才开放 |
 
-## 与上游 / 旧版本的关系
+## 与上游的关系
 
-- 上游官方：`https://github.com/dudor/bookmarkhub`（本仓库为其 v1.0.3 编译产物的还原工程）
+- 上游官方：[dudor/BookmarkHub](https://github.com/dudor/BookmarkHub)（本仓库基于其 v1.0.3 编译产物还原并二次开发）
+- 本仓库：[xxue-z/BookmarkSync](https://github.com/xxue-z/BookmarkSync)
 - 旧版 v0.0.6 WXT 源码已存档于 git 标签 **`v0.0.6`**（迁移提交前打标）
 
 ## 本地解锁（去除登录态/订阅态，开放全部功能）
@@ -71,8 +76,19 @@ npm run repack
 - Sentry（`sentry.io` 遥测）与各同步适配器（GitHub/Gitee/GitLab/微软）未改动。
 - 校验：`node --check` 修改过的 JS；manifest 用 `JSON.parse`；改完跑 `npm run repack`。
 - 验证成品：`chrome://extensions` 开发者模式加载 `dist/`（或解压 `bookmarksync-1.0.3.zip`），确认无登录/升级入口、自动同步可开、Pro 分区全部可用。
+
 ## 扩展 ID
 
 - 本仓库使用**自生成的扩展 ID**（manifest `key` 已轮换，不再使用官方商店密钥对应的 `fdnmfpogadcljhecfhdikdecbkggfmgk`）。
 - 当前 ID：`fmhcbgfpcgbijngkiamciiikeanhbjaf`（由 `scripts/rotate-extension-id.mjs` 生成）。
-- 私钥保存于 `.keys/extension-private-key.pem`（已被 gitignore，勿提交）；重新生成 ID 请运行 `node scripts/rotate-extension-id.mjs`（每次运行会生成新 ID）。> 2026-10 更新：已完成完全去品牌化与去订阅化——扩展名 BookmarkSync；数据文件默认名 `bookmarksync.json`、IndexedDB 存储名 `BookmarkSync_SyncRecords`、WASM 核心 `bookmarksync_core_bg.wasm`；专业版（Pro/升级/订阅/登录）文字与样式已全部移除。仅保留两处**上游功能 URL**（`github.com/dudor/bookmarkhub` 活动公告 json、About 页 GitHub 链接），因为它们是功能依赖而非品牌。> 2026-10-09 更新：**书签时光机**已改为基于同步存储的版本历史——gist 走 GitHub Gist commits API、github 走仓库 commits API，直接拉取/恢复版本，无需登录，并移除 30 天过期限制；设置云备份改为本地 `storage.local` 备份（不再访问登录服务器）。相关脚本：`scripts/patch-timemachine-gist.mjs`。> 2026-10-09 更新：移除「使用教程」「问题反馈」入口（options 侧栏外链、About 反馈卡片、popup 菜单项）及首次安装自动打开 getting-started 页面跳转；相关脚本 `scripts/remove-tutorial-feedback.mjs`。> 2026-10-09 更新：popup「更多」菜单移除「捐赠」「社区」外链项；相关脚本 `scripts/remove-donate-community.mjs`。> 2026-10-09 更新：移除 popup「更多」菜单（含官网/支持/条款外链）与 About 页脚外链行（条款/隐私/官网）；相关脚本 `scripts/remove-website-menu.mjs`。> 2026-10-09 更新：书签时光机现已支持全部五种存储后端（gist / github / gitee / gitlab / onedrive）的版本历史，不再出现 "This storage type does not support version history"；`scripts/patch-timemachine-gist.mjs` 已同步。> 2026-10-09 更新：图标重绘为 BookmarkSync 品牌——渐变圆角底 + 书签 + 同步环；SVG 源见 `src/icons/bookmarksync-{dark,light}[-compact].svg`，用 `scripts/render-icons.mjs`（Playwright 无头 Chromium）栅格化为 16/32/48/64/128/256 × 明暗两版；小尺寸（≤32px）使用无环简化版保证清晰。
+- 私钥保存于 `.keys/extension-private-key.pem`（已被 gitignore，勿提交）；重新生成 ID 请运行 `node scripts/rotate-extension-id.mjs`（每次运行会生成新 ID）。
+
+## 更新日志
+
+- **2026-10** — 完全去品牌化与去订阅化：扩展名 BookmarkSync；数据文件默认名 `bookmarksync.json`、IndexedDB 存储名 `BookmarkSync_SyncRecords`、WASM 核心 `bookmarksync_core_bg.wasm`；专业版（Pro/升级/订阅/登录）文字与样式已全部移除。
+- **2026-10-09** — 书签时光机改为基于同步存储的版本历史：gist 走 GitHub Gist commits API、github 走仓库 commits API，直接拉取/恢复版本，无需登录，移除 30 天过期限制；设置云备份改为本地 `storage.local` 备份。相关脚本：`scripts/patch-timemachine-gist.mjs`。
+- **2026-10-09** — 移除「使用教程」「问题反馈」入口（options 侧栏外链、About 反馈卡片、popup 菜单项）及首次安装自动打开 getting-started 页面跳转。相关脚本：`scripts/remove-tutorial-feedback.mjs`。
+- **2026-10-09** — popup「更多」菜单移除「捐赠」「社区」外链项。相关脚本：`scripts/remove-donate-community.mjs`。
+- **2026-10-09** — 移除 popup「更多」菜单（含官网/支持/条款外链）与 About 页脚外链行（条款/隐私/官网）。相关脚本：`scripts/remove-website-menu.mjs`。
+- **2026-10-09** — 书签时光机现已支持全部五种存储后端（gist / github / gitee / gitlab / onedrive）的版本历史。`scripts/patch-timemachine-gist.mjs` 已同步。
+- **2026-10-09** — 图标重绘为 BookmarkSync 品牌：渐变圆角底 + 书签 + 同步环。SVG 源见 `src/icons/bookmarksync-{dark,light}[-compact].svg`，用 `scripts/render-icons.mjs`（Playwright 无头 Chromium）栅格化为 16/32/48/64/128/256 × 明暗两版；小尺寸（≤32px）使用无环简化版保证清晰。

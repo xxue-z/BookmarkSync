@@ -166,7 +166,7 @@ const it = {
   nn = "BookmarkSync",
   sn = "\u4E66\u7B7E\u540C\u6B65",
   on = "https://bh.memoload.com",
-  rn = "https://github.com/dudor/BookmarkHub",
+  rn = "https://github.com/xxue-z/BookmarkSync",
   an = "https://bh.memoload.com",
   ln =
     "841468457533-1u5l56hiog2duo3301mbfnr5bm6lnni4.apps.googleusercontent.com",
@@ -182,7 +182,7 @@ const it = {
     DROPBOX_CLIENT_ID: cn,
     ONEDRIVE_CLIENT_ID: un,
     ACTIVITY_JSON_URL:
-      "https://raw.githubusercontent.com/dudor/BookmarkHub/refs/heads/main/assets/data/activities.json",
+      "https://raw.githubusercontent.com/xxue-z/BookmarkSync/refs/heads/main/assets/data/activities.json",
   },
   N = {
     BAR: "root_____bar",
