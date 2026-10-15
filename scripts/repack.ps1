@@ -34,19 +34,25 @@ $newVer = switch ($choice) {
   default { $current }
 }
 
+# Helper: write UTF-8 without BOM
+function Write-UTF8NoBOM($Path, $Content) {
+  $utf8 = New-Object System.Text.UTF8Encoding $false
+  [System.IO.File]::WriteAllText($Path, $Content, $utf8)
+}
+
 if ($newVer -ne $current) {
   Write-Host "Updating version: $current -> $newVer" -ForegroundColor Green
 
   # Update src/manifest.json
   $m = Get-Content $manifestPath -Encoding UTF8 -Raw
   $m = $m -replace '("version"s*:s*)"[^"]*"', ('$1"' + $newVer + '"')
-  Set-Content -Path $manifestPath -Value $m -Encoding UTF8NoBOM -NoNewline
+  Write-UTF8NoBOM $manifestPath $m
 
   # Update package.json
   $pkgPath = Join-Path $root 'package.json'
   $p = Get-Content $pkgPath -Encoding UTF8 -Raw
   $p = $p -replace '("version"s*:s*)"[^"]*"', ('$1"' + $newVer + '"')
-  Set-Content -Path $pkgPath -Value $p -Encoding UTF8NoBOM -NoNewline
+  Write-UTF8NoBOM $pkgPath $p
 
   Write-Host "Version updated in manifest.json and package.json" -ForegroundColor Green
 } else {
